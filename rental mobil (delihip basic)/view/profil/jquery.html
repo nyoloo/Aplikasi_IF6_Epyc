@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <button class="btn btn-primary" id="plusBtn">tambah</button>
+    <button class="btn btn-primary" id="minusBtn">kurang</button>
+    <input type="items" id="inputitems" class="form-control me-3" value="1" aria-label="1">
+    <script>
+        $(document).ready(function () {
+            var n = 1;
+            $("#plusBtn").on('click', (function () {
+                $("#inputitems").val(++n);
+            }));
+
+            $("#minusBtn").on('click', (function () {
+                if (n >= 2) {
+                    $("#inputitems").val(--n);
+                } else {
+                    //Otherwise do nothing
+                }
+            }));
+        });
+    </script>
+</body>
+
+</html>

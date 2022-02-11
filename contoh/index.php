@@ -6,13 +6,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-		<meta name="Author" content="edi sutanto">
-		<link rel="shortcut icon" href="">
+		
+		
 
 		<!-- Latest compiled and minified CSS -->
 		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 		<!-- <link rel="stylesheet" href="bootstrap-3.3.6/dist/css/bootstrap.min.css"> -->
-		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" />
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
 		<!-- Latest compiled and minified JavaScript -->
@@ -35,8 +36,7 @@
 			        <h1 class="blog-title">Latihan CRUD Sederhana dengan PHP dan MYSQL serta Bootstrap</h1>
 			        <p class="lead blog-description">Semoga bermanfaat <a href='http://www.e-sutanto.blogspot.co.id' target='_blank'>www.e-sutanto.blogspot.co.id</a></p>
 			      </div>
-
-			      <p><a href='?mod=add'><button type='button' class='btn btn-primary'><span class='glyphicon glyphicon-plus-sign'></span> Add User</button></a></p>
+			      <p><a href='?mod=add'><button type='button' class='btn btn-primary'><i class="fa fa-plus"></i> Add User</button></a></p>
 
 			    <div class="row">	
 

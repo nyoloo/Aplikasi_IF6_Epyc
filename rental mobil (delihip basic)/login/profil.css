@@ -1,0 +1,442 @@
+*{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  background-color: #FAA39E;
+}
+section{
+  padding: 2rem 7%;
+}
+.heading{
+  text-align: center;
+  color: beige;
+  text-transform: uppercase;
+  padding-bottom: 2.5rem;
+  font-size: 2.5rem;
+}
+.heading span{
+  color: black;
+  text-transform: uppercase;
+}
+.header{
+  background-color: #F06292;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1,5rem 7%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.header .logo img{
+  height: 3rem;
+}
+.header .navbar a{
+  margin: 0 1rem ;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0);
+}
+
+.header.navbar a:hover{
+  color: rgb(255, 248, 248);
+}
+
+.header .icons div{
+  color:rgb(0, 0, 0);
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+
+.header .icons div:hover{
+  color:#000;
+}
+
+.header .fa {
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  margin-left: 2rem;
+}
+
+.header .fa:hover {
+    opacity: 0.7;
+}
+.header .fa-user{
+    color: rgb(0, 0, 0);
+}
+.header .fa-shopping-cart{
+    color : rgb(0, 0, 0)
+}
+
+#menu-btn{
+  display: none;
+}
+
+.home{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.home .content{
+  max-width: 40rem;
+}
+
+.home .content h3{
+  font-size: 6rem;
+  text-transform: uppercase;
+  color:rgb(0, 0, 0);
+}
+
+.home .content p{
+  font-size: 2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding:1rem 0;
+  color:#000;
+}
+
+.home .image img 
+{
+  width:90%;
+  height: auto;
+  
+}
+
+.about{
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  justify-content: space-between;
+  align-items:center;
+}
+
+.about .content{
+  max-width: 40rem;
+}
+
+.about .content h3{
+  font-size: 3rem;
+  text-transform: uppercase;
+  color:rgb(0, 0, 0);
+}
+
+.about .content p{
+  font-size: 1.2rem;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding:1rem 0;
+  color:#000;
+}
+
+.about .image img 
+{
+  width:90%;
+  height: auto;
+  
+}
+.products .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+  gap:1.5rem;
+}
+
+.products .box-container .box{
+  text-align: center;
+  border:.2rem solid rgba(0, 0, 0, 0.3);
+  padding: 2rem;
+}
+
+.products .box-container .box .icons a{
+  height: 3rem;
+  width: 3em;
+  line-height: 3rem;
+  font-size: 3rem;
+  border:.2rem solid rgba(0, 0, 0, 0.3);
+  color:#fff;
+  margin:.2rem;
+}
+
+.products .box-container .box .icons a:hover{
+  background:#347FC4;
+}
+
+.products .box-container .box .image{
+  padding: 2.5rem 0;
+}
+
+.products .box-container .box .image img{
+  height: 10rem;
+}
+
+.products .box-container .box .content h3{
+  color:rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+.products .box-container .box .content .stars{
+  padding: 1.5rem;
+}
+
+.products .box-container .box .content .stars i{
+  font-size: 1.7rem;
+  color: rgb(117, 165, 4);
+}
+
+.products .box-container .box .content   .price{
+  color:rgb(0, 0, 0);
+  font-size: 2rem;
+}
+
+.products .box-container .box .content .price span{
+  text-decoration: line-through;
+  font-weight: lighter;
+  font-size: 1.5rem;
+}
+.footer .links{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem
+}
+.menu .box-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap:1.5rem;
+}
+.menu .box-container .box{
+  padding:2rem;
+  text-align: center;
+  border: .1rem solid ;    
+}
+
+.menu .box-container .box img{
+  height: 10rem;
+}
+
+.menu .box-container .box h3{
+  color: rgb(0, 0, 0);
+  font-size: 2rem;
+  padding:1rem 0;
+}
+
+.menu .box-container .box .price{
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  padding:.5rem 0;
+}
+
+.menu .box-container .box .price span{
+  font-size: 1.5rem;
+  text-decoration: line-through;
+  font-weight: lighter;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 1px 20px 0 rgba(2, 53, 77, 0.08);
+  border: .1rem solid;
+  margin-bottom: 30px
+}
+.container-fluid{
+  text-align: center;
+}
+
+.m-r-0 {
+  margin-right: 0px
+}
+
+.m-l-0 {
+  margin-left: 0px
+}
+
+.user-card-full .user-profile {
+  border-radius: 5px 0 0 5px
+}
+
+.bg-c-lite-green {
+  background: -webkit-gradient(linear, left top, right top, from(#f29263), to(#ee5a6f));
+  background: linear-gradient(to right, #ee5a6f, #f29263)
+}
+
+.user-profile {
+  padding: 20px 0
+}
+
+.card-block {
+  padding: 1.25rem
+}
+
+.m-b-25 {
+  margin-bottom: 25px
+}
+
+.img-radius {
+  border-radius: 5px
+}
+
+h6 {
+  font-size: 20px
+}
+
+.card .card-block p {
+  line-height: 25px
+}
+
+@media only screen and (min-width: 1400px) {
+  p {
+      font-size: 20px
+  }
+}
+
+.card-block {
+  padding: 1.25rem
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0
+}
+
+.m-b-20 {
+  margin-bottom: 20px
+}
+
+.p-b-5 {
+  padding-bottom: 5px !important
+}
+
+.card .card-block p {
+  line-height: 25px
+}
+
+.m-b-10 {
+  margin-bottom: 10px;
+  font-size: 15px
+}
+
+.text-muted {
+  color: #4b4a4a !important
+}
+
+.b-b-default {
+  border-bottom: 1px solid #e0e0e0
+}
+
+.f-w-600 {
+  font-weight: 600
+}
+
+.m-b-20 {
+  margin-bottom: 20px
+}
+
+.m-t-40 {
+  margin-top: 20px
+}
+
+.p-b-5 {
+  padding-bottom: 1px
+}
+
+.m-b-10 {
+  margin-bottom: 1px
+}
+
+.m-t-40 {
+  margin-top: 10px
+}
+
+.user-card-full .social-link li {
+  display: inline-block
+}
+.asu{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15PX;
+    display: flex;
+
+}
+.left-coloum{
+  width: 65%;
+  position: relative;
+}
+.right-coloum{
+  width: 35%;
+  margin-top: 60px;
+}
+@media (max-width:991px){
+
+
+  .header{
+      padding:1.5rem 2rem;
+  }
+
+  section{
+      padding:2rem;
+  }
+
+}
+
+@media (max-width:880px){
+
+  #menu-btn{
+      display: inline-block;
+  }
+
+  .header .navbar{
+      position: absolute;
+      top:100%; right: -100%;
+      background: rgb(255, 246, 246);
+      width: 30rem;
+      height: calc(100vh - 9.5rem);
+      padding-right: 0ch;
+  }
+
+  .header .navbar.active{
+      right:0;
+  }
+
+  .header .navbar a{
+      color: #000;
+      display: block;
+      margin:1rem;
+      padding:1rem;
+      font-size: 1.4rem;
+  }
+
+ 
+
+  .home{
+      background-position: left;
+      justify-content: center;
+      text-align: center;
+  }
+
+  .home .content h3{
+      font-size: 4.5rem;
+  }
+
+  .home .content p{
+      font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width:450px){
+
+  html{
+      font-size: 50%;
+  }
+
+}
