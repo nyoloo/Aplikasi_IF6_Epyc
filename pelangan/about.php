@@ -16,82 +16,55 @@
     <title>Delichip Cake Store</title>
   </head>
   
-  <body>
-<header class="header">
+  <body style="background-color: #F7F6F2 ;">
+  <header class="header">
 
-    <a href="#" class="logo">
-        <img src="images/31-315783_kue-ulang-tahun-animasi-clipart.png" alt="">
-    </a>
+<a href="#" class="logo">
+    <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
+</a>
 
-    <nav class="navbar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link " href="index.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.php">About</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link"data-bs-toggle="modal" data-bs-target="#prodak" href="#">Produk</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link"data-bs-toggle="modal" data-bs-target="#kontak" href="#">Contacts</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link"data-bs-toggle="modal" data-bs-target="#profil" href="#">Profil</a>
-              </li>
-          </ul>
-          
-    </nav>
-    <div class="icons">
-        <a href="login/login.php" class="fa fa-user"></a>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
-  </header>
+<nav class="navbar">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active " href="index.php"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.php">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link"  href="mobil.php">Jenis Dan Harga Mobil</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link"data-bs-toggle="modal" data-bs-target="#modal" href="#">Kontak</a>
+        </li>
+      </ul>
+      
+</nav>
+<div class="icons">
+  <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="login/login.php">Login</a></li>
+      </ul>
+  <div class="fas fa-bars" id="menu-btn"></div>
+</header>
   <br>
-  <br>
-  <br>
-  <section class="about" id="about">
+  <section class="home" id="home">
   
   <div class="content">
-      <h3>DELICHIP CAKE SHOP</h3>
-      <p>Delichip Cake Shop yang merupakan suatu bisnis yang bergerak dalam bidang penjualan kue yang beralamat di Jl,  Areng Girang Kulon No.41, Wangunsari, Lembang, Kabupaten Bandung Barat, Jawa Barat 40391. Bisnis ini menjual berbagai aneka ragam kue seperti bolu, kue custom dan lain sebagainya. </p>
+      <h3>White Rent Car</h3>
+      <p>White Rent Car perusahaan yang bergerak dibidang jasa sewa mobil. 
+        Kami menyewakan kendaraan roda empat untuk pemakaian harian, bulanan atau tahunan. 
+        Armada kami didukung driver yang jujur dan berpengalaman yang menguasai area Bandung atau pulau jawa. 
+        Komitmen kami adalah memberikan layanan yang terbaik , mudah dan cepat.
+      </p>
   </div>
   <div class="image">
       <div class="image">
-          <img src="images/31-315783_kue-ulang-tahun-animasi-clipart.png" alt="img">
+          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="img">
       </div>
-
-   <!-- Modal produk-->
-   <div class="modal fade" id="prodak" tabindex="-1" >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-body">
-                Login terlebihdahulu sebelum memasuki halaman produk, bisa klik icon <i class="fa fa-user"></i> atau klik tombol login
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="login/login.php" class="btn btn-primary">Login</a>
-                </div>
-              </div>
-            </div>
-   </div>
-             <!-- Modal profil-->
-   <div class="modal fade" id="profil" tabindex="-1" >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-body">
-                Login terlebihdahulu sebelum memasuki halaman profil, bisa klik icon <i class="fa fa-user"></i> atau klik tombol login
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="login/login.php" class="btn btn-primary">Login</a>
-                </div>
-              </div>
-            </div>
-   </div>
-   <!---- modal kontak --->
-   <div class="modal fade" id="kontak" tabindex="-1" >
+   <!---- modal  --->
+   <div class="modal fade" id="modal" tabindex="-1" >
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-body">

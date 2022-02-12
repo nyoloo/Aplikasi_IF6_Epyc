@@ -16,34 +16,31 @@
     
     <title>Delichip Cake Shop</title>
   </head>
-  <body>
-    
-<header class="header">
+  <body style="background-color: #F7F6F2 ;">
+  <header class="header">
 
-    <a href="#" class="logo">
-        <img src="../images/31-315783_kue-ulang-tahun-animasi-clipart.png" alt="">
-    </a>
-    <nav class="navbar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link " href="home.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.php">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="product.php">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacts.php">Contacs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="profil.php">Profil</a>
-              </li>
-          </ul>
-    </nav>
-    <div class="icons">
-      <a href="profil/transaksi.php" class="fa fa-shopping-cart"></a>
+<a href="#" class="logo">
+    <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
+</a>
+
+<nav class="navbar">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active " href="home.php"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.php">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link"  href="mobil.php">Jenis Dan Harga Mobil</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="contacts.php">Kontak</a>
+        </li>
+      </ul>
+      
+</nav>
+<div class="icons">
       <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -53,19 +50,22 @@
       <div class="fas fa-bars" id="menu-btn"></div>
 </header>
   <br>
-  <br>
-
-  <section class="about" id="about">
+  <section class="home" id="home">
   
-      <div class="content">
-          <h3>DELICHIP CAKE SHOP</h3>
-          <p>Delichip Cake Shop yang merupakan suatu bisnis yang bergerak dalam bidang penjualan kue yang beralamat di Jl,  Areng Girang Kulon No.41, Wangunsari, Lembang, Kabupaten Bandung Barat, Jawa Barat 40391. Bisnis ini menjual berbagai aneka ragam kue seperti bolu, kue custom dan lain sebagainya. </p>
-      </div>
+  <div class="content">
+      <h3>White Rent Car</h3>
+      <p>White Rent Car perusahaan yang bergerak dibidang jasa sewa mobil. 
+        Kami menyewakan kendaraan roda empat untuk pemakaian harian, bulanan atau tahunan. 
+        Armada kami didukung driver yang jujur dan berpengalaman yang menguasai area Bandung atau pulau jawa. 
+        Komitmen kami adalah memberikan layanan yang terbaik , mudah dan cepat.
+      </p>
+  </div>
+  <div class="image">
       <div class="image">
-          <img src="../images/31-315783_kue-ulang-tahun-animasi-clipart.png" alt="img">
+          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="img">
       </div>
+   </div>
   </section>
-  <!-- Modal -->
 <!-- Modal -->
 <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">

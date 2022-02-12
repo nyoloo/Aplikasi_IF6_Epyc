@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    
 }
 body{
     background-color: #F7F6F2;
@@ -80,7 +81,8 @@ section{
     padding: 2rem 1rem;
     background-color: #D3DEDC;
 }
-.about{
+
+.home{
     min-height: 90vh;
     display: flex;
     align-items: center;
@@ -90,27 +92,27 @@ section{
     align-items:center;
 }
 
-.about .content{
+.home .content{
     max-width: 40rem;
 }
 
-.about .content h3{
-    font-size: 3rem;
+.home .content h3{
+    font-size: 5rem;
     text-transform: uppercase;
     color:rgb(0, 0, 0);
 }
 
-.about .content p{
-    font-size: 1.2rem;
+.home .content p{
+    font-size: 1.5rem;
     font-weight: lighter;
     line-height: 1.8;
     padding:1rem 0;
     color:#000;
 }
 
-.about .image img 
+.home .image img 
 {
-    width:90%;
+    width:80%;
     height: auto;
     
 }

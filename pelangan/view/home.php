@@ -18,33 +18,30 @@
   </head>
   <body>
     
-<header class="header">
+  <header class="header">
 
-    <a href="#" class="logo">
-        <img src="../images/31-315783_kue-ulang-tahun-animasi-clipart.png" alt="">
-    </a>
+<a href="#" class="logo">
+    <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
+</a>
 
-    <nav class="navbar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link " href="home.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.php">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="product.php">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="contacts.php">Contacs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="profil.php">Profil</a>
-              </li>
-          </ul>
-    </nav>
-    <div class="icons">
-      <a href="profil/transaksi.php" class="fa fa-shopping-cart"></a>
+<nav class="navbar">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active " href="home.php"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.php">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="mobil.php">Jenis Dan Harga Mobil</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="contacts.php">Kontak</a>
+        </li>
+      </ul>
+      
+</nav>
+<div class="icons">
       <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -52,93 +49,86 @@
             <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
           </ul>
       <div class="fas fa-bars" id="menu-btn"></div>
-  </header>
-  <br>
-  <br>
-  <br>
-  <section class="home" id="home">
-  
-  <div class="content">
-      <h3>Welcome</h3>
-      <p>Selamat datang di Delichip Cake Store, Delichip menjual bebeberapa jenis kue seperti bolu, Kue ulang tahun dan Kue coustem </p>
-  </div>
-  <div class="image">
-      <img src="../images/31-315783_kue-ulang-tahun-animasi-clipart.png" alt="img">
-  </div>
+</header>
+<br>
+<br>
+<section class="jumbotron text-center">
+<img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="" width="200" class="rounded-circle">
+<h1 class="display-4">White Rent Car</h1>
 </section>
-<section class="products" id="products">
 
-
-  <h1 class="heading"> BEST <span>SELLER</span> </h1>
-
-  <div class="box-container">
-
-      <div class="box">
-          <div class="image">
-              <img src="../kue/Marble Coklat - Copy.jpeg" alt="">
-          </div>
-          <div class="content">
-              <h3>Marble Coklat</h3>
-              <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="price">Rp 60.000,00</div>
-              <div class="d-grid gap-2">
-              <a class="btn btn-primary" href="product/mcoklat.php" role="button">Details Produk</a>
-              <a class="btn btn-primary" href="profil/transaksi.php" role="button">add to chart</a>
+<section>
+<div class="container">
+<div class="row text-center">
+<div class="col">
+  <h3>Mengapa Harus Kita?</h3>
 </div>
-          </div>
-      </div>
+<div class="row justify-content-center">
+<div class="col-4">
+  <p>
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe dicta molestiae impedit voluptate ducimus commodi quaerat quod praesentium iste dolor.
+  </p>
+</div>
+<div class="col-4">
+  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum nisi laudantium reprehenderit est! Temporibus voluptatibus illum perspiciatis saepe voluptas?
+</div>
+</div>
+</div>
+</section>
 
-      <div class="box">
-          <div class="image">
-              <img src="../kue/Bolu Ketam Hitam Polos - Copy.jpeg" alt="">
-          </div>
-          <div class="content">
-              
-              <h3>Bolu Ketan Hitam Polos</h3>
-              <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="price">Rp 65.000,00</div>
-              <div class="d-grid gap-2">
-              <a class="btn btn-primary" href="product/bkhp.php" role="button">Details Produk</a>
-              <a class="btn btn-primary" href="profil/transaksi.php" role="button">add to chart</a>
-              </div>
-          </div>
-      </div>
-
-      <div class="box">
-          <div class="image">
-              <img src="../kue/Brownies Keju Gondrong - Copy.jpeg" alt="">
-          </div>
-          <div class="content">
-              <h3>Brownies Keju</h3>
-              <div class="stars">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star-half-alt"></i>
-              </div>
-              <div class="price">Rp 70.000,00</div>
-              <div class="d-grid gap-2">
-              <a class="btn btn-primary" href="product/bk.php" role="button">Details Produk</a>
-              <a class="btn btn-primary" href="profil/transaksi.php" role="button">add to chart</a>
-              </div>
-          </div>
-      </div>
-
+<section id="galeri">
+<div class="container">
+<div class="row text-center">
+  <div class="col">
+    <h3>
+      Galeri
+    </h3>
   </div>
-
+</div>
+<div class="row">
+<div class="col-md-4 mb-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-4 mb-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+  </div>
+  <br>
+  <div class="col-md-4 mb-3">
+    <div class="card" style="width: 18rem;">
+      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
 </section>
 <!-- Modal -->
 <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
