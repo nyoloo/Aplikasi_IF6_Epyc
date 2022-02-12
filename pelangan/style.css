@@ -76,7 +76,10 @@ section{
 #menu-btn{
     display: none;
 }
-
+.jumbotron{
+    padding: 2rem 1rem;
+    background-color: #D3DEDC;
+}
 .about{
     min-height: 90vh;
     display: flex;

@@ -26,30 +26,108 @@
     <nav class="navbar">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active " href="index.php">Home</a>
+              <a class="nav-link active " href="index.php"><i class="fa fa-home"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">About</a>
+              <a class="nav-link" href="about.php">Tentang Kami</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link"data-bs-toggle="modal" data-bs-target="#modal" href="#">Produk</a>
+            <a class="nav-link"data-bs-toggle="modal" data-bs-target="#modal" href="#">Jenis Dan Harga Mobil</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link"data-bs-toggle="modal" data-bs-target="#modal" href="#">Contacts</a>
+            <a class="nav-link"data-bs-toggle="modal" data-bs-target="#modal" href="#">Kontak</a>
             </li>
-            <li class="nav-item">
-            <a class="nav-link"data-bs-toggle="modal" data-bs-target="#modal" href="#">Profil</a>
-              </li>
           </ul>
           
     </nav>
     <div class="icons">
-        <a href="login/login.php" class="fa fa-user"></a>
-        <div class="fas fa-bars" id="menu-btn"></div>
-    </div>
+      <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="login/login.php">Login</a></li>
+          </ul>
+      <div class="fas fa-bars" id="menu-btn"></div>
   </header>
+<br>
+<br>
+<section class="jumbotron text-center">
+  <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="" width="200" class="rounded-circle">
+  <h1 class="display-4">White Rent Car</h1>
+</section>
+  
+<section>
+<div class="container">
+  <div class="row text-center">
+    <div class="col">
+      <h3>Mengapa Harus Kita?</h3>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-4">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe dicta molestiae impedit voluptate ducimus commodi quaerat quod praesentium iste dolor.
+      </p>
+    </div>
+    <div class="col-4">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum nisi laudantium reprehenderit est! Temporibus voluptatibus illum perspiciatis saepe voluptas?
+    </div>
+  </div>
+</div>
+</section>
 
-
+<section id="galeri">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h3>
+          Galeri
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+      </div>
+      <br>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Modal -->
   <div class="modal fade" id="modal" tabindex="-1" >
             <div class="modal-dialog">
