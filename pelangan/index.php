@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="<a class="vglnk href="https://fonts.googleapis.com/css2?family=Roboto" rel="nofollow"><span>https</span><span>://</span><span>fonts</span><span>.</span><span>googleapis</span><span>.</span><span>com</span><span>/</span><span>css2</span><span>?</span><span>family</span><span>=</span><span>Roboto</span></a>:ital@0;1&display=swap" rel="stylesheet"> 
 
-    <title>White Rent Car</title>
+    <title>NFS Rent Car</title>
   </head>
   
   <body>
@@ -53,7 +53,7 @@
 <br>
 <section class="jumbotron text-center">
   <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="" width="200" class="rounded-circle">
-  <h1 class="display-4">White Rent Car</h1>
+  <h1 class="display-4">NSF Rent Car</h1>
 </section>
   
 <section>
@@ -85,49 +85,41 @@
       </div>
     </div>
     <div class="row">
-    <div class="col-md-4 mb-3">
+    <div class="col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+          <img src="../asset/toyota supra.jpg" class="card-img-top" alt="...">
         </div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+          <img src="../asset/toyota 86.jpg" class="card-img-top" alt="...">
         </div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+          <img src="../asset/toyota-land-cruiser-300-series.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+          <img src="../asset/toyota-rush1.jpg" class="card-img-top" alt="...">
         </div>
       </div>
       <br>
-      <div class="col-md-4 mb-3">
+      <div class="col-md-4">
         <div class="card" style="width: 18rem;">
-          <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
+          <img src="../asset/new-toyota-raize-2020.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="../asset/CHR Hybrid.jpg" class="card-img-top" alt="...">
         </div>
       </div>
     </div>
   </div>
+
+  
 </section>
 <!-- Modal -->
   <div class="modal fade" id="modal" tabindex="-1" >
