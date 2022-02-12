@@ -63,9 +63,9 @@
     <div class="row">
         <div class="col-md-4 mb-3">
             <div class="card" style="width: 18rem;">
-                <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+                <img src="../asset/toyota supra.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">Toyota GT Supra</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Pesan Sekarang</a>
                     </div>

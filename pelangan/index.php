@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link href="<a class="vglnk href="https://fonts.googleapis.com/css2?family=Roboto" rel="nofollow"><span>https</span><span>://</span><span>fonts</span><span>.</span><span>googleapis</span><span>.</span><span>com</span><span>/</span><span>css2</span><span>?</span><span>family</span><span>=</span><span>Roboto</span></a>:ital@0;1&display=swap" rel="stylesheet"> 
 
-    <title>NFS Rent Car</title>
+    <title>White Rent Car</title>
   </head>
   
   <body>
@@ -53,7 +53,7 @@
 <br>
 <section class="jumbotron text-center">
   <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="" width="200" class="rounded-circle">
-  <h1 class="display-4">NSF Rent Car</h1>
+  <h1 class="display-4">White Rent Car</h1>
 </section>
 <br>
 <br>
@@ -63,8 +63,8 @@
 <div class="container">
   <div class="row text-center">
     <div class="col">
-      <h3>Mengapa Harus NSF Rent Car?</h3>
-      <span>Ada 2 Alasan kenapa harus memilih NSF Rent Car</span>
+      <h3>Mengapa Harus White Rent Car?</h3>
+      <span>Ada 2 Alasan kenapa harus memilih White Rent Car</span>
   </div>
   <br>
   <br>

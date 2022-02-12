@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>Delichip Cake Store</title>
+    <title>NFS Rent Car</title>
 </head>
 <style>
     .btn-group{
@@ -22,7 +22,7 @@
 <div class="container">
         <center>
             <img src="https://cdn.discordapp.com/attachments/859080381517266944/865996965488754728/WhatsApp_Image_2021-07-03_at_12.23.31.jpeg" style="width: 10rem;" class="mt-5">
-            <h1>White Rent Car</h1>
+            <h1>NFS Rent Car</h1>
             <div class="card mt-4  shadow p-3 mb-5 bg-white rounded" style="width: 45%;">
                 <div class=" card-body">         
                     <?php
