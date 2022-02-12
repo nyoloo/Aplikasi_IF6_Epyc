@@ -49,8 +49,8 @@
   <div class="fas fa-bars" id="menu-btn"></div>
 </header>
   <br>
+  <br>
   <section class="home" id="home">
-  
   <div class="content">
       <h3>White Rent Car</h3>
       <p>White Rent Car perusahaan yang bergerak dibidang jasa sewa mobil. 
