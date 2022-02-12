@@ -1,7 +1,7 @@
 <?php
 
 function dbconnect(){
-	$db = new mysqli("localhost:3306","root","","db10119213penyewaanmobil");
+	$db = new mysqli("localhost:3306","root","","delichip");
 	return $db;
 }
 function showpopup(){
