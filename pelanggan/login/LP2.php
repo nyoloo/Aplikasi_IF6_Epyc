@@ -83,7 +83,6 @@ if(isset($_POST["kirim"])){
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style.css">
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <title>Delichip Cake Store</title>
 <body>
@@ -93,25 +92,14 @@ if(isset($_POST["kirim"])){
 <br>
 <br>
 <center>
-    <div class="page-content page-container" id="page-content">
-        <div class="padding">
-            <div class="row container d-flex justify-content-center">
-                <div class="col-xl-6 col-md-12">
-                    <div class="card user-card-full">
-                                <div class="card-block">
-                                <center>
-                                <form name="loginreset" action="" method="post">
-                                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Cek Kembali Email Anda</h6>
-                                    <br>
-                                    <a href="login.php" class="btn btn-primary" role="button">Kembali Ke login</a>
-                                </form>
-                                </center>
-                                
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="card text-center shadow bg-white rounded" style="width: 45%;">
+<div class="card-header">
+    Cek Kembali Email Anda
+  </div>
+        <div class="card-body">
+            <form name="loginreset" action="" method="post">
+                <a href="login.php" class="btn btn-primary" role="button">Kembali Ke login</a>
+            </form>
         </div>
     </div>
   </center>

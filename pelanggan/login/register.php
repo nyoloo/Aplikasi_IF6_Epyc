@@ -19,7 +19,7 @@
             <div class="card mt-4  shadow p-3 mb-5 bg-white rounded" style="width: 45%;">
                 <div class=" card-body">         
                     <div class="mt-3">
-                    <form action="logindatabase.php" method="post">
+                    <form name="regisform" action="registrasi_simpan.php" method="post">
                             <table class="table table-borderless">
                                 <tr>
                                     <td>
@@ -33,12 +33,12 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                    <input type="password" name="your_pass" id="your_pass" class="form-control" placeholder="Password"required >
+                                    <input type="password" name="password" id="your_pass" class="form-control" placeholder="Password"required >
                                     </td>
                                 </tr>
                                 <tr>
                                     <td align="right">
-                                    <input type="submit" name="signup" id="signup" class="form-submit btn btn-primary" value="Register" >
+                                    <input type="submit" name="signup" id="signup" class="form-submit btn-btn" value="Register" >
                                     </td>
                                 </tr>
                                 <tr>
