@@ -27,7 +27,7 @@
     <nav class="navbar">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active " href="index.php"><i class="fa fa-home"></i></a>
+              <a class="nav-link active " href="home.php"><i class="fa fa-home"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.php">Tentang Kami</a>
@@ -36,7 +36,7 @@
             <a class="nav-link" href="mobil.php">Jenis Dan Harga Mobil</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link"data-bs-toggle="modal" data-bs-target="#modal" href="#">Kontak</a>
+            <a class="nav-link" href="contacts.php">Kontak</a>
             </li>
           </ul>
           
@@ -67,7 +67,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota GT Supra</h5>
                         <p class="card-text">Harga Sewa Rp 3.000.000/hari</p>
-                        <a href="#" class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -77,7 +77,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota 86</h5>
                         <p class="card-text">Harga Sewa Rp 2.560.000/hari</p>
-                        <a href="#" class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -87,7 +87,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Land Cruiser</h5>
                         <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
-                        <a href="#" class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -97,7 +97,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Rush</h5>
                         <p class="card-text">Harga Sewa Rp 2.000.000/hari</p>
-                        <a href="#" class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -107,7 +107,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Raize</h5>
                         <p class="card-text">Harga Sewa Rp 2.000.000/hari</p>
-                        <a href="#" class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -117,7 +117,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota CHR Hybrid</h5>
                         <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
-                        <a href="#"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -127,7 +127,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Agya</h5>
                         <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
-                        <a href="#"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -137,7 +137,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota CHR non Hybrid</h5>
                         <p class="card-text">Harga Sewa Rp 1.800.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -147,7 +147,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Camry Hybrid</h5>
                         <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -157,7 +157,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Camry non Hybrid</h5>
                         <p class="card-text">Harga Sewa Rp 1.900.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -167,7 +167,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Yaris</h5>
                         <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -177,7 +177,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Kijang Inova</h5>
                         <p class="card-text">Harga Sewa Rp 1.300.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -187,7 +187,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Avanza</h5>
                         <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -197,7 +197,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Avanza Veloz</h5>
                         <p class="card-text">Harga Sewa Rp 1.700.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -207,7 +207,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Alpard</h5>
                         <p class="card-text">Harga Sewa Rp 2.600.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -217,7 +217,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Corola Atlis</h5>
                         <p class="card-text">Harga Sewa Rp 1.800.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -227,7 +227,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Corola Cross</h5>
                         <p class="card-text">Harga Sewa Rp 1.800.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -237,7 +237,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Sienta</h5>
                         <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -247,7 +247,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota fortuner</h5>
                         <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -257,7 +257,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Hilux</h5>
                         <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -267,7 +267,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Calya</h5>
                         <p class="card-text">Harga Sewa Rp 1.400.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -277,7 +277,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Haice</h5>
                         <p class="card-text">Harga Sewa Rp 2.000.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -287,7 +287,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota vellfire</h5>
                         <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -297,7 +297,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Vios/h5>
                         <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
@@ -307,7 +307,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota Voxy</h5>
                         <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                        <a href="profil/transaksi.php" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>

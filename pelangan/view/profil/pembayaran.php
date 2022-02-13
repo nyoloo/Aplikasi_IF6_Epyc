@@ -66,64 +66,55 @@ if(isset($_POST['simpan']))
     <link rel="stylesheet" href="../../style.css">
     
     
-    <title>Delichip Cake Shop</title>
+ 
+    <title>White Rent Car</title>
   </head>
-  <body>
+  <body style="background-color: #F7F6F2 ;">
   <header class="header">
 
 <a href="#" class="logo">
-    <img src="../../images/31-315783_kue-ulang-tahun-animasi-clipart.png" alt="">
+    <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
 </a>
 
 <nav class="navbar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link " href="../home.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../about.php">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../product.php">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../contacts.php">Contacs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../profil.php">Profil</a>
-              </li>
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active " href="../home.php"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about.php">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link"  href="../mobil.php">Jenis Dan Harga Mobil</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="../contacts.php">Kontak</a>
+        </li>
+      </ul>
+      
+</nav>
+<div class="icons">
+      <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../view/profil.php">profil</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
           </ul>
-    </nav>
-    <div class="icons">
-      <a href="transaksi.php" class="fa fa-shopping-cart"></a>
-      <a href="../profil.php" class="fa fa-user"></a>
       <div class="fas fa-bars" id="menu-btn"></div>
-  </div>
 </header>
 <br>
 <br>
-<section class="footer">
-
-<div class="links">
-    <a class="btn btn-outline-dark" href="../profil.php" role="button">Profil</a>
-    <a class="btn btn-outline-dark" href="transaksi.php" role="button">transaksi</a>
-    <a class="btn btn-outline-dark" href="pembayaran.php" role="button">pembayaran</a>
-    <a class="btn btn-outline-dark" href="setting_profil.php" role="button">setting profil</a>
-    <a class="btn btn-outline-dark" href="#" role="button" data-bs-toggle="modal" data-bs-target="#asuuu">logout</a>
-</div>
-
-</section>
-<center>
-    <div class="card " style="max-width: 800px;">
+<main class="container d-flex justify-content-center align-items-center">
+<div class="card " style="max-width: 850px;">
         <h5 class="card-header" style="text-align: center;">TERIMAKASI TELAH MEMESAN KUE DI TOKO KAMI</h5>
         <div class="card-body">
           <h5 class="card-title">Kirim Konfirmasi Pembayaran Anda dengan mengisi form dibawah ini</h5>
           <p class="card-text">FORM KONFIRMASI PEMBAYARAN</p>
           <form name="pembayaran" action="../profil/traskrip.php" method="post">
             <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+              <label for="nama" class="col-sm-2 col-form-label">Nama</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail3"> 
+                <input type="text" class="form-control" id="nama"> 
               </div>
             </div>
             <div class="row mb-3">
@@ -133,45 +124,38 @@ if(isset($_POST['simpan']))
               </div>
             </div>
             <div class="row mb-3">
-              <label for="kodetransaksi" class="col-sm-2 col-form-label" >Kode transaksi</label>
-              <div class="col-sm-10">
-                <input type="transaksi" class="form-control" id="kodetransaksi" readonly value="<?php echo $kodetransaksiupdate ?>" name="kodetransaksi">
-              </div>
-            </div>
-            <div class="row mb-3">
-                <label for="kodetransaksi" class="col-sm-2 col-form-label">Tanggal Bayar</label>
+                <label for="kodetransaksi" class="col-sm-2 col-form-label">Tanggal Meminjam</label>
                 <div class="col-sm-10">
                   <input type="date" class="form-control" name="tanggalbayar" value="tglbayar">
                 </div>
               </div>
               <div class="row mb-3">
-                <label for="kodetransaksi" class="col-sm-2 col-form-label">deadline pengiriman</label>
-                <div class="col-sm-10">
-                  <input type="date" class="form-control" name="tanggaldeadline" value="deadline">
-                </div>
+              <label for="kodetransaksi" class="col-sm-2 col-form-label" >Nama mobil</label>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control-plaintext" id="namamobil" value=": Toyota Supra">
               </div>
+            </div>
               <div class="row mb-3">
-                <label for="kodetransaksi" class="col-sm-2 col-form-label">Totoal Harga</label>
+              <label for="kodetransaksi" class="col-sm-2 col-form-label" >Plat Nomer</label>
+              <div class="col-sm-10">
+                <input type="transaksi" class="form-control" id="kodetransaksi" readonly value="D 1002 AAT" name="kodetransaksi">
+              </div>
+            </div>
+              <div class="row mb-3">
+                <label for="kodetransaksi" class="col-sm-2 col-form-label">Totoal Harga Sewa</label>
                 <div class="col-sm-10">
-                  <input type="text" class="form-control" id="kodetransaksi" readonly value="<?php echo $totalharga ?>" name="totalharga">
+                  <input type="text" class="form-control" id="kodetransaksi" readonly value="Rp 3.000.000" name="totalharga">
                 </div>
               </div>
               <div class="row mb-3">
                 <label for="kodetransaksi" class="col-sm-2 col-form-label">Jenis Pembayaran</label>
                 <div class="col-sm-10">
-                  <input type="totalharga" class="form-control" id="kodetransaksi" >
-                </div>
-              </div>
-              <div class="row mb-3">
-                <label for="kodetransaksi" class="col-sm-2 col-form-label">Nama Pengirim</label>
-                <div class="col-sm-10">
-                  <input type="text" class="form-control" id="kodetransaksi">
-                </div>
-              </div>
-              <div class="row mb-3">
-                <label for="kodetransaksi" class="col-sm-2 col-form-label">Alamat</label>
-                <div class="col-sm-10">
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" value="tujuan" name="tujuan"></textarea>
+                <select class="form-select" aria-label="Default select example">
+                  <option selected>Jenis Pembayaran</option>
+                  <option value="1">Tunai</option>
+                  <option value="2">Transfer</option>
+                  <option value="3">Three</option>
+                </select>
                 </div>
               </div>
               <input type="submit" name="simpan" value="Konfirmasi Pembayaran" class="btn btn-secondary" role="button">
