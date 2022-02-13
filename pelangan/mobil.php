@@ -66,7 +66,7 @@
                 <img src="../asset/toyota supra.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Toyota GT Supra</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <p class="card-text">Harga Sewa Rp 3.000.000/hari</p>
                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Pesan Sekarang</a>
                     </div>
             </div>
