@@ -20,57 +20,46 @@
     <link rel="stylesheet" href="../../style.css">
 
     
-    
-    <title>Delichip Cake Store</title>
+    <title>White Rent Car</title>
   </head>
-  <body>
+  <body style="background-color: #F7F6F2 ;">
   <header class="header">
 
-    <a href="#" class="logo">
-        <img src="../images/31-315783_kue-ulang-tahun-animasi-clipart.png" alt="">
-    </a>
+<a href="#" class="logo">
+    <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
+</a>
 
-    <nav class="navbar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link " href="../home.php">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../about.php">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../product.php">Product</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../contacts.php">Contacs</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../profil.php">Profil</a>
-              </li>
+<nav class="navbar">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active " href="../home.php"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../about.php">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link"  href="../mobil.php">Jenis Dan Harga Mobil</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="../contacts.php">Kontak</a>
+        </li>
+      </ul>
+      
+</nav>
+<div class="icons">
+      <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="../view/profil.php">profil</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
           </ul>
-    </nav>
-    <div class="icons">
-      <a href="transaksi.php" class="fa fa-shopping-cart"></a>
-      <a href="../profil.php" class="fa fa-user"></a>
       <div class="fas fa-bars" id="menu-btn"></div>
-  </div>
-  </header>
-  <br>
-  <br>
-  <section class="footer">
-
-      <div class="links">
-        <a class="btn btn-outline-dark" href="../profil.php" role="button">Profil</a>
-        <a class="btn btn-outline-dark" href="transaksi.php" role="button">transaksi</a>
-        <a class="btn btn-outline-dark" href="pembayaran.php" role="button">pembayaran</a>
-        <a class="btn btn-outline-dark" href="setting_profil.php" role="button">setting profil</a>
-        <a class="btn btn-outline-dark" href="#" role="button" data-bs-toggle="modal" data-bs-target="#keluar">logout</a>
-      </div>
-
-    </section>
-
-</section>
-<center>
+</header>
+<br>
+<br>
+<br>
+<br>
+<main class="container d-flex justify-content-center align-items-center">
     <div class="card " style="width: 30rem;">
         <div class="card-body">
             <form name="editprofil"  action="simpanprofil.php" method="post">

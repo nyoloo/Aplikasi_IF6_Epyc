@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../style.css">
     
     
-    <title>Delichip Cake Shop</title>
+    <title>White Rent Car</title>
   </head>
   <body style="background-color: #F7F6F2 ;">
   <header class="header">

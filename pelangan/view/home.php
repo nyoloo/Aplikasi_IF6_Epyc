@@ -57,78 +57,88 @@
 <h1 class="display-4">White Rent Car</h1>
 </section>
 
+<br>
+<br>
+<br>
+<br>
 <section>
 <div class="container">
-<div class="row text-center">
-<div class="col">
-  <h3>Mengapa Harus Kita?</h3>
-</div>
-<div class="row justify-content-center">
-<div class="col-4">
-  <p>
-    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe dicta molestiae impedit voluptate ducimus commodi quaerat quod praesentium iste dolor.
-  </p>
-</div>
-<div class="col-4">
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio eum nisi laudantium reprehenderit est! Temporibus voluptatibus illum perspiciatis saepe voluptas?
-</div>
-</div>
-</div>
-</section>
-
-<section id="galeri">
-<div class="container">
-<div class="row text-center">
-  <div class="col">
-    <h3>
-      Galeri
-    </h3>
-  </div>
-</div>
-<div class="row">
-<div class="col-md-4 mb-3">
-    <div class="card" style="width: 18rem;">
-      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
-  </div>
-  <div class="col-md-4 mb-3">
-    <div class="card" style="width: 18rem;">
-      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
-  </div>
-  <div class="col-md-4 mb-3">
-    <div class="card" style="width: 18rem;">
-      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
-  </div>
-  <div class="col-md-4 mb-3">
-    <div class="card" style="width: 18rem;">
-      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
-    </div>
+  <div class="row text-center">
+    <div class="col">
+      <h3>Mengapa Harus White Rent Car?</h3>
+      <span>Ada 2 Alasan kenapa harus memilih White Rent Car</span>
   </div>
   <br>
+  <br>
+  <br>
+  <br>
+  <div class="row justify-content-center">
   <div class="col-md-4 mb-3">
-    <div class="card" style="width: 18rem;">
-      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
-        <div class="card-body">
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        </div>
+      <h4>
+        Kendaraan yang terawat
+      </h4>
+      <p>
+      Seluruh Unit Kendaraan NFS Rent Car mendapatkan perawatan secara berkala demi menjaga kenyamanan Anda dalam menggunakan layanan kami.
+      </p>
+    </div>
+    <div class="col-md-4 mb-3">
+      <h4>
+        Harga Terjangkau
+      </h4>
+      <p>
+      NFS Rent Car membuktikan keunggulan-keunggulan dengan harga yang terjangkau.
+      </p>
     </div>
   </div>
 </div>
-</div>
+</section>
+<br>
+<br>
+<br>
+
+<section class="jumbotron text-center">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h3>
+          Galeri
+        </h3>
+      </div>
+    </div>
+    <div class="row">
+    <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../../asset/toyota supra.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../../asset/toyota 86.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../../asset/toyota-land-cruiser-300-series.jpeg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../../asset/toyota-rush1.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <br>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../../asset/new-toyota-raize-2020.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="../../asset/CHR Hybrid.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- Modal -->
 <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
