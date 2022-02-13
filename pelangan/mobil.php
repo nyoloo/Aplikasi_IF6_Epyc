@@ -67,57 +67,247 @@
                     <div class="card-body">
                         <h5 class="card-title">Toyota GT Supra</h5>
                         <p class="card-text">Harga Sewa Rp 3.000.000/hari</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Pesan Sekarang</a>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="card" style="width: 18rem;">
-                <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+                <img src="../asset/toyota 86.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Pesan Sekarang</a>
+                        <h5 class="card-title">Toyota 86</h5>
+                        <p class="card-text">Harga Sewa Rp 2.560.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="card" style="width: 18rem;">
-                <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+                <img src="../asset/toyota-land-cruiser-300-series.jpeg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Pesan Sekarang</a>
+                        <h5 class="card-title">Toyota Land Cruiser</h5>
+                        <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="card" style="width: 18rem;">
-                <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+                <img src="../asset/toyota-rush1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Pesan Sekarang</a>
+                        <h5 class="card-title">Toyota Rush</h5>
+                        <p class="card-text">Harga Sewa Rp 2.000.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="card" style="width: 18rem;">
-                <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+                <img src="../asset/new-toyota-raize-2020.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Pesan Sekarang</a>
+                        <h5 class="card-title">Toyota Raize</h5>
+                        <p class="card-text">Harga Sewa Rp 2.000.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
         <div class="col-md-4 mb-3">
             <div class="card" style="width: 18rem;">
-                <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" class="card-img-top" alt="...">
+            <img src="../asset/CHR Hybrid.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Pesan Sekarang</a>
+                        <h5 class="card-title">Toyota CHR Hybrid</h5>
+                        <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/agya.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Agya</h5>
+                        <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/CHR non Hybrid.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota CHR non Hybrid</h5>
+                        <p class="card-text">Harga Sewa Rp 1.800.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/camry hibrid.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Camry Hybrid</h5>
+                        <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/camry.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Camry non Hybrid</h5>
+                        <p class="card-text">Harga Sewa Rp 1.900.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/toyota yaris.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Yaris</h5>
+                        <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/kijang inova.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Kijang Inova</h5>
+                        <p class="card-text">Harga Sewa Rp 1.300.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/avanza.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Avanza</h5>
+                        <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/Avanza-Veloz.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Avanza Veloz</h5>
+                        <p class="card-text">Harga Sewa Rp 1.700.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/alpard.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Alpard</h5>
+                        <p class="card-text">Harga Sewa Rp 2.600.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/corola atlis.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Corola Atlis</h5>
+                        <p class="card-text">Harga Sewa Rp 1.800.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/Corolla Cross.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Corola Cross</h5>
+                        <p class="card-text">Harga Sewa Rp 1.800.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/Sienta.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Sienta</h5>
+                        <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/fortuner.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota fortuner</h5>
+                        <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/Hilux.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Hilux</h5>
+                        <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/calya.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Calya</h5>
+                        <p class="card-text">Harga Sewa Rp 1.400.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/toyota haice.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Haice</h5>
+                        <p class="card-text">Harga Sewa Rp 2.000.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/vellfire-2021-colors-black.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota vellfire</h5>
+                        <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/Vios.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Vios/h5>
+                        <p class="card-text">Harga Sewa Rp 1.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
+                    </div>
+            </div>
+        </div>
+        <div class="col-md-4 mb-3">
+            <div class="card" style="width: 18rem;">
+            <img src="../asset/voxy.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Toyota Voxy</h5>
+                        <p class="card-text">Harga Sewa Rp 2.500.000/hari</p>
+                        <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
         </div>
