@@ -4,7 +4,7 @@
 <?php
 session_start();
 $db=dbconnect();
-if (!isset($_SESSION["email"]))
+if (!isset($_SESSION["username"]))
 header("Location: ../login/login.php?error=4");
 ?>
 <?php

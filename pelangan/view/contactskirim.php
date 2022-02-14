@@ -3,7 +3,7 @@
 ?>
 <?php
               session_start();
-              if (!isset($_SESSION["email"]))
+              if (!isset($_SESSION["username"]))
                 header("Location: ../login/login.php?error=4");
               ?>
 <!doctype html>
@@ -42,8 +42,8 @@ try {
     $mail->Host = 'smtp.mailtrap.io';
     $mail->SMTPAuth = true;
     $mail->Port = 2525;
-    $mail->Username = '38e6b8b9d46b79';
-    $mail->Password = '1ffb80c08b2ebc';
+    $mail->Username = 'e55eb3fa9f0110';
+    $mail->Password = '86fbf20c1e6068';
 
     $mail->setFrom("$email", "$nama");
     $mail->addAddress('tafriyadi273@gmail.com', 'Tri');
@@ -52,7 +52,7 @@ try {
 
     //Content
     $mail->isHTML(false);                                  //Set email format to HTML
-    $mail->Subject = 'Suara dari pelanggan';
+    $mail->Subject = 'Suara dari Customer';
     $mail->Body    = $messages;
 
     $mail->send();
