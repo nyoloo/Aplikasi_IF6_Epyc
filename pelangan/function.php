@@ -1,7 +1,7 @@
 <?php
 
 function dbconnect(){
-	$db = new mysqli("localhost:3306","root","","delichip");
+	$db = new mysqli("localhost:3306","root","","db10119213penyewaanmobil");
 	return $db;
 }
 function showpopup(){
@@ -29,10 +29,10 @@ function getkuekustom(){
 	echo $message;
 	}
 
-function getDataPelanggan($Email){
+function getDataCustomer($username){
 		$db=dbConnect();
 		if($db->connect_errno==0){
-			$res=$db->query("SELECT * from pelanggan where email='$Email'");
+			$res=$db->query("SELECT * from customer where username='$username'");
 			if($res){
 				if($res->num_rows>0){
 					$data=$res->fetch_assoc();

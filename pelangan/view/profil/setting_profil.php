@@ -4,7 +4,7 @@
 <?php
               session_start();
               $db=dbconnect();
-              if (!isset($_SESSION["email"]))
+              if (!isset($_SESSION["username"]))
                 header("Location: ../login/login.php?error=4");
               ?>
 <!doctype html>
@@ -64,33 +64,52 @@
         <div class="card-body">
             <form name="editprofil"  action="simpanprofil.php" method="post">
                 <div class="mb-3">
-                    <label for="displayname" class="form-label">Display Name</label>
-                    <input type="text" name="namapelanggan" id="txt_nama_pelanggan" class="form-control"  placeholder="<?php $nopelanggan=$_SESSION["no_pelanggan"];
-                  $query=mysqli_query($db,"select nama_pelanggan as namapelanggan from pelanggan where no_pelanggan='$nopelanggan'");
-                  $data=mysqli_fetch_array($query);
-                  $namapelanggan=$data['namapelanggan'];
-                  echo $namapelanggan?>">
+                    <label for="namacustomer" class="form-label">Nama Customer</label>
+                    <input type="text" name="namacustomer" id="txt_nama_customer" class="form-control"  placeholder="<?php
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
+                                              $data=mysqli_fetch_array($query);
+                                              $namacustomer=$data['namacustomer'];
+                                              echo $namacustomer?>">
+                   
+                  </div>
+                  <div class="mb-3">
+                    <label for="alamat" class="form-label">Alamat</label>
+                    <input type="text" name="alamat" id="txt_alamat" class="form-control"  placeholder="<?php
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select alamat as alamat from customer where id_customer='$idcustomer'");
+                                              $data=mysqli_fetch_array($query);
+                                              $alamat=$data['alamat'];
+                                              echo $alamat?>">
                    
                   </div>
                 <div class="mb-3">
-                  <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" name="email" id="txt_email" class="form-control" placeholder="<?php
-                                              $nopelanggan=$_SESSION["no_pelanggan"];
-                                              $query=mysqli_query($db,"select email as email from pelanggan where no_pelanggan='$nopelanggan'");
+                  <label for="notelepon" class="form-label">No Telepon</label>
+                  <input type="text" name="notelp" id="txt_notelp" class="form-control" placeholder="<?php
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select no_telp as notelp from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
-                                              $email=$data['email'];
-                                              echo $email ?>">
-                  
+                                              $notelp=$data['notelp'];
+                                              echo $notelp?>">
+                  <div class="mb-3">
+                    <label for="displayname" class="form-label">Username</label>
+                    <input type="text" name="username" id="txt_username" class="form-control"  placeholder="<?php
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select username as username from customer where id_customer='$idcustomer'");
+                                              $data=mysqli_fetch_array($query);
+                                              $username=$data['username'];
+                                              echo $username?>">
+                   
+                  </div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" name="password" id="txt_password" class="form-control"  placeholder="<?php 
-                  $nopelanggan=$_SESSION["no_pelanggan"];
-                  $query=mysqli_query($db,"select password as password from pelanggan where no_pelanggan='$nopelanggan'");
-                  $data=mysqli_fetch_array($query);
-                  $password=$data['password'];
-                  echo $password;
-                  ?>">
+                  <input type="password" name="password" id="txt_password" class="form-control"  placeholder="<?php
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select password as password from customer where id_customer='$idcustomer'");
+                                              $data=mysqli_fetch_array($query);
+                                              $password=$data['password'];
+                                              echo $password ?>">
                   
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">

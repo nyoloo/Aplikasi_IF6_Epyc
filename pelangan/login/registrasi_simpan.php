@@ -21,18 +21,29 @@ if ($db->connect_errno == 0) {
 	
 	$email = $emailErr = "";
 
-$nama_pelanggan = $db->escape_string($_POST["nama_pelanggan"]);
-$email = $db->escape_string($_POST["email"]);
+$nama_customer = $db->escape_string($_POST["nama_customer"]);
+$alamat = $db->escape_string($_POST["alamat"]);
+$notelp = $db->escape_string($_POST["no_telepon"]);
+$username = $db->escape_string($_POST["username"]);
 $password = $db->escape_string($_POST["password"]);
 
-$query=mysqli_query($db,"SELECT max(no_pelanggan) as nopel from pelanggan");
+$query=mysqli_query($db,"SELECT max(id_customer) as idcustomer from customer");
 $data=mysqli_fetch_array($query);
-$no_pelanggan=$data['nopel'];
-$tambah=(int)$no_pelanggan + 1;
+$no_pelanggan=$data['idcustomer'];
+$no_pelanggan1 = substr($no_pelanggan, 1, 3);
+$tambah=(int)$no_pelanggan1 + 1;
+
+		if (strlen($tambah) == 1) {
+			$customerupdate = "C00" . $tambah;
+		} else if (strlen($tambah) == 2) {
+			$customerupdate = "C0" . $tambah;
+		} else if (strlen($tambah) >= 3) {
+			$customerupdate = "C" . $tambah;
+		}
 
 
-$sql = "INSERT INTO pelanggan (no_pelanggan, nama_pelanggan,email, password)
-VALUES('$tambah', '$nama_pelanggan','$email','$password')";
+$sql = "INSERT INTO customer (id_customer,nama_customer,alamat,no_telp,username, password)
+VALUES('$customerupdate', '$nama_customer','$alamat','$notelp','$username','$password')";
 
 $res = $db->query($sql);
 if ($res) {
@@ -69,7 +80,7 @@ else {
 <?php
 }
 } else
-echo "<p> koneksi" . (DEVELOPMENT ? " : " . $db->connect_error : "") . "<br></p>";
+echo "<p> koneksi" . ( " : " . $db->connect_error  ) . "<br></p>";
 }
 ?>
 

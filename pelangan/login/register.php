@@ -23,17 +23,27 @@
                             <table class="table table-borderless">
                                 <tr>
                                     <td>
-                                    <input type="text" name="nama_pelanggan" id="nama_pelanggan" class="form-control" placeholder="Your Name"required>
+                                    <input type="text" name="nama_customer" id="nama_customer" class="form-control" placeholder="Masukkan Nama Anda"required>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                    <input type="email" name="email" id="email" class="form-control" placeholder="Your Email"required>
+                                    <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Masukkan Alamat Anda"required>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                    <input type="password" name="password" id="your_pass" class="form-control" placeholder="Password"required >
+                                    <input type="text" name="no_telepon" id="no_telepon" class="form-control" placeholder="Masukkan No Telepon Anda"required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <input type="text" name="username" id="username" class="form-control" placeholder="Masukkan Username Anda"required>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                    <input type="password" name="password" id="password" class="form-control" placeholder="Masukkan Password Anda"required >
                                     </td>
                                 </tr>
                                 <tr>

@@ -3,7 +3,7 @@
 ?>
 <?php
               session_start();
-              if (!isset($_SESSION["email"]))
+              if (!isset($_SESSION["username"]))
                 header("Location: ../login/login.php?error=4");
               ?>
 <!doctype html>
@@ -24,13 +24,15 @@ if(isset($_POST["simpan"])){
 	$db=dbConnect();
 	if($db->connect_errno==0){
 		// Bersihkan data
-		$namapelanggan  =$db->escape_string($_POST["namapelanggan"]);
-		$email		=$db->escape_string($_POST["email"]);
+		$namacustomer  =$db->escape_string($_POST["namacustomer"]);
+		$alamat  =$db->escape_string($_POST["alamat"]);
+		$notelp  =$db->escape_string($_POST["notelp"]);
+		$username  =$db->escape_string($_POST["username"]);
 		$password =$db->escape_string($_POST["password"]);
 
-        $nopelanggan=$_SESSION["no_pelanggan"];
+        $idcustomer=$_SESSION["id_customer"];
 		// Susun query insert
-		$sql="UPDATE pelanggan SET nama_pelanggan='$namapelanggan',email='$email',password='$password' WHERE no_pelanggan='$nopelanggan'";
+		$sql="UPDATE customer SET nama_customer='$namacustomer',alamat='$alamat',no_telp='$notelp',username='$username',password='$password' WHERE id_customer='$idcustomer'";
 		// Eksekusi query insert
 		$res=$db->query($sql);
 		if($res){

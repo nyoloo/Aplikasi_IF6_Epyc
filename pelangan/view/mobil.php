@@ -18,37 +18,38 @@
   </head>
   
   <body style="background-color: #F7F6F2 ;">
-<header class="header">
+  <header class="header">
 
-    <a href="#" class="logo">
-        <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
-    </a>
+<a href="#" class="logo">
+    <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
+</a>
 
-    <nav class="navbar">
-        <ul class="nav justify-content-center">
-            <li class="nav-item">
-              <a class="nav-link active " href="home.php"><i class="fa fa-home"></i></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.php">Tentang Kami</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="mobil.php">Jenis Dan Harga Mobil</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="contacts.php">Kontak</a>
-            </li>
-          </ul>
-          
-    </nav>
-    <div class="icons">
+<nav class="navbar">
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active " href="home.php"><i class="fa fa-home"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.php">Tentang Kami</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="mobil.php">Jenis Dan Harga Mobil</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="contacts.php">Kontak</a>
+        </li>
+      </ul>
+      
+</nav>
+<div class="icons">
       <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="login/login.php">Login</a></li>
+            <li><a class="dropdown-item" href="../view/profil.php">profil</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
           </ul>
       <div class="fas fa-bars" id="menu-btn"></div>
-  </header>
+</header>
 <br>
 <br>
 <section id="galeri">

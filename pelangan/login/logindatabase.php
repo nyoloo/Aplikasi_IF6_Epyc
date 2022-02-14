@@ -3,17 +3,19 @@
 $db = dbconnect();
 if ($db->connect_errno == 0) {
 	if (isset($_POST["signin"])) {
-		$email = $db->escape_string($_POST["email"]);
-		$your_pass = $db->escape_string($_POST["your_pass"]);
-		$sql = "SELECT email,no_pelanggan,nama_pelanggan,password FROM pelanggan WHERE email='$email' and password='$your_pass'";
+		$username = $db->escape_string($_POST["username"]);
+		$password = $db->escape_string($_POST["password"]);
+		$sql = "SELECT * FROM customer WHERE username='$username' and password='$password'";
 		$res = $db->query($sql);
 		if ($res) {
 			if ($res->num_rows == 1) {
 				$data = $res->fetch_assoc();
 			session_start();
-				$_SESSION["email"] = $data["email"];
-				$_SESSION["no_pelanggan"] = $data["no_pelanggan"];
-				$_SESSION["nama_pelanggan"] = $data["nama_pelanggan"];
+				$_SESSION["id_customer"] = $data["id_customer"];
+				$_SESSION["nama_customer"] = $data["nama_customer"];
+				$_SESSION["alamat"] = $data["alamat"];
+				$_SESSION["no_telp"] = $data["no_telp"];
+				$_SESSION["username"] = $data["username"];
 				$_SESSION["password"] = $data["password"];
 
 			header("Location: ../view/home.php");

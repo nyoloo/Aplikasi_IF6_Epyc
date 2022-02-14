@@ -4,7 +4,7 @@
 <?php
 session_start();
 $db=dbconnect();
-if (!isset($_SESSION["email"]))
+if (!isset($_SESSION["username"]))
 header("Location:../login/login.php?error=4");
 ?>
 <!doctype html>
@@ -72,23 +72,53 @@ header("Location:../login/login.php?error=4");
                                     <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Profil</h6>
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Username</p>
-                                            <h6 class="text-muted f-w-400" name="namapelanggan">
+                                            <p class="m-b-10 f-w-600">Nama Customer</p>
+                                            <h6 class="text-muted f-w-400" name="namacustomer">
                                               <?php
-                                              $nopelanggan=$_SESSION["no_pelanggan"];
-                                              $query=mysqli_query($db,"select nama_pelanggan as namapelanggan from pelanggan where no_pelanggan='$nopelanggan'");
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
-                                              $namapelanggan=$data['namapelanggan'];
-                                              echo $namapelanggan?></h6>
+                                              $namacustomer=$data['namacustomer'];
+                                              echo $namacustomer?></h6>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Email</p>
-                                            <h6 class="text-muted f-w-400" name="email"><?php
-                                              $nopelanggan=$_SESSION["no_pelanggan"];
-                                              $query=mysqli_query($db,"select email as email from pelanggan where no_pelanggan='$nopelanggan'");
+                                            <p class="m-b-10 f-w-600">Alamat</p>
+                                            <h6 class="text-muted f-w-400" name="alamat">
+                                              <?php
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select alamat as alamat from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
-                                              $email=$data['email'];
-                                              echo $email ?></h6>
+                                              $alamat=$data['alamat'];
+                                              echo $alamat?></h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="m-b-10 f-w-600">No Telp</p>
+                                            <h6 class="text-muted f-w-400" name="notelp">
+                                              <?php
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select no_telp as notelp from customer where id_customer='$idcustomer'");
+                                              $data=mysqli_fetch_array($query);
+                                              $notelp=$data['notelp'];
+                                              echo $notelp?></h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="m-b-10 f-w-600">Username</p>
+                                            <h6 class="text-muted f-w-400" name="username">
+                                              <?php
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select username as username from customer where id_customer='$idcustomer'");
+                                              $data=mysqli_fetch_array($query);
+                                              $username=$data['username'];
+                                              echo $username?></h6>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p class="m-b-10 f-w-600">Password</p>
+                                            <h6 class="text-muted f-w-400" name="password"><?php
+                                              $idcustomer=$_SESSION["id_customer"];
+                                              $query=mysqli_query($db,"select password as password from customer where id_customer='$idcustomer'");
+                                              $data=mysqli_fetch_array($query);
+                                              $password=$data['password'];
+                                              echo $password ?></h6>
                                         </div>
                                     </div>
                                     <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">

@@ -21,26 +21,26 @@ include_once("../function.php");
 <center>
     <div class="card text-center shadow bg-white rounded" style="width: 45%;">
     <div class="card-header">
-    Masukan Email Anda
+    Masukan Username Anda
     </div>
         <div class="card-body">
             <?php
                 if (isset($_GET["error"])) {
                     $error = $_GET["error"];
                 if ($error == 1) {
-                    showError("Email Tidak Ditemukan"); }
+                    showError("Username Tidak Ditemukan"); }
                         else if ($error == 2)
                             showError("Error database. Silahkan hubungi administrator");
                         else
                             showError("Unknown Error.");
                 }
             ?>
-            <form name="kirimemail" action="LP2.php" method="post">
+            <form name="kirimuser" action="LP2.php" method="post">
                 <div class="form-group">
                     <div class="row mb-3">
-                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <label for="inputusername3" class="col-sm-2 col-form-label">Username</label>
                             <div class="col-sm-10">
-                                <input type="email"  class="form-control" name="email" id="email" placeholder="Your Email"required>
+                                <input type="username"  class="form-control" name="username" id="username" placeholder="Username"required>
                             </div>     
                             <br>
                             <br>
