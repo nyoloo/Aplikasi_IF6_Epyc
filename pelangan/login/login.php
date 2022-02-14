@@ -66,8 +66,12 @@
                                 <td align="center"><a href="lupapass.php" class="term-service">lupa Password?</a></td>
                                 </tr>
                                 <div class="form-group">
+<<<<<<< HEAD
                                     
                                 <a href="../../admin/public/index.php" class="term-service">Login Sebagai Admin</a>
+=======
+                                <a href="http://localhost/tugas-besar-RPL/admin/public/" class="term-service">Login Sebagai Admin</a>
+>>>>>>> 73f86178c2d74beaad7df5179035a99577d508bf
                             </div>
                             </table>
                         </form>
