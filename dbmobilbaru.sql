@@ -65,10 +65,10 @@ DROP TABLE IF EXISTS `destinasi`;
 
 CREATE TABLE `destinasi` (
   `id_destinasi` varchar(5) NOT NULL,
-  `id_customer` varchar(5) DEFAULT NULL,
-  `tgl_sewa` date DEFAULT NULL,
-  `tgl_kembali` date DEFAULT NULL,
-  `tujuan` varchar(20) DEFAULT NULL,
+  `id_customer` varchar(5) NOT NULL,
+  `tgl_sewa` date NOT NULL,
+  `tgl_kembali` date NOT NULL,
+  `tujuan` varchar(20) NOT NULL,
   PRIMARY KEY (`id_destinasi`),
   KEY `id_customer` (`id_customer`),
   CONSTRAINT `destinasi_ibfk_1` FOREIGN KEY (`id_customer`) REFERENCES `customer` (`id_customer`) ON DELETE CASCADE ON UPDATE CASCADE
@@ -151,41 +151,42 @@ DROP TABLE IF EXISTS `mobil`;
 
 CREATE TABLE `mobil` (
   `id_mobil` varchar(5) NOT NULL,
-  `plat_mobil` varchar(15) DEFAULT NULL,
-  `merk_mobil` varchar(15) DEFAULT NULL,
-  `jenis_mobil` varchar(10) DEFAULT NULL,
+  `plat_mobil` varchar(15) NOT NULL,
+  `merk_mobil` varchar(15) NOT NULL,
+  `jenis_mobil` varchar(10) NOT NULL,
   `nama_mobil` varchar(50) NOT NULL,
+  `harga_sewa` int(10) NOT NULL,
   PRIMARY KEY (`id_mobil`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `mobil` */
 
-insert  into `mobil`(`id_mobil`,`plat_mobil`,`merk_mobil`,`jenis_mobil`,`nama_mobil`) values 
-('M001','D 1500 AJC','Toyota','SUV','Toyota Raize'),
-('M002','D 1097 AJS','Toyota','SUV','Toyota Rush'),
-('M003','D 1523 AJB','Toyota','SUV','Toyota Fortuner'),
-('M004','D 1532 AJD','Toyota','SUV','Toyota Land Cruiser'),
-('M005','D 1987 AAF','Toyota','SEDAN','Toyota Camry'),
-('M006','D 1197 AAB','Toyota','SEDAN','Toyota Vios'),
-('M007','D 1275 AAS','Toyota','SEDAN','Toyota Camry Hybrid'),
-('M008','D 1567 AAF','Toyota','SEDAN','Toyota Corolla Altis'),
-('M009','D 1996 AFA','Toyota','MINIVAN','Toyota Haice'),
-('M010','D 1504 AJE','Toyota','MPV','Toyota Kijang Innova'),
-('M011','D 1281 AJY','Toyota','MPV','Toyota Avanza'),
-('M012','D 1309 AJK','Toyota','MPV','Toyota Avanza Veloz'),
-('M013','D 1425 AJL','Toyota','MPV','Toyota Calya'),
-('M014','D 1783 AJQ','Toyota','MPV','Toyota Alphard'),
-('M015','D 1041 AJT','Toyota','MPV','Toyota Vellfire'),
-('M016','D 1293 AJR','Toyota','MPV','Toyota Voxy'),
-('M017','D 1562 AJH','Toyota','MPV','Toyota Sienta'),
-('M018','D 1720 AJW','Toyota','PICKUP','Toyota Hilux'),
-('M019','D 1723 AJY','Toyota','CROSSOVER','Toyota CHR Hybrid'),
-('M020','D 1911 AJS','Toyota','CROSSOVER','Toyota CHR'),
-('M021','D 1398 AJO','Toyota','CROSSOVER','Toyota Corolla Cross'),
-('M022','D 1188 AAG','Toyota','Coupe','Toyota 86'),
-('M023','D 1002 AAT','Toyota','Coupe','Toyota GR Supra'),
-('M024','D 1541 AFE','Toyota','HATCHBACK','Toyota Yaris'),
-('M025','D 1996 AFW','Toyota','HATCHBACK','Toyota Agya');
+insert  into `mobil`(`id_mobil`,`plat_mobil`,`merk_mobil`,`jenis_mobil`,`nama_mobil`,`harga_sewa`) values 
+('M001','D 1500 AJC','Toyota','SUV','Toyota Raize',2000000),
+('M002','D 1097 AJS','Toyota','SUV','Toyota Rush',2000000),
+('M003','D 1523 AJB','Toyota','SUV','Toyota Fortuner',2500000),
+('M004','D 1532 AJD','Toyota','SUV','Toyota Land Cruiser',2500000),
+('M005','D 1987 AAF','Toyota','SEDAN','Toyota Camry',1900000),
+('M006','D 1197 AAB','Toyota','SEDAN','Toyota Vios',1500000),
+('M007','D 1275 AAS','Toyota','SEDAN','Toyota Camry Hybrid',2500000),
+('M008','D 1567 AAF','Toyota','SEDAN','Toyota Corolla Altis',1800000),
+('M009','D 1996 AFA','Toyota','MINIVAN','Toyota Haice',2000000),
+('M010','D 1504 AJE','Toyota','MPV','Toyota Kijang Innova',1300000),
+('M011','D 1281 AJY','Toyota','MPV','Toyota Avanza',1500000),
+('M012','D 1309 AJK','Toyota','MPV','Toyota Avanza Veloz',1700000),
+('M013','D 1425 AJL','Toyota','MPV','Toyota Calya',1400000),
+('M014','D 1783 AJQ','Toyota','MPV','Toyota Alphard',2600000),
+('M015','D 1041 AJT','Toyota','MPV','Toyota Vellfire',2500000),
+('M016','D 1293 AJR','Toyota','MPV','Toyota Voxy',2500000),
+('M017','D 1562 AJH','Toyota','MPV','Toyota Sienta',1500000),
+('M018','D 1720 AJW','Toyota','PICKUP','Toyota Hilux',2500000),
+('M019','D 1723 AJY','Toyota','CROSSOVER','Toyota CHR Hybrid',2500000),
+('M020','D 1911 AJS','Toyota','CROSSOVER','Toyota CHR',1800000),
+('M021','D 1398 AJO','Toyota','CROSSOVER','Toyota Corolla Cross',1800000),
+('M022','D 1188 AAG','Toyota','Coupe','Toyota 86',2560000),
+('M023','D 1002 AAT','Toyota','Coupe','Toyota GR Supra',3000000),
+('M024','D 1541 AFE','Toyota','HATCHBACK','Toyota Yaris',1500000),
+('M025','D 1996 AFW','Toyota','HATCHBACK','Toyota Agya',1500000);
 
 /*Table structure for table `pembayaran` */
 
@@ -193,11 +194,11 @@ DROP TABLE IF EXISTS `pembayaran`;
 
 CREATE TABLE `pembayaran` (
   `id_pembayaran` varchar(5) NOT NULL,
-  `id_karyawan` varchar(5) DEFAULT NULL,
+  `id_karyawan` varchar(5) NOT NULL,
   `id_customer` varchar(5) NOT NULL,
   `id_mobil` varchar(5) NOT NULL,
   `id_destinasi` varchar(5) NOT NULL,
-  `harga_sewa` int(10) NOT NULL,
+  `total_harga_sewa` int(10) NOT NULL,
   `metode_bayar` enum('Tunai','Kredit') NOT NULL,
   PRIMARY KEY (`id_pembayaran`),
   KEY `id_karyawan` (`id_karyawan`),
@@ -212,7 +213,7 @@ CREATE TABLE `pembayaran` (
 
 /*Data for the table `pembayaran` */
 
-insert  into `pembayaran`(`id_pembayaran`,`id_karyawan`,`id_customer`,`id_mobil`,`id_destinasi`,`harga_sewa`,`metode_bayar`) values 
+insert  into `pembayaran`(`id_pembayaran`,`id_karyawan`,`id_customer`,`id_mobil`,`id_destinasi`,`total_harga_sewa`,`metode_bayar`) values 
 ('B001','K001','C001','M001','D001',2000000,'Tunai'),
 ('B002','K002','C002','M002','D002',6000000,'Tunai'),
 ('B003','K003','C003','M003','D003',5000000,'Kredit'),
