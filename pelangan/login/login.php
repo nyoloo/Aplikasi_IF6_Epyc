@@ -22,7 +22,7 @@
 <div class="container">
         <center>
             <img src="https://cdn.discordapp.com/attachments/859080381517266944/865996965488754728/WhatsApp_Image_2021-07-03_at_12.23.31.jpeg" style="width: 10rem;" class="mt-5">
-            <h1>NFS Rent Car</h1>
+            <h1>White Rent Car</h1>
             <div class="card mt-4  shadow p-3 mb-5 bg-white rounded" style="width: 45%;">
                 <div class=" card-body">         
                     <?php
@@ -66,7 +66,12 @@
                                 <td align="center"><a href="lupapass.php" class="term-service">lupa Password?</a></td>
                                 </tr>
                                 <div class="form-group">
+<<<<<<< HEAD
+                                    
+                                <a href="../../admin/public/index.php" class="term-service">Login Sebagai Admin</a>
+=======
                                 <a href="http://localhost/tugas-besar-RPL/admin/public/" class="term-service">Login Sebagai Admin</a>
+>>>>>>> 73f86178c2d74beaad7df5179035a99577d508bf
                             </div>
                             </table>
                         </form>
