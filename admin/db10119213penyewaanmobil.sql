@@ -57,7 +57,8 @@ insert  into `customer`(`id_customer`,`nama_customer`,`alamat`,`no_telp`,`userna
 ('C022','Koruru','Setiabudi,Jawa Barat','085494867391','v','v'),
 ('C023','Refi Zulhaqi','Sukamaju,Jawa Barat','081795438265','w','w'),
 ('C024','Senandung','Sukaempat,Jawa Barat','085498763182','x','x'),
-('C025','Cahya Nun Sukun','Wangunsari,Jawa Barat','084978653821','y','y');
+('C025','Cahya Nun Sukun','Wangunsari,Jawa Barat','084978653821','y','y'),
+('C026','TrippyTeri','kp areng rt 03 rw 11','086187369184','teri-chan','aa');
 
 /*Table structure for table `destinasi` */
 
@@ -65,10 +66,10 @@ DROP TABLE IF EXISTS `destinasi`;
 
 CREATE TABLE `destinasi` (
   `id_destinasi` varchar(5) NOT NULL,
-  `id_customer` varchar(5) DEFAULT NULL,
-  `tgl_sewa` date DEFAULT NULL,
-  `tgl_kembali` date DEFAULT NULL,
-  `tujuan` varchar(20) DEFAULT NULL,
+  `id_customer` varchar(5) NOT NULL,
+  `tgl_sewa` date NOT NULL,
+  `tgl_kembali` date NOT NULL,
+  `tujuan` varchar(20) NOT NULL,
   PRIMARY KEY (`id_destinasi`),
   KEY `id_customer` (`id_customer`),
   CONSTRAINT `destinasi_ibfk_1` FOREIGN KEY (`id_customer`) REFERENCES `customer` (`id_customer`) ON DELETE CASCADE ON UPDATE CASCADE
@@ -151,41 +152,43 @@ DROP TABLE IF EXISTS `mobil`;
 
 CREATE TABLE `mobil` (
   `id_mobil` varchar(5) NOT NULL,
-  `plat_mobil` varchar(15) DEFAULT NULL,
-  `merk_mobil` varchar(15) DEFAULT NULL,
-  `jenis_mobil` varchar(10) DEFAULT NULL,
+  `plat_mobil` varchar(15) NOT NULL,
+  `merk_mobil` varchar(15) NOT NULL,
+  `jenis_mobil` varchar(10) NOT NULL,
   `nama_mobil` varchar(50) NOT NULL,
+  `harga_sewa` int(10) NOT NULL,
+  `img_url` text DEFAULT NULL,
   PRIMARY KEY (`id_mobil`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 /*Data for the table `mobil` */
 
-insert  into `mobil`(`id_mobil`,`plat_mobil`,`merk_mobil`,`jenis_mobil`,`nama_mobil`) values 
-('M001','D 1500 AJC','Toyota','SUV','Toyota Raize'),
-('M002','D 1097 AJS','Toyota','SUV','Toyota Rush'),
-('M003','D 1523 AJB','Toyota','SUV','Toyota Fortuner'),
-('M004','D 1532 AJD','Toyota','SUV','Toyota Land Cruiser'),
-('M005','D 1987 AAF','Toyota','SEDAN','Toyota Camry'),
-('M006','D 1197 AAB','Toyota','SEDAN','Toyota Vios'),
-('M007','D 1275 AAS','Toyota','SEDAN','Toyota Camry Hybrid'),
-('M008','D 1567 AAF','Toyota','SEDAN','Toyota Corolla Altis'),
-('M009','D 1996 AFA','Toyota','MINIVAN','Toyota Haice'),
-('M010','D 1504 AJE','Toyota','MPV','Toyota Kijang Innova'),
-('M011','D 1281 AJY','Toyota','MPV','Toyota Avanza'),
-('M012','D 1309 AJK','Toyota','MPV','Toyota Avanza Veloz'),
-('M013','D 1425 AJL','Toyota','MPV','Toyota Calya'),
-('M014','D 1783 AJQ','Toyota','MPV','Toyota Alphard'),
-('M015','D 1041 AJT','Toyota','MPV','Toyota Vellfire'),
-('M016','D 1293 AJR','Toyota','MPV','Toyota Voxy'),
-('M017','D 1562 AJH','Toyota','MPV','Toyota Sienta'),
-('M018','D 1720 AJW','Toyota','PICKUP','Toyota Hilux'),
-('M019','D 1723 AJY','Toyota','CROSSOVER','Toyota CHR Hybrid'),
-('M020','D 1911 AJS','Toyota','CROSSOVER','Toyota CHR'),
-('M021','D 1398 AJO','Toyota','CROSSOVER','Toyota Corolla Cross'),
-('M022','D 1188 AAG','Toyota','Coupe','Toyota 86'),
-('M023','D 1002 AAT','Toyota','Coupe','Toyota GR Supra'),
-('M024','D 1541 AFE','Toyota','HATCHBACK','Toyota Yaris'),
-('M025','D 1996 AFW','Toyota','HATCHBACK','Toyota Agya');
+insert  into `mobil`(`id_mobil`,`plat_mobil`,`merk_mobil`,`jenis_mobil`,`nama_mobil`,`harga_sewa`,`img_url`) values 
+('M001','D 1500 AJC','Toyota','SUV','Toyota Raize',2000000,'http://localhost/tugas-besar-RPL/asset/new-toyota-raize-2020.jpg'),
+('M002','D 1097 AJS','Toyota','SUV','Toyota Rush',2000000,'http://localhost/tugas-besar-RPL/asset/toyota-rush1.jpg'),
+('M003','D 1523 AJB','Toyota','SUV','Toyota Fortuner',2500000,'http://localhost/tugas-besar-RPL/asset/fortuner.jpg'),
+('M004','D 1532 AJD','Toyota','SUV','Toyota Land Cruiser',2500000,'http://localhost/tugas-besar-RPL/asset/toyota-land-cruiser-300-series.jpeg'),
+('M005','D 1987 AAF','Toyota','SEDAN','Toyota Camry',1900000,'http://localhost/tugas-besar-RPL/asset/camry.jpg'),
+('M006','D 1197 AAB','Toyota','SEDAN','Toyota Vios',1500000,'http://localhost/tugas-besar-RPL/asset/Vios.jpg'),
+('M007','D 1275 AAS','Toyota','SEDAN','Toyota Camry Hybrid',2500000,'http://localhost/tugas-besar-RPL/asset/camry hibrid.jpg'),
+('M008','D 1567 AAF','Toyota','SEDAN','Toyota Corolla Altis',1800000,'http://localhost/tugas-besar-RPL/asset/corola atlis.jpg'),
+('M009','D 1996 AFA','Toyota','MINIVAN','Toyota Haice',2000000,'http://localhost/tugas-besar-RPL/asset/toyota haice.jpg'),
+('M010','D 1504 AJE','Toyota','MPV','Toyota Kijang Innova',1300000,'http://localhost/tugas-besar-RPL/asset/kijang inova.jpg'),
+('M011','D 1281 AJY','Toyota','MPV','Toyota Avanza',1500000,'http://localhost/tugas-besar-RPL/asset/avanza.jpg'),
+('M012','D 1309 AJK','Toyota','MPV','Toyota Avanza Veloz',1700000,'http://localhost/tugas-besar-RPL/asset/Avanza-Veloz.jpg'),
+('M013','D 1425 AJL','Toyota','MPV','Toyota Calya',1400000,'http://localhost/tugas-besar-RPL/asset/calya.png'),
+('M014','D 1783 AJQ','Toyota','MPV','Toyota Alphard',2600000,'http://localhost/tugas-besar-RPL/asset/alpard.jpg'),
+('M015','D 1041 AJT','Toyota','MPV','Toyota Vellfire',2500000,'http://localhost/tugas-besar-RPL/asset/vellfire-2021-colors-black.png'),
+('M016','D 1293 AJR','Toyota','MPV','Toyota Voxy',2500000,'http://localhost/tugas-besar-RPL/asset/voxy.jpg'),
+('M017','D 1562 AJH','Toyota','MPV','Toyota Sienta',1500000,'http://localhost/tugas-besar-RPL/asset/Sienta.jpg'),
+('M018','D 1720 AJW','Toyota','PICKUP','Toyota Hilux',2500000,'http://localhost/tugas-besar-RPL/asset/Hilux.jpg'),
+('M019','D 1723 AJY','Toyota','CROSSOVER','Toyota CHR Hybrid',2500000,'http://localhost/tugas-besar-RPL/asset/CHR Hybrid.jpg'),
+('M020','D 1911 AJS','Toyota','CROSSOVER','Toyota CHR',1800000,'http://localhost/tugas-besar-RPL/asset/CHR non Hybrid.jpg'),
+('M021','D 1398 AJO','Toyota','CROSSOVER','Toyota Corolla Cross',1800000,'http://localhost/tugas-besar-RPL/asset/Corolla Cross.jpeg'),
+('M022','D 1188 AAG','Toyota','Coupe','Toyota 86',2560000,'http://localhost/tugas-besar-RPL/asset/toyota 86.jpg'),
+('M023','D 1002 AAT','Toyota','Coupe','Toyota GR Supra',3000000,'http://localhost/tugas-besar-RPL/asset/toyota supra.jpg'),
+('M024','D 1541 AFE','Toyota','HATCHBACK','Toyota Yaris',1500000,'http://localhost/tugas-besar-RPL/asset/toyota yaris.png'),
+('M025','D 1996 AFW','Toyota','HATCHBACK','Toyota Agya',1500000,'http://localhost/tugas-besar-RPL/asset/agya.jpg');
 
 /*Table structure for table `pembayaran` */
 
@@ -193,11 +196,11 @@ DROP TABLE IF EXISTS `pembayaran`;
 
 CREATE TABLE `pembayaran` (
   `id_pembayaran` varchar(5) NOT NULL,
-  `id_karyawan` varchar(5) DEFAULT NULL,
+  `id_karyawan` varchar(5) NOT NULL,
   `id_customer` varchar(5) NOT NULL,
   `id_mobil` varchar(5) NOT NULL,
   `id_destinasi` varchar(5) NOT NULL,
-  `harga_sewa` int(10) NOT NULL,
+  `total_harga_sewa` int(10) NOT NULL,
   `metode_bayar` enum('Tunai','Kredit') NOT NULL,
   PRIMARY KEY (`id_pembayaran`),
   KEY `id_karyawan` (`id_karyawan`),
@@ -212,32 +215,32 @@ CREATE TABLE `pembayaran` (
 
 /*Data for the table `pembayaran` */
 
-insert  into `pembayaran`(`id_pembayaran`,`id_karyawan`,`id_customer`,`id_mobil`,`id_destinasi`,`harga_sewa`,`metode_bayar`) values 
-('B001','K001','C001','M001','D001',1350000,'Tunai'),
-('B002','K002','C002','M002','D002',2050000,'Tunai'),
-('B003','K003','C003','M003','D003',2700000,'Kredit'),
-('B004','K004','C004','M004','D004',3350000,'Kredit'),
-('B005','K005','C005','M005','D005',2200000,'Tunai'),
-('B006','K006','C006','M006','D006',1350000,'Tunai'),
-('B007','K007','C007','M007','D007',1850000,'Tunai'),
-('B008','K008','C008','M008','D008',1350000,'Tunai'),
-('B009','K009','C009','M009','D009',1850000,'Tunai'),
-('B010','K010','C010','M010','D010',1700000,'Tunai'),
-('B011','K011','C011','M011','D011',1350000,'Tunai'),
-('B012','K012','C012','M012','D012',1700000,'Tunai'),
-('B013','K013','C013','M013','D013',1700000,'Tunai'),
-('B014','K014','C014','M014','D014',3050000,'Kredit'),
-('B015','K015','C015','M015','D015',4050000,'Kredit'),
-('B016','K016','C016','M016','D016',2550000,'Kredit'),
-('B017','K017','C017','M017','D017',2050000,'Tunai'),
-('B018','K018','C018','M018','D018',1350000,'Tunai'),
-('B019','K019','C019','M019','D019',2400000,'Tunai'),
-('B020','K020','C020','M020','D020',2050000,'Tunai'),
-('B021','K021','C021','M021','D021',2050000,'Tunai'),
-('B022','K022','C022','M022','D022',2200000,'Tunai'),
-('B023','K023','C023','M023','D023',4050000,'Kredit'),
-('B024','K024','C024','M024','D024',2050000,'Tunai'),
-('B025','K025','C025','M025','D025',2750000,'Kredit');
+insert  into `pembayaran`(`id_pembayaran`,`id_karyawan`,`id_customer`,`id_mobil`,`id_destinasi`,`total_harga_sewa`,`metode_bayar`) values 
+('B001','K001','C001','M001','D001',2000000,'Tunai'),
+('B002','K002','C002','M002','D002',6000000,'Tunai'),
+('B003','K003','C003','M003','D003',5000000,'Kredit'),
+('B004','K004','C004','M004','D004',2500000,'Kredit'),
+('B005','K005','C005','M005','D005',3800000,'Tunai'),
+('B006','K006','C006','M006','D006',1500000,'Tunai'),
+('B007','K007','C007','M007','D007',2500000,'Tunai'),
+('B008','K008','C008','M008','D008',1800000,'Tunai'),
+('B009','K009','C009','M009','D009',2000000,'Tunai'),
+('B010','K010','C010','M010','D010',2600000,'Tunai'),
+('B011','K011','C011','M011','D011',1500000,'Tunai'),
+('B012','K012','C012','M012','D012',2400000,'Tunai'),
+('B013','K013','C013','M013','D013',2800000,'Tunai'),
+('B014','K014','C014','M014','D014',7800000,'Kredit'),
+('B015','K015','C015','M015','D015',7500000,'Kredit'),
+('B016','K016','C016','M016','D016',7500000,'Kredit'),
+('B017','K017','C017','M017','D017',6000000,'Tunai'),
+('B018','K018','C018','M018','D018',2500000,'Tunai'),
+('B019','K019','C019','M019','D019',10000000,'Tunai'),
+('B020','K020','C020','M020','D020',5400000,'Tunai'),
+('B021','K021','C021','M021','D021',5400000,'Tunai'),
+('B022','K022','C022','M022','D022',5120000,'Tunai'),
+('B023','K023','C023','M023','D023',9000000,'Kredit'),
+('B024','K024','C024','M024','D024',6000000,'Tunai'),
+('B025','K025','C025','M025','D025',7500000,'Kredit');
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
 /*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
