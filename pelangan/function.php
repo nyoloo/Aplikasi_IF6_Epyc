@@ -68,4 +68,18 @@ function getPassword($password){
 		else
 			return FALSE;
 	}
+
+
+
+$conn = mysqli_connect("localhost:3306","root","","db10119213penyewaanmobil");
+
+function query($query) {
+    global $conn;
+    $result = mysqli_query($conn, $query);
+    $rows = [];
+    while ($row = mysqli_fetch_assoc($result)) {
+        $rows[] = $row;
+    }
+    return $rows;
+}
 ?>
