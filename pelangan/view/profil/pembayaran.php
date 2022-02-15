@@ -7,52 +7,52 @@ $db=dbconnect();
 if (!isset($_SESSION["username"]))
 header("Location: ../login/login.php?error=4");
 ?>
-<?php
-if(isset($_POST['simpan']))
-{
-    $query = mysqli_query($db, "SELECT max(kode_transaksi) as kodetransaksi from transaksi");
-    $data = mysqli_fetch_array($query);
-    $kodetransaksi = $data['kodetransaksi'];
-    $kodetransaksi1=substr($kodetransaksi,1,2);
-    $tambah = (int)$kodetransaksi1 + 1;
-    if (strlen($tambah) == 1){
-        $kodetransaksiupdate = "00" .$tambah;
-     }
-     else if (strlen($tambah) == 2){
-        $kodetransaksiupdate = "0" .$tambah;
-     }
-     else if(strlen($tambah) == 3){
-        $kodetransaksiupdate = $tambah;
-     }
-     else if(strlen($tambah) == 4){
-        $kodetransaksiupdate = $tambah;
-     }
+<!-- <?php
+// if(isset($_POST['simpan']))
+// {
+//     $query = mysqli_query($db, "SELECT max(kode_transaksi) as kodetransaksi from transaksi");
+//     $data = mysqli_fetch_array($query);
+//     $kodetransaksi = $data['kodetransaksi'];
+//     $kodetransaksi1=substr($kodetransaksi,1,2);
+//     $tambah = (int)$kodetransaksi1 + 1;
+//     if (strlen($tambah) == 1){
+//         $kodetransaksiupdate = "00" .$tambah;
+//      }
+//      else if (strlen($tambah) == 2){
+//         $kodetransaksiupdate = "0" .$tambah;
+//      }
+//      else if(strlen($tambah) == 3){
+//         $kodetransaksiupdate = $tambah;
+//      }
+//      else if(strlen($tambah) == 4){
+//         $kodetransaksiupdate = $tambah;
+//      }
 
-     $totalharga=$_POST["totalharga"];
-    }
-    else
-    {
-      $query = mysqli_query($db, "SELECT max(kode_transaksi) as kodetransaksi from transaksi");
-      $data = mysqli_fetch_array($query);
-      $kodetransaksi = $data['kodetransaksi'];
-      $kodetransaksi1=substr($kodetransaksi,1,2);
-      $tambah = (int)$kodetransaksi1 + 1;
-      if (strlen($tambah) == 1){
-          $kodetransaksiupdate = "00" .$tambah;
-       }
-       else if (strlen($tambah) == 2){
-          $kodetransaksiupdate = "0" .$tambah;
-       }
-       else if(strlen($tambah) == 3){
-          $kodetransaksiupdate = $tambah;
-       }
-       else if(strlen($tambah) == 4){
-          $kodetransaksiupdate = $tambah;
-       }
+//      $totalharga=$_POST["totalharga"];
+//     }
+//     else
+//     {
+//       $query = mysqli_query($db, "SELECT max(kode_transaksi) as kodetransaksi from transaksi");
+//       $data = mysqli_fetch_array($query);
+//       $kodetransaksi = $data['kodetransaksi'];
+//       $kodetransaksi1=substr($kodetransaksi,1,2);
+//       $tambah = (int)$kodetransaksi1 + 1;
+//       if (strlen($tambah) == 1){
+//           $kodetransaksiupdate = "00" .$tambah;
+//        }
+//        else if (strlen($tambah) == 2){
+//           $kodetransaksiupdate = "0" .$tambah;
+//        }
+//        else if(strlen($tambah) == 3){
+//           $kodetransaksiupdate = $tambah;
+//        }
+//        else if(strlen($tambah) == 4){
+//           $kodetransaksiupdate = $tambah;
+//        }
   
-       $totalharga=$_POST["totalharga"];
-    }
-?>
+//        $totalharga=$_POST["totalharga"];
+//     }
+?> -->
 <!doctype html>
 <html lang="en">
   <head>

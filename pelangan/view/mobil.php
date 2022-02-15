@@ -73,7 +73,7 @@
             <img src="<?= $data['img_url']; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?= $data['nama_mobil']; ?></h5>
-                        <p class="card-text"><?= $data['harga_sewa']; ?></p>
+                        <p class="card-text">Harga Sewa Rp<?=number_format($data['harga_sewa'],0,",",".") ?>/Hari</p>
                         <a href="profil/transaksi.php?id_mobil=<?= $data['id_mobil']; ?>" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
