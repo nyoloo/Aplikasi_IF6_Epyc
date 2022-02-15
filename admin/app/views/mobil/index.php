@@ -46,6 +46,7 @@
                             <th>Jenis Mobil</th>
                             <th>Nama Mobil</th>
                             <th>Harga Sewa Per Hari</th>
+                            <th>Gambar Mobil</th>
                             <th style="width: 150px">Aksi</th>
                         </tr>
                     </thead>
@@ -58,6 +59,7 @@
                                 <td><?= $row['jenis_mobil']; ?></td>
                                 <td><?= $row['nama_mobil']; ?></td>
                                 <td><?= $row['harga_sewa']; ?></td>
+                                <td><img src="<?=$row['img_url']?>" width="200px" height="100px"></td>
                                 <td>
                                     <a href="<?= base_url; ?>/mobil/edit/<?= $row['id_mobil'] ?>" class="btn btn-info">Edit</a>
                                     <a href="<?= base_url; ?>/mobil/hapus/<?= $row['id_mobil'] ?>" class="btn btn-danger" onclick="return confirm('Hapus data?');">Hapus</a>

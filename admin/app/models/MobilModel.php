@@ -40,9 +40,14 @@ class MobilModel
 			$data["id_mobil"] = $mobilupdate;
 		}
 
+		$gambar = $_FILES['img_url']['name'];
+    	$tmp = $_FILES['img_url']['tmp_name'];
+		$path = "../../asset/" . $gambar;
+		move_uploaded_file($tmp, $path);
+		$img_url="http://localhost/tugas-besar-RPL/asset/" . $gambar;
 
-		$query = "INSERT INTO " . $this->table . " (`id_mobil`, `plat_mobil`, `merk_mobil`, `jenis_mobil`, `nama_mobil`,`harga_sewa`) 
-		VALUES (:id_mobil, :plat_mobil, :merk_mobil, :jenis_mobil, :nama_mobil ,:harga_sewa)";
+		$query = "INSERT INTO " . $this->table . " (`id_mobil`, `plat_mobil`, `merk_mobil`, `jenis_mobil`, `nama_mobil`,`harga_sewa`,`img_url`) 
+		VALUES (:id_mobil, :plat_mobil, :merk_mobil, :jenis_mobil, :nama_mobil ,:harga_sewa, :img_url)";
 		$this->db->query($query);
 
 		$this->db->bind("id_mobil", $data["id_mobil"]);
@@ -51,6 +56,9 @@ class MobilModel
 		$this->db->bind("jenis_mobil", $data["jenis_mobil"]);
 		$this->db->bind("nama_mobil", $data["nama_mobil"]);
 		$this->db->bind("harga_sewa", $data["harga_sewa"]);
+		$this->db->bind("img_url", $img_url);
+		
+		
 		$this->db->execute();
 
 		return $this->db->rowCount();
@@ -63,7 +71,25 @@ class MobilModel
 
 	public function updateDataMobil($data)
 	{
-		$query = "UPDATE " . $this->table . " SET plat_mobil=:plat_mobil, merk_mobil=:merk_mobil,jenis_mobil=:jenis_mobil,nama_mobil=:nama_mobil,harga_sewa=:harga_sewa WHERE id_mobil=:id_mobil";
+		$gambar = $_FILES['img_url']['name'];
+    	$tmp = $_FILES['img_url']['tmp_name'];
+		$path = "../../asset/" . $gambar;
+		move_uploaded_file($tmp, $path);
+		$img_url2=$data["id_mobil"];
+		$query1="Select img_url from mobil WHERE id_mobil='" . $img_url2 . "'";
+		$this->db->query($query1);
+		$this->db->execute();
+		$img_url1=$this->db->count();
+		if(!$gambar)
+		{
+			$img_url=$img_url1;
+		}
+		else
+		{
+			$img_url="http://localhost/tugas-besar-RPL/asset/" . $gambar;
+		}
+
+		$query = "UPDATE " . $this->table . " SET plat_mobil=:plat_mobil, merk_mobil=:merk_mobil,jenis_mobil=:jenis_mobil,nama_mobil=:nama_mobil,harga_sewa=:harga_sewa,img_url=:img_url WHERE id_mobil=:id_mobil";
 		$this->db->query($query);
 
 		$this->db->bind("id_mobil", $data["id_mobil"]);
@@ -72,6 +98,7 @@ class MobilModel
 		$this->db->bind("jenis_mobil", $data["jenis_mobil"]);
 		$this->db->bind("nama_mobil", $data["nama_mobil"]);
 		$this->db->bind("harga_sewa", $data["harga_sewa"]);
+		$this->db->bind("img_url", $img_url);
 		$this->db->execute();
 
 		return $this->db->rowCount();

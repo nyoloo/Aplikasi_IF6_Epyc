@@ -45,6 +45,13 @@
                           <label>Harga Sewa Per Hari</label>
                           <input type="number" class="form-control" placeholder="masukkan harga sewa per hari..." name="harga_sewa" value="<?= $data['mobil'][0]['harga_sewa'] ?>">
                       </div>
+                      <div class="form-group">
+                          <label>Upload Gambar Mobil</label>
+                          <br>
+                          <img src="<?= $data['mobil'][0]['img_url'] ?>" width="200px" height="100px">
+                          <input type="file" class="form-control" name="img_url">
+                          
+                      </div>
                       <!-- <div class="form-group">
               <label>Jenis</label>
               <select class="form-control" name="jenis-playstation">

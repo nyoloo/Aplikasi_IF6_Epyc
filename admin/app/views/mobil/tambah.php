@@ -41,6 +41,10 @@
               <label>Harga Sewa Per Hari</label>
               <input type="number" class="form-control" placeholder="masukkan harga sewa per hari..." name="harga_sewa">
             </div>
+            <div class="form-group">
+              <label>Upload Gambar Mobil</label>
+              <input type="file" class="form-control" name="img_url">
+            </div>
             <!-- <div class="form-group">
               <label>Jenis</label>
               <select class="form-control" name="jenis-playstation">
