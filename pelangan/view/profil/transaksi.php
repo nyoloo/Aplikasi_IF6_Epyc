@@ -1,5 +1,12 @@
 <?php
 include_once("../../function.php");
+
+$id_mobil = $_GET['id_mobil'];
+
+$dataMobil = query("SELECT * FROM mobil WHERE id_mobil='$id_mobil'")[0];
+error_reporting (0);
+
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -54,40 +61,63 @@ include_once("../../function.php");
 <br>
 <br>
 <main class="container d-flex justify-content-center align-items-center">
+
+<form action="" method="post">
 <div class="card " style="max-width: 800px;">
     <div class="row g-0">
       <div class="col-md-12">
         <div class="card-body">
           <div class="row g-3 align-items-center">
-            <h5 class="card-title">Toyota Supra</h5>
+            <h5 class="card-title"><?= $dataMobil['nama_mobil']; ?></h5>
             <div class="row mb-3">
               <label for="inputEmail3" class="col-sm-2 col-form-label">Tanggal Minjam</label>
               <div class="col-sm-10">
-                    <input type="date" class="form-control" name="tanggalminjam" value="tanggalminjam">
+                    <input type="date" class="form-control" name="tanggalminjam" value="<?= $_POST['tanggalminjam']; ?>">
                   </div>
             </div>
             <div class="row mb-3">
               <label for="inputPassword3" class="col-sm-2 col-form-label">Tanggal Pengembalian</label>
               <div class="col-sm-10">
-                    <input type="date" class="form-control" name="tanggalkembali" value="tanggalkembali">
+                    <input type="date" class="form-control" name="tanggalkembali" value="<?= $_POST['tanggalkembali']; ?>">
                   </div>
             </div>
             <div class="mb-3 row">
               <label for="hargasewa" class="col-sm-2 col-form-label">Harga Sewa Per Hari</label>
               <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="hargasewa" value=": Rp 3.000.000">
-              </div>
+                <input type="text" readonly class="form-control-plaintext" id="hargasewa" value="<?= "Rp".number_format($dataMobil['harga_sewa'],0,",","."); ?>">
+
+                <button type="submit" name="cekharga">Cek Harga</button>
+
+                <?php
+                $diff2 = 0;
+                  if(isset($_POST['cekharga'])) {
+                      $tanggalminjam    =strtotime($_POST['tanggalminjam']);
+                      $tanggalkembali   =strtotime($_POST['tanggalkembali']);
+                      $diff             =(($tanggalkembali - $tanggalminjam)/3600)/24;
+                      if ($diff  * $dataMobil['harga_sewa'] < 0) {
+                        $diff2 = 0;
+                      } else {
+                        $diff2 = $diff  * $dataMobil['harga_sewa'];
+                      };
+                  };
+                ?>
+
+              </div>  
             </div>
             <div class="mb-3 row">
-              <label for="hargasewa" class="col-sm-2 col-form-label">Total Harga Sewa</label>
+              <label for="hargasewa" class="col-sm-2 col-form-label"></label>
+              <label for="">Harga Sewa :</label>
               <div class="col-sm-10">
-                <input type="text" readonly class="form-control" id="hargasewa" value=" Rp 3.000.000">
-              </div>
+                <label for=""><?= "Rp".number_format($diff2,0,",","."); ?></label>
+                </div>
             </div>
             <div class="mb-3 row">
               <label for="hargasewa" class="col-sm-2 col-form-label">Plat Nomer</label>
               <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="hargasewa" value=": D 1002 AAT">
+                <input type="text" readonly class="form-control-plaintext" id="hargasewa" value="<?= $dataMobil['plat_mobil']; ?>">
+                <label for="tujuan">Tujuan :</label>
+                <input type="text" name="tujuan" id="tujuan">
+
               </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
@@ -95,7 +125,9 @@ include_once("../../function.php");
             </div>
           </div>
   </div>
-    </div>
+</div>
+
+</form>
 </main>
 
 
