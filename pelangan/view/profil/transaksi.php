@@ -62,7 +62,7 @@ error_reporting (0);
 <br>
 <main class="container d-flex justify-content-center align-items-center">
 
-<form action="" method="post">
+<form name="transaksi" action="pembayaran.php" method="post">
 <div class="card " style="max-width: 800px;">
     <div class="row g-0">
       <div class="col-md-12">
