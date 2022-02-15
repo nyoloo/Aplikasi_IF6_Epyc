@@ -142,7 +142,7 @@ if(isset($_POST['simpan']))
               </div>
             </div>
               <div class="row mb-3">
-                <label for="kodetransaksi" class="col-sm-2 col-form-label">Totoal Harga Sewa</label>
+                <label for="kodetransaksi" class="col-sm-2 col-form-label">Total Harga Sewa</label>
                 <div class="col-sm-10">
                   <input type="text" class="form-control" id="kodetransaksi" readonly value="Rp 3.000.000" name="totalharga">
                 </div>
