@@ -1,6 +1,6 @@
 <?php
 
-define('base_url', 'http://localhost/kuliah/tugas-besar-RPL/admin/public');
+define('base_url', 'http://localhost/tugas-besar-RPL/admin/public');
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
