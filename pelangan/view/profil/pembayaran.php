@@ -153,7 +153,7 @@ else
       <div class="card-body">
         <h5 class="card-title">Kirim Konfirmasi Pembayaran Anda dengan mengisi form dibawah ini</h5>
         <p class="card-text">FORM KONFIRMASI PEMBAYARAN</p>
-        <form name="konfirmasi" action="../profil/traskrip.php" method="post">
+        <form name="konfirmasi" action="../profil/traskrip.php?id_mobil=<?= $dataMobil['id_mobil']; ?>" method="post">
           <div class="row mb-3">
             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
@@ -193,14 +193,14 @@ else
           <div class="row mb-3">
             <label for="kodetransaksi" class="col-sm-2 col-form-label">Jenis Pembayaran</label>
             <div class="col-sm-10">
-              <select class="form-select" aria-label="Default select example">
+              <select class="form-select" aria-label="Default select example" name="metodebayar">
                 <option selected>Jenis Pembayaran</option>
                 <option value="Cash">Cash</option>
                 <option value="Transfer">Transfer</option>
               </select>
             </div>
           </div>
-          <input type="submit" name="simpan" value="Konfirmasi Pembayaran" class="btn btn-secondary" role="button">
+          <input type="submit" name="simpan2" value="Konfirmasi Pembayaran" class="btn btn-secondary" role="button">
         </form>
       </div>
     </div>
