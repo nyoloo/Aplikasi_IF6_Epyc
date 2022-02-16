@@ -31,7 +31,7 @@
           </li>
            <li class="nav-item">
             <a href="<?= base_url; ?>/transaksi" class="nav-link">
-              <i class="nav-icon fas fa-gamepad"></i>
+              <i class="nav-icon fas fa-book"></i>
               <p>
                 Transaksi
               </p>
