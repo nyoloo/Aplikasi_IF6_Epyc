@@ -121,7 +121,7 @@ header("Location:../login/login.php?error=4");
                                               echo $password ?></h6>
                                         </div>
                                     </div>
-                                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
+                                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
                                         <a class="btn btn-primary btn-sm" href="profil/setting_profil.php" role="button">Edit Profil</a>
                                       </div>
                                 </div>
@@ -133,8 +133,7 @@ header("Location:../login/login.php?error=4");
     </div>
   </center>
   
-<!-- Modal -->
-<div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-body">

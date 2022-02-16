@@ -20,44 +20,17 @@
     <link rel="stylesheet" href="../../style.css">
 
     
-    <title>White Rent Car</title>
+    <title>Setting Profil</title>
   </head>
   <body style="background-color: #F7F6F2 ;">
-  <header class="header">
-
-<a href="#" class="logo">
-    <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
-</a>
-
-<nav class="navbar">
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active " href="../home.php"><i class="fa fa-home"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../about.php">Tentang Kami</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link"  href="../mobil.php">Jenis Dan Harga Mobil</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="../contacts.php">Kontak</a>
-        </li>
-      </ul>
-      
+  <nav class="navbar navbar-dar " style="background-color: #C8C6C6;">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="" width="30" height="24">
+    </a>
+  </div>
 </nav>
-<div class="icons">
-      <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../view/profil.php">profil</a></li>
-            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
-          </ul>
-      <div class="fas fa-bars" id="menu-btn"></div>
-</header>
-<br>
-<br>
-<br>
+
 <br>
 <main class="container d-flex justify-content-center align-items-center">
     <div class="card " style="width: 30rem;">

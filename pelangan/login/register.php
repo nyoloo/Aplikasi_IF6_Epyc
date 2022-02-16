@@ -48,7 +48,7 @@
                                 </tr>
                                 <tr>
                                     <td align="right">
-                                    <input type="submit" name="signup" id="signup" class="form-submit btn-btn" value="Register" >
+                                    <input type="submit" name="signup" id="signup" class="form-submit btn btn-primary" value="Register" >
                                     </td>
                                 </tr>
                                 <tr>
