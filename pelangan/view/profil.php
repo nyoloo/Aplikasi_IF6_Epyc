@@ -61,46 +61,52 @@ header("Location:../login/login.php?error=4");
   <br>
   <br>
   <br>
-
-<center>
-    <div class="page-content page-container" id="page-content">
-        <div class="padding">
-            <div class="row container d-flex justify-content-center">
-                <div class="col-xl-6 col-md-12">
-                    <div class="card user-card-full">
-                                <div class="card-block">
-                                    <h6 class="m-b-20 p-b-5 b-b-default f-w-600">Profil</h6>
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Nama Customer</p>
-                                            <h6 class="text-muted f-w-400" name="namacustomer">
-                                              <?php
-                                              $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
-                                              $data=mysqli_fetch_array($query);
-                                              $namacustomer=$data['namacustomer'];
-                                              echo $namacustomer?></h6>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Alamat</p>
-                                            <h6 class="text-muted f-w-400" name="alamat">
-                                              <?php
-                                              $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select alamat as alamat from customer where id_customer='$idcustomer'");
-                                              $data=mysqli_fetch_array($query);
-                                              $alamat=$data['alamat'];
-                                              echo $alamat?></h6>
-                                        </div>
-                                        <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">No Telp</p>
-                                            <h6 class="text-muted f-w-400" name="notelp">
-                                              <?php
-                                              $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select no_telp as notelp from customer where id_customer='$idcustomer'");
-                                              $data=mysqli_fetch_array($query);
-                                              $notelp=$data['notelp'];
-                                              echo $notelp?></h6>
-                                        </div>
+  <main class="container d-flex justify-content-center align-items-center">
+    <div class="card">
+      <h5 class="card-header"><center>Profil</center></h5>
+        <div class="card-body">
+        <center>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Nama Customer</p>
+                <h6 class="text-muted f-w-400" name="namacustomer">
+                  <?php
+                    $idcustomer=$_SESSION["id_customer"];
+                    $query=mysqli_query($db,"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
+                    $data=mysqli_fetch_array($query);
+                    $namacustomer=$data['namacustomer'];
+                    echo $namacustomer
+                  ?>
+                </h6>
+            </div>
+            <div class="col-sm-6">
+              <p class="m-b-10 f-w-600">Alamat</p>
+                  <h6 class="text-muted f-w-400" name="alamat">
+                    <?php
+                      $idcustomer=$_SESSION["id_customer"];
+                      $query=mysqli_query($db,"select alamat as alamat from customer where id_customer='$idcustomer'");
+                      $data=mysqli_fetch_array($query);
+                      $alamat=$data['alamat'];
+                      echo $alamat
+                    ?>
+                  </h6>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="col-sm-6">
+              <p class="m-b-10 f-w-600">No Telp</p>
+              <h6 class="text-muted f-w-400" name="notelp">                             
+              <?php
+                $idcustomer=$_SESSION["id_customer"];
+                $query=mysqli_query($db,"select no_telp as notelp from customer where id_customer='$idcustomer'");
+                $data=mysqli_fetch_array($query);
+                $notelp=$data['notelp'];
+                echo $notelp
+              ?>
+            </h6>
+          </div>
                                         <div class="col-sm-6">
                                             <p class="m-b-10 f-w-600">Username</p>
                                             <h6 class="text-muted f-w-400" name="username">
@@ -111,7 +117,11 @@ header("Location:../login/login.php?error=4");
                                               $username=$data['username'];
                                               echo $username?></h6>
                                         </div>
-                                        <div class="col-sm-6">
+                                        
+                                    </div>
+                                    <br>
+                                    <div class="row justify-content-center">
+                                    <div class="col-sm-6">
                                             <p class="m-b-10 f-w-600">Password</p>
                                             <h6 class="text-muted f-w-400" name="password"><?php
                                               $idcustomer=$_SESSION["id_customer"];
@@ -121,17 +131,22 @@ header("Location:../login/login.php?error=4");
                                               echo $password ?></h6>
                                         </div>
                                     </div>
-                                    <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                                        <a class="btn btn-primary btn-sm" href="profil/setting_profil.php" role="button">Edit Profil</a>
-                                      </div>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-  </center>
+                                    
+
+                                                              
+
+        </center>
+                                    
+                                    
+</div>
+<div class="card-footer text-muted">
+<div class="d-grid gap-2 col-6 mx-auto">
+                                    <a class="btn btn-primary btn-sm" href="profil/setting_profil.php" role="button">Edit Profil</a>
+</div>
+  </div>
+  </div>
+</div>
+  
   
   <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">

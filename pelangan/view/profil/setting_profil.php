@@ -34,6 +34,7 @@
 <br>
 <main class="container d-flex justify-content-center align-items-center">
     <div class="card " style="width: 30rem;">
+
         <div class="card-body">
             <form name="editprofil"  action="simpanprofil.php" method="post">
                 <div class="mb-3">
