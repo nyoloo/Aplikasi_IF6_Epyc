@@ -9,6 +9,10 @@ if (!isset($_SESSION["username"]))
 ?>
 <?php
 if (isset($_POST['simpan1'])) {
+  $id_mobil = $_GET['id_mobil'];
+
+  $dataMobil = query("SELECT * FROM mobil WHERE id_mobil='$id_mobil'")[0];
+
   $tglminjam  = $db->escape_string($_POST["tanggalminjam"]);
   $tglkembali  = $db->escape_string($_POST["tanggalkembali"]);
   $tujuan  = $db->escape_string($_POST["tujuan"]);
@@ -149,41 +153,41 @@ else
       <div class="card-body">
         <h5 class="card-title">Kirim Konfirmasi Pembayaran Anda dengan mengisi form dibawah ini</h5>
         <p class="card-text">FORM KONFIRMASI PEMBAYARAN</p>
-        <form name="pembayaran" action="../profil/traskrip.php" method="post">
+        <form name="konfirmasi" action="../profil/traskrip.php" method="post">
           <div class="row mb-3">
             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nama">
+              <input type="text" class="form-control" id="nama" name="nama" value="<?= $_SESSION['nama_customer']?>">
             </div>
           </div>
           <div class="row mb-3">
-            <label for="inputEmail3" class="col-sm-2 col-form-label">No telpon</label>
+            <label for="notelp" class="col-sm-2 col-form-label">No telpon</label>
             <div class="col-sm-10">
-              <input type="no_telpon" class="form-control" id="inputEmail3" name="notelp">
+              <input type="no_telpon" class="form-control" id="notelp" name="notelp" value="<?= $_SESSION['no_telp']?>">
             </div>
           </div>
           <div class="row mb-3">
-            <label for="kodetransaksi" class="col-sm-2 col-form-label">Tanggal Meminjam</label>
+            <label for="tanggalminjam" class="col-sm-2 col-form-label">Tanggal Meminjam</label>
             <div class="col-sm-10">
-              <input type="date" class="form-control" name="tanggalbayar" value="tglbayar">
+              <input type="date" class="form-control" name="tanggalminjam" value="<?= $_POST['tanggalminjam']?>" readonly>
             </div>
           </div>
           <div class="row mb-3">
-            <label for="kodetransaksi" class="col-sm-2 col-form-label">Nama mobil</label>
+            <label for="namamobil" class="col-sm-2 col-form-label">Nama mobil</label>
             <div class="col-sm-10">
-              <input type="text" readonly class="form-control-plaintext" id="namamobil" value=": Toyota Supra">
+              <input type="text" readonly class="form-control-plaintext" id="namamobil" name="namamobil" value="<?= $dataMobil['nama_mobil']?>">
             </div>
           </div>
           <div class="row mb-3">
-            <label for="kodetransaksi" class="col-sm-2 col-form-label">Plat Nomer</label>
+            <label for="platnomor" class="col-sm-2 col-form-label">Plat Nomer</label>
             <div class="col-sm-10">
-              <input type="transaksi" class="form-control" id="kodetransaksi" readonly value="D 1002 AAT" name="kodetransaksi">
+              <input type="text" class="form-control" id="platnomor" readonly value="<?= $_POST['platnomor']?>" name="platnomor">
             </div>
           </div>
           <div class="row mb-3">
-            <label for="kodetransaksi" class="col-sm-2 col-form-label">Total Harga Sewa</label>
+            <label for="totalhargasewa" class="col-sm-2 col-form-label">Total Harga Sewa</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="kodetransaksi" readonly value="Rp 3.000.000" name="totalharga">
+              <input type="text" class="form-control" id="totalhargasewa" name="totalhargasewa" readonly value="<?= $_POST['totalhargasewa']?>">
             </div>
           </div>
           <div class="row mb-3">
@@ -191,9 +195,8 @@ else
             <div class="col-sm-10">
               <select class="form-select" aria-label="Default select example">
                 <option selected>Jenis Pembayaran</option>
-                <option value="1">Tunai</option>
-                <option value="2">Transfer</option>
-                <option value="3">Three</option>
+                <option value="Cash">Cash</option>
+                <option value="Transfer">Transfer</option>
               </select>
             </div>
           </div>

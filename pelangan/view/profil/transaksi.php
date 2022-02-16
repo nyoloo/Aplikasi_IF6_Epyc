@@ -62,13 +62,13 @@ error_reporting (0);
 <br>
 <main class="container d-flex justify-content-center align-items-center">
 
-<form name="pembayaran" action="pembayaran.php" method="post">
+<form name="pembayaran" action="pembayaran.php?id_mobil=<?= $dataMobil['id_mobil']; ?>" method="post">
 <div class="card " style="max-width: 800px;">
     <div class="row g-0">
       <div class="col-md-12">
         <div class="card-body">
           <div class="row g-3 align-items-center">
-            <h5 class="card-title"><?= $dataMobil['nama_mobil']; ?></h5>
+            <h5 class="card-title"><?= $dataMobil['nama_mobil']?></h5>
             <div class="row mb-3">
               <label for="inputEmail3" class="col-sm-2 col-form-label">Tanggal Minjam</label>
               <div class="col-sm-10">
@@ -87,8 +87,8 @@ error_reporting (0);
                 <input type="text" readonly class="form-control-plaintext" id="hargasewa" value="<?= "Rp".number_format($dataMobil['harga_sewa'],0,",","."); ?>">
                 
                 <button name="cekharga" id="cekharga" href="" onclick="document.pembayaran.action = ''; 
-                document.pembayaran.method='post'; document.form_cek.submit(); 
-                return false;">Cek Harga</button>
+                document.pembayaran.method='post'; document.pembayaran.submit(); 
+                return true;">Cek Harga</button>
                 
                 <?php
                 $diff2 = 0;
@@ -106,16 +106,16 @@ error_reporting (0);
               </div>  
             </div>
             <div class="mb-3 row">
-              <label for="hargasewa" class="col-sm-2 col-form-label"></label>
-              <label for="">Harga Sewa :</label>
+              <label for="totalhargasewa" class="col-sm-2 col-form-label"></label>
+              <label for=""> Total Harga Sewa :</label>
               <div class="col-sm-10">
-                <label for=""><?= "Rp".number_format($diff2,0,",","."); ?></label>
+                <input type="text" readonly class="form-control-plaintext" id="totalhargasewa" name="totalhargasewa" value="<?= "Rp".number_format($diff2,0,",","."); ?>">
                 </div>
             </div>
             <div class="mb-3 row">
-              <label for="hargasewa" class="col-sm-2 col-form-label">Plat Nomer</label>
+              <label for="platnomor" class="col-sm-2 col-form-label">Plat Nomer</label>
               <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="hargasewa" value="<?= $dataMobil['plat_mobil']; ?>">
+                <input type="text" readonly class="form-control-plaintext" id="platnomor" name ="platnomor" value="<?= $dataMobil['plat_mobil']; ?>">
                 <label for="tujuan">Tujuan :</label>
                 <input type="text" name="tujuan" id="tujuan">
 
