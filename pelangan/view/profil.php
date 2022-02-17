@@ -3,7 +3,7 @@
 ?>
 <?php
 session_start();
-$db=dbconnect();
+$db=new database();
 if (!isset($_SESSION["username"]))
 header("Location:../login/login.php?error=4");
 ?>
@@ -72,7 +72,7 @@ header("Location:../login/login.php?error=4");
                 <h6 class="text-muted f-w-400" name="namacustomer">
                   <?php
                     $idcustomer=$_SESSION["id_customer"];
-                    $query=mysqli_query($db,"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
+                    $query=mysqli_query($db->__construct(),"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
                     $data=mysqli_fetch_array($query);
                     $namacustomer=$data['namacustomer'];
                     echo $namacustomer
@@ -84,7 +84,7 @@ header("Location:../login/login.php?error=4");
                   <h6 class="text-muted f-w-400" name="alamat">
                     <?php
                       $idcustomer=$_SESSION["id_customer"];
-                      $query=mysqli_query($db,"select alamat as alamat from customer where id_customer='$idcustomer'");
+                      $query=mysqli_query($db->__construct(),"select alamat as alamat from customer where id_customer='$idcustomer'");
                       $data=mysqli_fetch_array($query);
                       $alamat=$data['alamat'];
                       echo $alamat
@@ -100,7 +100,7 @@ header("Location:../login/login.php?error=4");
                 <h6 class="text-muted f-w-400" name="notelp">                             
                 <?php
                   $idcustomer=$_SESSION["id_customer"];
-                  $query=mysqli_query($db,"select no_telp as notelp from customer where id_customer='$idcustomer'");
+                  $query=mysqli_query($db->__construct(),"select no_telp as notelp from customer where id_customer='$idcustomer'");
                   $data=mysqli_fetch_array($query);
                   $notelp=$data['notelp'];
                   echo $notelp
@@ -112,7 +112,7 @@ header("Location:../login/login.php?error=4");
               <h6 class="text-muted f-w-400" name="username">
               <?php
                 $idcustomer=$_SESSION["id_customer"];
-                $query=mysqli_query($db,"select username as username from customer where id_customer='$idcustomer'");
+                $query=mysqli_query($db->__construct(),"select username as username from customer where id_customer='$idcustomer'");
                 $data=mysqli_fetch_array($query);
                 $username=$data['username'];
                 echo $username
@@ -127,7 +127,7 @@ header("Location:../login/login.php?error=4");
               <h6 class="text-muted f-w-400" name="password">
               <?php
                 $idcustomer=$_SESSION["id_customer"];
-                $query=mysqli_query($db,"select password as password from customer where id_customer='$idcustomer'");
+                $query=mysqli_query($db->__construct(),"select password as password from customer where id_customer='$idcustomer'");
                 $data=mysqli_fetch_array($query);
                 $password=$data['password'];
                 echo $password 
