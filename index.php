@@ -15,12 +15,11 @@
 
     <title>White Rent Car</title>
   </head>
-  
   <body>
 <header class="header">
 
     <a href="#" class="logo">
-        <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
+        <img src="https://cdn.discordapp.com/attachments/899880655465357315/943887196681822278/Frame_1_2.png" alt="">
     </a>
 
     <nav class="navbar">
@@ -51,7 +50,7 @@
 <br>
 <br>
 <section class="jumbotron text-center">
-  <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="" width="200" class="rounded-circle">
+  <img src="https://cdn.discordapp.com/attachments/899880655465357315/943884856235028571/Group_3.png" alt="" width="200" class="rounded-circle">
   <h1 class="display-4">White Rent Car</h1>
 </section>
 <br>

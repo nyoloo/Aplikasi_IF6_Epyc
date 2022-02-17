@@ -26,7 +26,7 @@
   <header class="header">
 
     <a href="#" class="logo">
-      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
+      <img src="https://cdn.discordapp.com/attachments/899880655465357315/943887196681822278/Frame_1_2.png" alt="">
     </a>
 
     <nav class="navbar">
@@ -97,7 +97,6 @@
                                               $data=mysqli_fetch_array($query);
                                               $username=$data['username'];
                                               echo $username?>">
-                   
                   </div>
                 </div>
                 <div class="mb-3">
@@ -111,7 +110,7 @@
                   
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
-                  <a href=""></a>
+                  <a href="../profil.php" class="btn btn-danger">Kembali</a>
                   <input type="submit" name="simpan" value="Simpan" class="btn btn-success" ></div>
               </form>
         </div>
