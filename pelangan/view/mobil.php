@@ -1,5 +1,5 @@
 <?php
-    include_once("../function.php");
+    include_once("../../function.php");
     $halaman = 6; //batasan halaman
     $db=dbconnect();
 	  $page = isset($_GET['halaman'])? (int)$_GET["halaman"]:1;

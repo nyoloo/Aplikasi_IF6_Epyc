@@ -1,72 +1,63 @@
-<?php
-	include_once("../function.php");
-?>
-<!DOCTYPE html>
+<?php include_once("../../function.php"); ?>
+
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Delichip Cake Store</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body class="bg-white">
+  <head>
+  	<title>White Rent Car | Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div class="container">
-        <center>
-            <img src="https://cdn.discordapp.com/attachments/859080381517266944/865996965488754728/WhatsApp_Image_2021-07-03_at_12.23.31.jpeg" style="width: 10rem;" class="mt-5">
-            <h1>White Rent Car</h1>
-            <div class="card mt-4  shadow p-3 mb-5 bg-white rounded" style="width: 45%;">
-                <div class=" card-body">         
-                    <div class="mt-3">
-                    <form name="regisform" action="registrasi_simpan.php" method="post">
-                            <table class="table table-borderless">
-                                <tr>
-                                    <td>
-                                    <input type="text" name="nama_customer" id="nama_customer" class="form-control" placeholder="Masukkan Nama Anda"required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                    <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Masukkan Alamat Anda"required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                    <input type="text" name="no_telepon" id="no_telepon" class="form-control" placeholder="Masukkan No Telepon Anda"required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                    <input type="text" name="username" id="username" class="form-control" placeholder="Masukkan Username Anda"required>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                    <input type="password" name="password" id="password" class="form-control" placeholder="Masukkan Password Anda"required >
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td align="right">
-                                    <input type="submit" name="signup" id="signup" class="form-submit btn btn-primary" value="Register" >
-                                    </td>
-                                </tr>
-                                <tr>
-                                </tr>
-                                <div class="form-group">
-                                <a href="login.php" class="signup-image-link">Sudah Punya Akun ?</a>
-                            </div>
-                            </table>
-                        </form>
-                    </div>
-                    </div>
-        </center>
-                </div>
-            </div>
-        </section>
-    </div>
-<script src="vendor/jquery/jquery.min.js"></script>
-<script src="js/main.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
 
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body class="img js-fullheight" style="background-image: url(images/mobil.jpg);">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Resgiter </h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+					<form name="regisform" action="registrasi_simpan.php" method="post">
+                    <div class="form-group">
+                    <input type="text" name="nama_customer" id="nama_customer" class="form-control" placeholder="Masukkan Nama Anda"required>
+		      		</div>
+                      <div class="form-group">
+                      <input type="text" name="alamat" id="alamat" class="form-control" placeholder="Masukkan Alamat Anda"required>
+		      		</div>
+                      <div class="form-group">
+                      <input type="text" name="no_telepon" id="no_telepon" class="form-control" placeholder="Masukkan No Telepon Anda"required>
+		      		</div>
+		      		<div class="form-group">
+                      <input type="text" name="username" id="username" class="form-control" placeholder="Masukkan Username Anda"required>
+		      		</div>
+	            <div class="form-group">
+					<input type="password" name="password" id="password" class="form-control" placeholder="Masukkan Password Anda"required >
+	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+	            </div>
+	            <div class="form-group">
+                    <input type="submit" name="signup" id="signup"  class="form-control btn btn-primary submit px-3" value="Register" >
+	            </div>
+	          </form>
+	          
+		      </div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+
+	</body>
 </html>
+

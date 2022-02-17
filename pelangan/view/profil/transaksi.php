@@ -1,5 +1,5 @@
 <?php
-include_once("../../function.php");
+include_once("../../../function.php");
 
 $id_mobil = $_GET['id_mobil'];
 

@@ -1,5 +1,5 @@
 <?php
-    include_once("function.php");
+    include_once("../function.php");
     $halaman = 6; //batasan halaman
     $db=dbconnect();
 	  $page = isset($_GET['halaman'])? (int)$_GET["halaman"]:1;
@@ -35,7 +35,7 @@
     <nav class="navbar">
         <ul class="nav justify-content-center">
             <li class="nav-item">
-              <a class="nav-link active " href="index.php"><i class="fa fa-home"></i></a>
+              <a class="nav-link active " href="../index.php"><i class="fa fa-home"></i></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.php">Tentang Kami</a>

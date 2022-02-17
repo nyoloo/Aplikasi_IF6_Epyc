@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="pelangan/style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
@@ -29,10 +29,10 @@
               <a class="nav-link active " href="index.php"><i class="fa fa-home"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.php">Tentang Kami</a>
+              <a class="nav-link" href="pelangan/about.php">Tentang Kami</a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" href="mobil.php">Jenis Dan Harga Mobil</a>
+            <a class="nav-link" href="pelangan/mobil.php">Jenis Dan Harga Mobil</a>
             </li>
             <li class="nav-item">
             <a class="nav-link"data-bs-toggle="modal" data-bs-target="#modal" href="#">Kontak</a>
@@ -44,7 +44,7 @@
       <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="login/login.php">Login</a></li>
+            <li><a class="dropdown-item" href="pelangan/login/login.php">Login</a></li>
           </ul>
       <div class="fas fa-bars" id="menu-btn"></div>
   </header>
@@ -106,33 +106,33 @@
     <div class="row">
     <div class="col-md-4 mb-3">
         <div class="card" style="width: 18rem;">
-          <img src="../asset/toyota supra.jpg" class="card-img-top" alt="...">
+          <img src="asset/toyota supra.jpg" class="card-img-top" alt="...">
         </div>
       </div>
       <div class="col-md-4 mb-3">
         <div class="card" style="width: 18rem;">
-          <img src="../asset/toyota 86.jpg" class="card-img-top" alt="...">
+          <img src="asset/toyota 86.jpg" class="card-img-top" alt="...">
         </div>
       </div>
       <div class="col-md-4 mb-3">
         <div class="card" style="width: 18rem;">
-          <img src="../asset/toyota-land-cruiser-300-series.jpeg" class="card-img-top" alt="...">
+          <img src="asset/toyota-land-cruiser-300-series.jpeg" class="card-img-top" alt="...">
         </div>
       </div>
       <div class="col-md-4 mb-3">
         <div class="card" style="width: 18rem;">
-          <img src="../asset/toyota-rush1.jpg" class="card-img-top" alt="...">
+          <img src="asset/toyota-rush1.jpg" class="card-img-top" alt="...">
         </div>
       </div>
       <br>
       <div class="col-md-4 mb-3">
         <div class="card" style="width: 18rem;">
-          <img src="../asset/new-toyota-raize-2020.jpg" class="card-img-top" alt="...">
+          <img src="asset/new-toyota-raize-2020.jpg" class="card-img-top" alt="...">
         </div>
       </div>
       <div class="col-md-4 mb-3">
         <div class="card" style="width: 18rem;">
-          <img src="../asset/CHR Hybrid.jpg" class="card-img-top" alt="...">
+          <img src="asset/CHR Hybrid.jpg" class="card-img-top" alt="...">
         </div>
       </div>
     </div>
@@ -147,7 +147,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="login/login.php" class="btn btn-primary">Login</a>
+                  <a href="pelangan/login/login.php" class="btn btn-primary">Login</a>
                 </div>
               </div>
             </div>
@@ -155,6 +155,6 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="pelangan/script.js"></script>
   </body>
 </html>

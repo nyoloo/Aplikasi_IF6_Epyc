@@ -1,4 +1,4 @@
-<?php include_once ("../function.php");
+<?php include_once ("../../function.php");
 
 $db = dbconnect();
 if ($db->connect_errno == 0) {
