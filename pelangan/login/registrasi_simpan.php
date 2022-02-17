@@ -16,18 +16,18 @@ include_once ("../../function.php");
 
 <?php
 if (isset($_POST["signup"])) {
-$db = dbconnect();
-if ($db->connect_errno == 0) {
+$db = new database();
+if ($db->__construct()->connect_errno == 0) {
 	
 	$email = $emailErr = "";
 
-$nama_customer = $db->escape_string($_POST["nama_customer"]);
-$alamat = $db->escape_string($_POST["alamat"]);
-$notelp = $db->escape_string($_POST["no_telepon"]);
-$username = $db->escape_string($_POST["username"]);
-$password = $db->escape_string($_POST["password"]);
+$nama_customer = $db->__construct()->escape_string($_POST["nama_customer"]);
+$alamat = $db->__construct()->escape_string($_POST["alamat"]);
+$notelp = $db->__construct()->escape_string($_POST["no_telepon"]);
+$username = $db->__construct()->escape_string($_POST["username"]);
+$password = $db->__construct()->escape_string($_POST["password"]);
 
-$query=mysqli_query($db,"SELECT max(id_customer) as idcustomer from customer");
+$query=mysqli_query($db->__construct(),"SELECT max(id_customer) as idcustomer from customer");
 $data=mysqli_fetch_array($query);
 $no_pelanggan=$data['idcustomer'];
 $no_pelanggan1 = substr($no_pelanggan, 1, 3);
@@ -45,9 +45,9 @@ $tambah=(int)$no_pelanggan1 + 1;
 $sql = "INSERT INTO customer (id_customer,nama_customer,alamat,no_telp,username, password)
 VALUES('$customerupdate', '$nama_customer','$alamat','$notelp','$username','$password')";
 
-$res = $db->query($sql);
+$res = $db->__construct()->query($sql);
 if ($res) {
-if ($db->affected_rows > 0) {
+if ($db->__construct()->affected_rows > 0) {
 ?>
 <br>
 <br>
@@ -80,7 +80,7 @@ else {
 <?php
 }
 } else
-echo "<p> koneksi" . ( " : " . $db->connect_error  ) . "<br></p>";
+echo "<p> koneksi" . ( " : " . $db->__construct()->connect_error  ) . "<br></p>";
 }
 ?>
 

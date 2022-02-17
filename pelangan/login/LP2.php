@@ -34,10 +34,10 @@ include_once ("../../function.php");
 
 //error_reporting(0);
 if(isset($_POST["kirim"])){
-	$db=dbConnect();
-	if($db->connect_errno==0){
+	$db=new database();
+	if($db->__construct()->connect_errno==0){
 		// Bersihkan data
-		$username		=$db->escape_string($_POST["username"]);
+		$username		=$db->__construct()->escape_string($_POST["username"]);
 
 		$datacustomer=getDataCustomer($username);
         if($datacustomer)
