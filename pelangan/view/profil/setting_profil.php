@@ -61,20 +61,18 @@
 <br>
 <main class="container d-flex justify-content-center align-items-center">
     <div class="card " style="width: 30rem;">
-
-        <div class="card-body">
-            <form name="editprofil"  action="simpanprofil.php" method="post">
-                <div class="mb-3">
-                    <label for="namacustomer" class="form-label">Nama Customer</label>
-                    <input type="text" name="namacustomer" id="txt_nama_customer" class="form-control"  placeholder="<?php
-                                              $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
-                                              $data=mysqli_fetch_array($query);
-                                              $namacustomer=$data['namacustomer'];
-                                              echo $namacustomer?>">
-                   
-                  </div>
-                  <div class="mb-3">
+      <div class="card-body">
+          <form name="editprofil"  action="simpanprofil.php" method="post">
+            <div class="mb-3">
+              <label for="namacustomer" class="form-label">Nama Customer</label>
+              <input type="text" name="namacustomer" id="txt_nama_customer" class="form-control"  placeholder="<?php 
+              $idcustomer=$_SESSION["id_customer"];
+              $query=mysqli_query($db,"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
+              $data=mysqli_fetch_array($query);
+              $namacustomer=$data['namacustomer'];
+              echo $namacustomer?>">
+            </div>
+            <div class="mb-3">
                     <label for="alamat" class="form-label">Alamat</label>
                     <input type="text" name="alamat" id="txt_alamat" class="form-control"  placeholder="<?php
                                               $idcustomer=$_SESSION["id_customer"];
@@ -82,8 +80,7 @@
                                               $data=mysqli_fetch_array($query);
                                               $alamat=$data['alamat'];
                                               echo $alamat?>">
-                   
-                  </div>
+            </div>
                 <div class="mb-3">
                   <label for="notelepon" class="form-label">No Telepon</label>
                   <input type="text" name="notelp" id="txt_notelp" class="form-control" placeholder="<?php

@@ -28,10 +28,13 @@
   <div class="card">
     <div class="card-body login-card-body">
       <p class="login-box-msg">Silahkan login terlebih dahulu.</p>
-
+      <center>
+      <a href="http://localhost/tugas-besar-RPL/pelangan/login/login.php" class="term-service">Login Sebagai User</a>
+      </center>
+      
       <form action="<?= base_url; ?>/login/prosesLogin" method="post">
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="ketikkan username.." name="username">
+          <input type="text" class="form-control" placeholder="ketikkan username.." name="username" require>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-user"></span>
@@ -39,7 +42,7 @@
           </div>
         </div>
         <div class="input-group mb-3">
-          <input type="password" class="form-control" placeholder="ketikkan password.." name="password">
+          <input type="password" class="form-control" placeholder="ketikkan password.." name="password" require>
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-lock"></span>

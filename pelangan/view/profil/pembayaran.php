@@ -145,7 +145,7 @@ else
       <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
       </a>
       <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <li><a class="dropdown-item" href="../view/profil.php">profil</a></li>
+        <li><a class="dropdown-item" href="../profil.php">profil</a></li>
         <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
       </ul>
       <div class="fas fa-bars" id="menu-btn"></div>
@@ -227,7 +227,7 @@ else
             <div class="modal-footer">
               <div class="modal-body">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">TIDAK</button>
-                <a class="btn btn-primary" href="../login/logot.php" role="button">YA</a>
+                <a class="btn btn-primary" href="../../login/logot.php" role="button">YA</a>
               </div>
 
             </div>
