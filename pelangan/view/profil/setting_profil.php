@@ -3,7 +3,7 @@
 ?>
 <?php
               session_start();
-              $db=dbconnect();
+              $db=new database();
               if (!isset($_SESSION["username"]))
                 header("Location: ../login/login.php?error=4");
               ?>
@@ -67,7 +67,7 @@
               <label for="namacustomer" class="form-label">Nama Customer</label>
               <input type="text" name="namacustomer" id="txt_nama_customer" class="form-control"  placeholder="<?php 
               $idcustomer=$_SESSION["id_customer"];
-              $query=mysqli_query($db,"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
+              $query=mysqli_query($db->__construct(),"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
               $data=mysqli_fetch_array($query);
               $namacustomer=$data['namacustomer'];
               echo $namacustomer?>">
@@ -76,7 +76,7 @@
                     <label for="alamat" class="form-label">Alamat</label>
                     <input type="text" name="alamat" id="txt_alamat" class="form-control"  placeholder="<?php
                                               $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select alamat as alamat from customer where id_customer='$idcustomer'");
+                                              $query=mysqli_query($db->__construct(),"select alamat as alamat from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
                                               $alamat=$data['alamat'];
                                               echo $alamat?>">
@@ -85,7 +85,7 @@
                   <label for="notelepon" class="form-label">No Telepon</label>
                   <input type="text" name="notelp" id="txt_notelp" class="form-control" placeholder="<?php
                                               $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select no_telp as notelp from customer where id_customer='$idcustomer'");
+                                              $query=mysqli_query($db->__construct(),"select no_telp as notelp from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
                                               $notelp=$data['notelp'];
                                               echo $notelp?>">
@@ -93,7 +93,7 @@
                     <label for="displayname" class="form-label">Username</label>
                     <input type="text" name="username" id="txt_username" class="form-control"  placeholder="<?php
                                               $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select username as username from customer where id_customer='$idcustomer'");
+                                              $query=mysqli_query($db->__construct(),"select username as username from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
                                               $username=$data['username'];
                                               echo $username?>">
@@ -104,7 +104,7 @@
                   <label for="exampleInputPassword1" class="form-label">Password</label>
                   <input type="password" name="password" id="txt_password" class="form-control"  placeholder="<?php
                                               $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select password as password from customer where id_customer='$idcustomer'");
+                                              $query=mysqli_query($db->__construct(),"select password as password from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
                                               $password=$data['password'];
                                               echo $password ?>">

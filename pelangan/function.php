@@ -1,8 +1,20 @@
 <?php
 
-function dbconnect(){
-	$db = new mysqli("localhost:3306","root","","db10119213penyewaanmobil");
+class database{
+	public $localhost = "localhost:3306";
+	public $user = "root";
+	public $password = "";
+	public $database= "db10119213penyewaanmobil";
+
+// function dbconnect(){
+// 	$db = new mysqli($localhost,$user,$password,$database);
+// 	return $db;
+// }
+
+function __construct(){
+	$db = new mysqli($this->localhost,$this->user,$this->password,$this->database);
 	return $db;
+}
 }
 function showpopup(){
 	?>
@@ -12,19 +24,7 @@ function showpopup(){
 	
 	<?php
 }
-function getkuekustom(){
-		$db = dbconnect(); 
-		if($db->connect_errno == 0){
-			$res=$db->query("select * from kue_custom order by kode_kue_custom");
-			if($res){
-				$data = $res->fetch_all(MYSQLI_ASSOC);
-				$res->free();
-				return $data;
-			}else
-				return False;
-		}else
-			return false;
-	}
+
 	function showError($message){
 	echo $message;
 	}
@@ -49,27 +49,6 @@ function getDataCustomer($username){
 			return FALSE;
 	}
 
-function getPassword($password){
-		$db=dbConnect();
-		if($db->connect_errno==0){
-			$res=$db->query("SELECT * from pelanggan where password='$password'");
-			if($res){
-				if($res->num_rows>0){
-					$data=$res->fetch_assoc();
-					$res->free();
-					return $data;
-				}
-				else
-					return FALSE;
-			}
-			else
-				return FALSE; 
-		}
-		else
-			return FALSE;
-	}
-
-
 
 $conn = mysqli_connect("localhost:3306","root","","db10119213penyewaanmobil");
 
@@ -82,4 +61,5 @@ function query($query) {
     }
     return $rows;
 }
+
 ?>

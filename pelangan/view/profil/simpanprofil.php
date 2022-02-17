@@ -21,22 +21,22 @@
   <body>
   <?php
 if(isset($_POST["simpan"])){
-	$db=dbConnect();
-	if($db->connect_errno==0){
+	$db=new database();
+	if($db->__construct()->connect_errno==0){
 		// Bersihkan data
-		$namacustomer  =$db->escape_string($_POST["namacustomer"]);
-		$alamat  =$db->escape_string($_POST["alamat"]);
-		$notelp  =$db->escape_string($_POST["notelp"]);
-		$username  =$db->escape_string($_POST["username"]);
-		$password =$db->escape_string($_POST["password"]);
+		$namacustomer  =$db->__construct()->escape_string($_POST["namacustomer"]);
+		$alamat  =$db->__construct()->escape_string($_POST["alamat"]);
+		$notelp  =$db->__construct()->escape_string($_POST["notelp"]);
+		$username  =$db->__construct()->escape_string($_POST["username"]);
+		$password =$db->__construct()->escape_string($_POST["password"]);
 
         $idcustomer=$_SESSION["id_customer"];
 		// Susun query insert
 		$sql="UPDATE customer SET nama_customer='$namacustomer',alamat='$alamat',no_telp='$notelp',username='$username',password='$password' WHERE id_customer='$idcustomer'";
 		// Eksekusi query insert
-		$res=$db->query($sql);
+		$res=$db->__construct()->query($sql);
 		if($res){
-			if($db->affected_rows>0){ // jika ada penambahan data
+			if($db->__construct()->affected_rows>0){ // jika ada penambahan data
 				?>
 				<br>
 				<br>

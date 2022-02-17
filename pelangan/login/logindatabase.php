@@ -1,12 +1,12 @@
 <?php include_once ("../function.php");
 
-$db = dbconnect();
-if ($db->connect_errno == 0) {
+$db = new database();
+if ($db->__construct()->connect_errno == 0) {
 	if (isset($_POST["signin"])) {
-		$username = $db->escape_string($_POST["username"]);
-		$password = $db->escape_string($_POST["password"]);
+		$username = $db->__construct()->escape_string($_POST["username"]);
+		$password = $db->__construct()->escape_string($_POST["password"]);
 		$sql = "SELECT * FROM customer WHERE username='$username' and password='$password'";
-		$res = $db->query($sql);
+		$res = $db->__construct()->query($sql);
 		if ($res) {
 			if ($res->num_rows == 1) {
 				$data = $res->fetch_assoc();

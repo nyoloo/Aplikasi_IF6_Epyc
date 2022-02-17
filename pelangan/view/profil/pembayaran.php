@@ -3,7 +3,7 @@ include_once("../../function.php");
 ?>
 <?php
 session_start();
-$db = dbconnect();
+$db = new database();
 if (!isset($_SESSION["username"]))
   header("Location: ../login/login.php?error=4");
 ?>
@@ -13,12 +13,12 @@ if (isset($_POST['simpan1'])) {
 
   $dataMobil = query("SELECT * FROM mobil WHERE id_mobil='$id_mobil'")[0];
 
-  $tglminjam  = $db->escape_string($_POST["tanggalminjam"]);
-  $tglkembali  = $db->escape_string($_POST["tanggalkembali"]);
-  $tujuan  = $db->escape_string($_POST["tujuan"]);
+  $tglminjam  = $db->__construct()->escape_string($_POST["tanggalminjam"]);
+  $tglkembali  = $db->__construct()->escape_string($_POST["tanggalkembali"]);
+  $tujuan  = $db->__construct()->escape_string($_POST["tujuan"]);
   $idcustomer  = $_SESSION["id_customer"];
 
-  $query = mysqli_query($db, "SELECT max(id_destinasi) as iddestinasi from destinasi");
+  $query = mysqli_query($db->__construct(), "SELECT max(id_destinasi) as iddestinasi from destinasi");
   $data = mysqli_fetch_array($query);
   $idestinasi = $data['iddestinasi'];
   $idestinasi1 = substr($idestinasi, 1, 3);
@@ -31,21 +31,21 @@ if (isset($_POST['simpan1'])) {
     $iddestinasiupdate = "D" . $tambah;
   }
 
-  $query = mysqli_query($db, "SELECT nama_customer as namacustomer, no_telp as notelp from customer where id_customer='$idcustomer'");
+  $query = mysqli_query($db->__construct(), "SELECT nama_customer as namacustomer, no_telp as notelp from customer where id_customer='$idcustomer'");
   $data = mysqli_fetch_array($query);
   $namacustomer = $data['namacustomer'];
   $notelp = $data['notelp'];
 
   $sql = "INSERT INTO destinasi (`id_destinasi`,`id_customer`,`tgl_sewa`,`tgl_kembali`,`tujuan`)
   VALUES ('$iddestinasiupdate','$idcustomer','$tglminjam','$tglkembali','$tujuan')";
-  $res=$db->query($sql);
+  $res=$db->__construct()->query($sql);
   if($res)
   {
 
   }
   else
   {
-    echo $db->connect_error;
+    echo $db->__construct()->connect_error;
   }
 }
 else
