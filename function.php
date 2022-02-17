@@ -1,7 +1,7 @@
 <?php
 
 class database{
-	public $localhost = "localhost:3306";
+	public $host = "localhost:3306";
 	public $user = "root";
 	public $password = "";
 	public $database= "db10119213penyewaanmobil";
@@ -12,7 +12,7 @@ class database{
 // }
 
 function __construct(){
-	$db = new mysqli($this->localhost,$this->user,$this->password,$this->database);
+	$db = new mysqli($this->host,$this->user,$this->password,$this->database);
 	return $db;
 }
 }
