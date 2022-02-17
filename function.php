@@ -15,6 +15,7 @@ function __construct(){
 	$db = new mysqli($this->host,$this->user,$this->password,$this->database);
 	return $db;
 }
+}
 
 function showpopup(){
 	?>
@@ -49,7 +50,7 @@ function getDataCustomer($username){
 			return FALSE;
 	}
 
-}
+
 $conn = mysqli_connect("localhost:3306","root","","db10119213penyewaanmobil");
 
 function query($query) {
