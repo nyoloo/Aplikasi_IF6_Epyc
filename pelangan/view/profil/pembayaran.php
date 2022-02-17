@@ -147,9 +147,11 @@ else
   </header>
   <br>
   <br>
+  <br>
+  <br>
   <main class="container d-flex justify-content-center align-items-center">
     <div class="card " style="max-width: 850px;">
-      <h5 class="card-header" style="text-align: center;">TERIMAKASI TELAH MEMESAN KUE DI TOKO KAMI</h5>
+      <h5 class="card-header" style="text-align: center;">TERIMAKASI TELAH MENYEWA MOBIL DITEMPAT KAMI</h5>
       <div class="card-body">
         <h5 class="card-title">Kirim Konfirmasi Pembayaran Anda dengan mengisi form dibawah ini</h5>
         <p class="card-text">FORM KONFIRMASI PEMBAYARAN</p>
@@ -200,12 +202,14 @@ else
               </select>
             </div>
           </div>
-          <input type="submit" name="simpan2" value="Konfirmasi Pembayaran" class="btn btn-secondary" role="button">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <input type="submit" name="simpan2" value="Konfirmasi Pembayaran" class="btn btn-primary" role="button">
+          </div>
         </form>
       </div>
     </div>
     </center>
-    <<!-- Modal -->
+    <!-- Modal -->
       <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">

@@ -23,6 +23,13 @@ error_reporting (0);
     
     <title>White Rent Car</title>
   </head>
+  <Style>
+    .container-sm{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </Style>
   <body style="background-color: #F7F6F2 ;">
   <header class="header">
 
@@ -59,10 +66,9 @@ error_reporting (0);
 <br>
 <br>
 <br>
-<br>
 <main class="container d-flex justify-content-center align-items-center">
 
-<form name="pembayaran" action="pembayaran.php?id_mobil=<?= $dataMobil['id_mobil']; ?>" method="post">
+<form class="row g-3" name="pembayaran" action="pembayaran.php?id_mobil=<?= $dataMobil['id_mobil']; ?>" method="post">
 <div class="card " style="max-width: 800px;">
     <div class="row g-0">
       <div class="col-md-12">
@@ -76,17 +82,28 @@ error_reporting (0);
                   </div>
             </div>
             <div class="row mb-3">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Tanggal Pengembalian</label>
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Tanggal Kembali</label>
               <div class="col-sm-10">
                     <input type="date" class="form-control" name="tanggalkembali" value="<?= $_POST['tanggalkembali']; ?>">
                   </div>
             </div>
+
             <div class="mb-3 row">
-              <label for="hargasewa" class="col-sm-2 col-form-label">Harga Sewa Per Hari</label>
+              <label for="platnomor" class="col-sm-2 col-form-label">Plat Nomer</label>
               <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="hargasewa" value="<?= "Rp".number_format($dataMobil['harga_sewa'],0,",","."); ?>">
-                
-                <button name="cekharga" id="cekharga" href="" onclick="document.pembayaran.action = ''; 
+                <input type="text" readonly class="form-control" id="platnomor" name ="platnomor" value=" <?= $dataMobil['plat_mobil']; ?>">
+
+              </div>
+              <br>
+              <br>
+              <br>
+            <div class="mb-3 row">
+            <label for="hargasewa" class="col-sm-2 col-form-label">Harga Sewa Per Hari</label>
+              <div class="col-auto">
+                <input type="text" readonly class="form-control" id="hargasewa" style="width: 28rem;" value=" <?= "Rp".number_format($dataMobil['harga_sewa'],0,",","."); ?>" > 
+              </div>
+              <div class="col-auto">
+              <button class="btn btn-primary " name="cekharga" id="cekharga" href="" onclick="document.pembayaran.action = ''; 
                 document.pembayaran.method='post'; document.pembayaran.submit(); 
                 return true;">Cek Harga</button>
                 
@@ -103,23 +120,14 @@ error_reporting (0);
                       };
                   }
                 ?>
-              </div>  
-            </div>
-            <div class="mb-3 row">
-              <label for="totalhargasewa" class="col-sm-2 col-form-label"></label>
-              <label for=""> Total Harga Sewa :</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="totalhargasewa" name="totalhargasewa" value="<?= "Rp".number_format($diff2,0,",","."); ?>">
-                </div>
-            </div>
-            <div class="mb-3 row">
-              <label for="platnomor" class="col-sm-2 col-form-label">Plat Nomer</label>
-              <div class="col-sm-10">
-                <input type="text" readonly class="form-control-plaintext" id="platnomor" name ="platnomor" value="<?= $dataMobil['plat_mobil']; ?>">
-                <label for="tujuan">Tujuan :</label>
-                <input type="text" name="tujuan" id="tujuan">
-
               </div>
+            </div>
+            </div>
+            <div class="mb-3 row">
+              <label for="totalhargasewa" class="col-sm-2 col-form-label"> Total Harga Sewa </label>
+              <div class="col-sm-10">
+                <input type="text" readonly class="form-control" id="totalhargasewa" name="totalhargasewa" value="<?= "Rp".number_format($diff2,0,",","."); ?>">
+                </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <input type="submit" name="simpan1" value="Lanjutkan Ke Pembayaran" class="btn btn-primary">
@@ -127,9 +135,31 @@ error_reporting (0);
           </div>
   </div>
 </div>
+      </div>
+    </div>
+</div>
+
 </form>
 </main>
+<div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <center>
+                <h3>Anda yakin ?</h3>
+              </center>
 
+            </div>
+            <div class="modal-footer">
+              <div class="modal-body">
+                <button type="button" class="btn btn-danger" data-bs-dismiss="modal">TIDAK</button>
+                <a class="btn btn-primary" href="../login/logot.php" role="button">YA</a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="script.js"></script>

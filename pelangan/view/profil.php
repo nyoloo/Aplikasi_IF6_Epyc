@@ -95,58 +95,55 @@ header("Location:../login/login.php?error=4");
             <br>
             <br>
             <br>
+              <div class="col-sm-6">
+                <p class="m-b-10 f-w-600">No Telp</p>
+                <h6 class="text-muted f-w-400" name="notelp">                             
+                <?php
+                  $idcustomer=$_SESSION["id_customer"];
+                  $query=mysqli_query($db,"select no_telp as notelp from customer where id_customer='$idcustomer'");
+                  $data=mysqli_fetch_array($query);
+                  $notelp=$data['notelp'];
+                  echo $notelp
+                ?>
+              </h6>
+            </div>
             <div class="col-sm-6">
-              <p class="m-b-10 f-w-600">No Telp</p>
-              <h6 class="text-muted f-w-400" name="notelp">                             
+              <p class="m-b-10 f-w-600">Username</p>
+              <h6 class="text-muted f-w-400" name="username">
               <?php
                 $idcustomer=$_SESSION["id_customer"];
-                $query=mysqli_query($db,"select no_telp as notelp from customer where id_customer='$idcustomer'");
+                $query=mysqli_query($db,"select username as username from customer where id_customer='$idcustomer'");
                 $data=mysqli_fetch_array($query);
-                $notelp=$data['notelp'];
-                echo $notelp
+                $username=$data['username'];
+                echo $username
               ?>
-            </h6>
+              </h6>
+            </div>
           </div>
-                                        <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Username</p>
-                                            <h6 class="text-muted f-w-400" name="username">
-                                              <?php
-                                              $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select username as username from customer where id_customer='$idcustomer'");
-                                              $data=mysqli_fetch_array($query);
-                                              $username=$data['username'];
-                                              echo $username?></h6>
-                                        </div>
-                                        
-                                    </div>
-                                    <br>
-                                    <div class="row justify-content-center">
-                                    <div class="col-sm-6">
-                                            <p class="m-b-10 f-w-600">Password</p>
-                                            <h6 class="text-muted f-w-400" name="password"><?php
-                                              $idcustomer=$_SESSION["id_customer"];
-                                              $query=mysqli_query($db,"select password as password from customer where id_customer='$idcustomer'");
-                                              $data=mysqli_fetch_array($query);
-                                              $password=$data['password'];
-                                              echo $password ?></h6>
-                                        </div>
-                                    </div>
-                                    
-
-                                                              
-
+          <br>
+          <div class="row justify-content-center">
+            <div class="col-sm-6">
+              <p class="m-b-10 f-w-600">Password</p>
+              <h6 class="text-muted f-w-400" name="password">
+              <?php
+                $idcustomer=$_SESSION["id_customer"];
+                $query=mysqli_query($db,"select password as password from customer where id_customer='$idcustomer'");
+                $data=mysqli_fetch_array($query);
+                $password=$data['password'];
+                echo $password 
+              ?>
+              </h6>
+            </div>
+          </div>
         </center>
-                                    
-                                    
-</div>
-<div class="card-footer text-muted">
-<div class="d-grid gap-2 col-6 mx-auto">
-                                    <a class="btn btn-primary btn-sm" href="profil/setting_profil.php" role="button">Edit Profil</a>
-</div>
-  </div>
-  </div>
-</div>
-  
+        </div>
+        <div class="card-footer text-muted">
+          <div class="d-grid gap-2 col-6 mx-auto">
+            <a class="btn btn-primary btn-sm" href="profil/setting_profil.php" role="button">Edit Profil</a>
+          </div>
+        </div>
+      </div>
+  </main>
   
   <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">

@@ -56,9 +56,9 @@
 <div class="container">
   <div class="row justify-content-center">
   <div class="card" style="max-width: 800px;">
-        <h5 class="card-header">Perlu Bantuan?</h5>
         <div class="card-body">
-            <h5 class="card-title">Hubungi Kami</h5>
+            <h5 class="card-title">Perlu Bantuan?</h5>
+            <h6>Hubungi Kami</h6>
             <form name="kirimpesan" action="contactskirim.php" method="post">
             <label for="nama" name="nama" class="form-label">Nama</label>
             <input type="text" name="nama" id="nama" class="form-control" >
