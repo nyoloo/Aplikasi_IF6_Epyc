@@ -15,7 +15,7 @@ function __construct(){
 	$db = new mysqli($this->host,$this->user,$this->password,$this->database);
 	return $db;
 }
-}
+
 function showpopup(){
 	?>
 	<div style="background-color: #faedb7;padding:10px;border:1px solid red;margin:15px 0px"> 
@@ -49,7 +49,7 @@ function getDataCustomer($username){
 			return FALSE;
 	}
 
-
+}
 $conn = mysqli_connect("localhost:3306","root","","db10119213penyewaanmobil");
 
 function query($query) {
