@@ -130,6 +130,7 @@ error_reporting (0);
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="../mobil.php" class="btn btn-danger">Kembali</a>
             <input type="submit" name="simpan1" value="Lanjutkan Ke Pembayaran" class="btn btn-primary">
             </div>
           </div>
