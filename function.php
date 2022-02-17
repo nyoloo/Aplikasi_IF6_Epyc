@@ -30,9 +30,9 @@ function showpopup(){
 	}
 
 function getDataCustomer($username){
-		$db=dbConnect();
-		if($db->connect_errno==0){
-			$res=$db->query("SELECT * from customer where username='$username'");
+		$db=new database();
+		if($db->__construct()->connect_errno==0){
+			$res=$db->__construct()->query("SELECT * from customer where username='$username'");
 			if($res){
 				if($res->num_rows>0){
 					$data=$res->fetch_assoc();
