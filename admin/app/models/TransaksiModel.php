@@ -2,7 +2,6 @@
 
 class TransaksiModel {
 	
-	private $table = 'pembayaran';
 	private $db;
 
 	public function __construct()
