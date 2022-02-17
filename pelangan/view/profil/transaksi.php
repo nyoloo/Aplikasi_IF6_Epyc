@@ -34,7 +34,7 @@ error_reporting (0);
   <header class="header">
 
 <a href="#" class="logo">
-    <img src="https://cdn.discordapp.com/attachments/899880655465357315/943887196681822278/Frame_1_2.png" alt="">
+<img src="https://cdn.discordapp.com/attachments/899880655465357315/943891619692818472/Group_4.png" alt="">
 </a>
 
 <nav class="navbar">

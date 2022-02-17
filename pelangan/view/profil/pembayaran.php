@@ -121,7 +121,7 @@ else
   <header class="header">
 
     <a href="#" class="logo">
-      <img src="https://cdn.discordapp.com/attachments/837296692876410883/856111970466136114/OIP.png" alt="">
+    <img src="https://cdn.discordapp.com/attachments/899880655465357315/943891619692818472/Group_4.png" alt="">
     </a>
 
     <nav class="navbar">
