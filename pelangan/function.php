@@ -11,12 +11,12 @@ class database{
 // 	return $db;
 // }
 
-function __construct(){
+public function __construct(){
 	$db = new mysqli($this->localhost,$this->user,$this->password,$this->database);
 	return $db;
 }
 }
-function showpopup(){
+public function showpopup(){
 	?>
 	<div style="background-color: #faedb7;padding:10px;border:1px solid red;margin:15px 0px"> 
 	<?php echo "data berhasil dibuat";?>
@@ -25,11 +25,11 @@ function showpopup(){
 	<?php
 }
 
-	function showError($message){
+	public function showError($message){
 	echo $message;
 	}
 
-function getDataCustomer($username){
+public function getDataCustomer($username){
 		$db=dbConnect();
 		if($db->connect_errno==0){
 			$res=$db->query("SELECT * from customer where username='$username'");
