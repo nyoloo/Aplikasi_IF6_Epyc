@@ -1,6 +1,5 @@
-<?php
-include_once ("../../function.php");
-?>
+
+<?php include_once("../../function.php"); ?>
 
 
 <html lang="en">
