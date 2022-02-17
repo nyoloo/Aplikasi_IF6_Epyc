@@ -103,6 +103,7 @@
         </h3>
       </div>
     </div>
+    <center>
     <div class="row">
     <div class="col-md-4 mb-3">
         <div class="card" style="width: 18rem;">
@@ -137,6 +138,8 @@
       </div>
     </div>
   </div>
+    </center>
+    
 </section>
 <!-- Modal -->
   <div class="modal fade" id="modal" tabindex="-1" >
