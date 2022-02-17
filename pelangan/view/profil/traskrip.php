@@ -50,7 +50,7 @@ if(isset($_POST["simpan2"]))
     } else if (strlen($tambah) >= 3) {
         $idpembayaranupdate = "B" . $tambah;
     }
-
+    
     $sql = "INSERT INTO pembayaran (`id_pembayaran`,`id_karyawan`,`id_customer`,`id_mobil`,`id_destinasi`,`total_harga_sewa`,`metode_bayar`)
     VALUES ('$idpembayaranupdate','$idkaryawan','$idcustomer','$dataMobil[id_mobil]','$iddestinasi',$totalhargasewa1,'$metodebayar')";
     $res=$db->query($sql);

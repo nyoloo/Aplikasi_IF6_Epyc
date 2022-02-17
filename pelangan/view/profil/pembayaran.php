@@ -31,6 +31,11 @@ if (isset($_POST['simpan1'])) {
     $iddestinasiupdate = "D" . $tambah;
   }
 
+  $query = mysqli_query($db, "SELECT nama_customer as namacustomer, no_telp as notelp from customer where id_customer='$idcustomer'");
+  $data = mysqli_fetch_array($query);
+  $namacustomer = $data['namacustomer'];
+  $notelp = $data['notelp'];
+
   $sql = "INSERT INTO destinasi (`id_destinasi`,`id_customer`,`tgl_sewa`,`tgl_kembali`,`tujuan`)
   VALUES ('$iddestinasiupdate','$idcustomer','$tglminjam','$tglkembali','$tujuan')";
   $res=$db->query($sql);
@@ -159,13 +164,13 @@ else
           <div class="row mb-3">
             <label for="nama" class="col-sm-2 col-form-label">Nama</label>
             <div class="col-sm-10">
-              <input type="text" class="form-control" id="nama" name="nama" value="<?= $_SESSION['nama_customer']?>">
+              <input type="text" class="form-control" id="nama" name="nama" value="<?= $namacustomer?>">
             </div>
           </div>
           <div class="row mb-3">
             <label for="notelp" class="col-sm-2 col-form-label">No telpon</label>
             <div class="col-sm-10">
-              <input type="no_telpon" class="form-control" id="notelp" name="notelp" value="<?= $_SESSION['no_telp']?>">
+              <input type="no_telpon" class="form-control" id="notelp" name="notelp" value="<?= $notelp?>">
             </div>
           </div>
           <div class="row mb-3">

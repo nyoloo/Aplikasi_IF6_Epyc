@@ -1,7 +1,12 @@
 <?php
     include_once("../function.php");
-
-    $dataMobil = query("SELECT * FROM mobil");
+    $halaman = 6; //batasan halaman
+    $db=dbconnect();
+	  $page = isset($_GET['halaman'])? (int)$_GET["halaman"]:1;
+	  $mulai = ($page>1) ? ($page * $halaman) - $halaman : 0;
+	  $total = $db->query("select * from mobil");
+	  $pages = ceil($total->num_rows/$halaman);
+    $dataMobil = query("SELECT * FROM mobil limit $mulai,$halaman");
 
 ?>
 <!doctype html>
@@ -78,7 +83,12 @@
             </div>
         </div>
        <?php endforeach; ?> 
+       <?php for ($i=1; $i<=$pages ; $i++){ ?>
+		    <a  href="?halaman=<?php echo $i; ?>"><?php echo $i; ?></a>
 
+		    <?php } 
+
+		    ?>
       <!-- //sadasdasdasd -->
     </div>
   </div>
