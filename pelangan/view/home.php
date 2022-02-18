@@ -117,10 +117,10 @@
             <div class="content"><img src="../../asset/toyota-rush1.jpg" class="card-img-top" alt="..."></div>
         </div>
         <div class="gallery-item">
-            <div class="content"> <img src="../../asset/new-toyota-raize-2020.jpg" class="card-img-top" alt="..."></div>
+            <div class="content"> <img src="../../asset/camry hibrid.jpg" class="card-img-top" alt="..."></div>
         </div>
         <div class="gallery-item">
-            <div class="content"><img src="../../asset/new-toyota-raize-2020.jpg" class="card-img-top" alt="..."></div>
+            <div class="content"><img src="../../asset/toyota haice.jpg" class="card-img-top" alt="..."></div>
         </div>
         <div class="gallery-item">
             <div class="content"> <img src="../../asset/CHR Hybrid.jpg" class="card-img-top" alt="..."></div>
