@@ -75,7 +75,7 @@
             <img src="<?= $data['img_url']; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?= $data['nama_mobil'];?></h5>
-                        <p class="card-text">Harga Sewa Rp<?=number_format($data['harga_sewa'],0,",",".") ?>/Hari</p>
+                        <p class="card-text">Harga Sewa <br>Rp. <?=number_format($data['harga_sewa'],0,",",".") ?> / Hari</p>
                         <a href="#" data-bs-toggle="modal" data-bs-target="#modal"class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>
@@ -104,7 +104,7 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-body">
-                Login terlebihdahulu sebelum anda memesan, anda harus login terlebih dahulu dengan meneka icon <i class="fa fa-user"></i> atau klik tombol login
+                Login terlebih dahulu sebelum anda memesan! <br>Bisa klik icon <i class="fa fa-user"></i> atau klik tombol Login.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

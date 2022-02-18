@@ -45,8 +45,8 @@
       <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../view/profil.php">profil</a></li>
-            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
+            <li><a class="dropdown-item" href="../view/profil.php">Profil</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">Log Out</a></li>
           </ul>
       <div class="fas fa-bars" id="menu-btn"></div>
 </header>
@@ -66,7 +66,7 @@
   <div class="row text-center">
     <div class="col">
       <h3>Mengapa Harus White Rent Car?</h3>
-      <span>Ada 2 Alasan kenapa harus memilih White Rent Car</span>
+      <span>Ada 2 Alasan kenapa harus memilih White Rent Car.</span>
   </div>
   <br>
   <br>
@@ -78,7 +78,7 @@
         Kendaraan yang terawat
       </h4>
       <p>
-      Seluruh Unit Kendaraan NFS Rent Car mendapatkan perawatan secara berkala demi menjaga kenyamanan Anda dalam menggunakan layanan kami.
+      Seluruh Unit Kendaraan White Rent Car mendapatkan perawatan secara berkala demi menjaga kenyamanan Anda dalam menggunakan layanan kami.
       </p>
     </div>
     <div class="col-md-4 mb-3">
@@ -86,7 +86,7 @@
         Harga Terjangkau
       </h4>
       <p>
-      NFS Rent Car membuktikan keunggulan-keunggulan dengan harga yang terjangkau.
+      White Rent Car membuktikan keunggulan-keunggulan dengan harga yang terjangkau.
       </p>
     </div>
   </div>

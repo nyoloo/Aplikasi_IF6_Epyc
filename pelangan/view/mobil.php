@@ -53,8 +53,8 @@
       <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../view/profil.php">profil</a></li>
-            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
+            <li><a class="dropdown-item" href="../view/profil.php">Profil</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">Log Out</a></li>
           </ul>
       <div class="fas fa-bars" id="menu-btn"></div>
 </header>
@@ -77,7 +77,7 @@
             <img src="<?= $data['img_url']; ?>" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title"><?= $data['nama_mobil'];?></h5>
-                        <p class="card-text">Harga Sewa Rp<?=number_format($data['harga_sewa'],0,",",".") ?>/Hari</p>
+                        <p class="card-text">Harga Sewa <br>Rp. <?=number_format($data['harga_sewa'],0,",",".") ?> / Hari</p>
                         <a href="profil/transaksi.php?id_mobil=<?= $data['id_mobil']; ?>" class="btn btn-primary">Sewa Sekarang</a>
                     </div>
             </div>

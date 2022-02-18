@@ -58,8 +58,8 @@ error_reporting (0);
       <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../view/profil.php">profil</a></li>
-            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
+            <li><a class="dropdown-item" href="../view/profil.php">Profil</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">Log Out</a></li>
           </ul>
       <div class="fas fa-bars" id="menu-btn"></div>
 </header>
@@ -76,7 +76,7 @@ error_reporting (0);
           <div class="row g-3 align-items-center">
             <h5 class="card-title"><?= $dataMobil['nama_mobil']?></h5>
             <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Tanggal Minjam</label>
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Tanggal Pinjam</label>
               <div class="col-sm-10">
                     <input type="date" class="form-control" name="tanggalminjam" value="<?= $_POST['tanggalminjam']; ?>">
                   </div>

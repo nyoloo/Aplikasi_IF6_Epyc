@@ -61,9 +61,9 @@ try {
 	echo '<center>';
     echo '<div class="card" style="width: 25rem;">';
     echo '<center>';
-    echo '<h5 class="card-header">Pesan Telah Terkirim</h5>';
+    echo '<h5 class="card-header">Pesan Telah Terkirim!</h5>';
     echo '<div class="card-footer ">';
-    echo '<a class="btn btn-primary" href="home.php" role="button">OKE</a>';
+    echo '<a class="btn btn-primary" href="home.php" role="button">OK</a>';
     echo '</div>';
     echo '</center>';
     echo '</div>';

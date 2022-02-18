@@ -44,8 +44,8 @@
       <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../view/profil.php">profil</a></li>
-            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">logout</a></li>
+            <li><a class="dropdown-item" href="../view/profil.php">Profil</a></li>
+            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">Log Out</a></li>
           </ul>
       <div class="fas fa-bars" id="menu-btn"></div>
 </header>
@@ -54,10 +54,10 @@
   
   <div class="content">
       <h3>White Rent Car</h3>
-      <p>White Rent Car perusahaan yang bergerak dibidang jasa sewa mobil. 
+      <p>White Rent Car adalah perusahaan yang bergerak dibidang jasa sewa mobil. 
         Kami menyewakan kendaraan roda empat untuk pemakaian harian, bulanan atau tahunan. 
-        Armada kami didukung driver yang jujur dan berpengalaman yang menguasai area Bandung atau pulau jawa. 
-        Komitmen kami adalah memberikan layanan yang terbaik , mudah dan cepat.
+        Armada kami didukung driver yang jujur dan berpengalaman yang menguasai area Bandung atau pulau Jawa. 
+        Komitmen kami adalah memberikan layanan yang terbaik, mudah dan cepat.
       </p>
   </div>
   <div class="image">

@@ -59,11 +59,11 @@ VALUES('$customerupdate', '$nama_customer','$alamat','$notelp','$username','$pas
               <center>
                 <h5 class="card-header">Registrasi Berhasil</h5>
                 <div class="card-body">
-                  <p class="card-text">Silahkan Kembali kehalaman login dengan memencet tombol OKE</p>
+                  <p class="card-text">Silahkan Kembali ke halaman Log In dengan memencet tombol OK.</p>
 
                 </div>
                 <div class="card-footer ">
-                  <a class="btn btn-primary" href="login.php" role="button">OKE</a>
+                  <a class="btn btn-primary" href="login.php" role="button">OK</a>
                 </div>
               </center>
            

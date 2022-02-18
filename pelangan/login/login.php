@@ -19,7 +19,7 @@
 		<div class="container">
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
-					<h2 class="heading-section">Login </h2>
+					<h2 class="heading-section">Log In </h2>
 				</div>
 			</div>
 			<div class="row justify-content-center">
@@ -30,7 +30,7 @@
                     if (isset($_GET["error"])) {
                     $error = $_GET["error"];
                     if ($error == 1) {
-                    showError("Email dan password tidak sesuai."); }
+                    showError("Username  dan Password tidak sesuai."); }
                     else if ($error == 2)
                     showError("Error database. Silahkan hubungi administrator");
                     else if ($error == 3)
@@ -55,7 +55,7 @@
 	            </div>
 	            <div class="form-group d-md-flex">
 								<div class="justify-content-end">
-									<a href="lupapass.php" class="term-service">lupa Password?</a>
+									<a href="lupapass.php" class="term-service">Lupa Password?</a>
 								</div>
 	            </div>
 	          </form>
