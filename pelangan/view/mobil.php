@@ -65,7 +65,7 @@
     <div class="row text-center">
       <div class="col">
         <h3>
-          Jenis Mobil dan Harga Mobil
+          Nama  dan Harga Sewa Mobil
         </h3>
       </div>
     </div>
