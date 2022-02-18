@@ -62,7 +62,7 @@
         </div>
         <div class="content">
             <h3>Mengapa Harus Kami?</h3>
-            <p>Seluruh Unit Kendaraan White Rent Car mendapatkan perawatan secara berkala demi menjaga kenyamanan Anda dalam menggunakan layanan kami.</p>
+            <p>Seluruh unit kendaraan White Rent Car mendapatkan perawatan secara berkala demi menjaga kenyamanan Anda dalam menggunakan layanan kami.</p>
             <p> White Rent Car membuktikan keunggulan-keunggulan dengan harga yang terjangkau.</p>
         </div>
     </div>

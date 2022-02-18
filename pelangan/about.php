@@ -55,8 +55,8 @@
       <h3>White Rent Car</h3>
       <p>White Rent Car adalah perusahaan yang bergerak dibidang jasa sewa mobil. 
         Kami menyewakan kendaraan roda empat untuk pemakaian harian, bulanan atau tahunan. 
-        Armada kami didukung driver yang jujur dan berpengalaman yang menguasai area Bandung atau pulau jawa. 
-        Komitmen kami adalah memberikan layanan yang terbaik , mudah dan cepat.
+        Armada kami didukung driver yang jujur dan berpengalaman yang menguasai area Bandung atau pulau Jawa. 
+        Komitmen kami adalah memberikan layanan yang terbaik, mudah dan cepat.
       </p>
   </div>
   <div class="image">
