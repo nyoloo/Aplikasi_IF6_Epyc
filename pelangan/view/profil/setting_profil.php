@@ -20,7 +20,7 @@
     <link rel="stylesheet" href="../../style.css">
 
     
-    <title>Setting Profil</title>
+    <title> WHite Rent Car |Setting Profil</title>
   </head>
   <<body style="background-color: #F7F6F2 ;">
   <header class="header">
@@ -38,7 +38,7 @@
           <a class="nav-link" href="../about.php">Tentang Kami</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../mobil.php">Jenis Dan Harga Mobil</a>
+          <a class="nav-link" href="../mobil.php">Nama Dan Harga Sewa Mobil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../contacts.php">Kontak</a>

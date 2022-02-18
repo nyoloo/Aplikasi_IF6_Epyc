@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 
-    <title>About</title>
+    <title>White Rent Car | About</title>
   </head>
   
   <body style="background-color: #F7F6F2 ;">
@@ -32,7 +32,7 @@
           <a class="nav-link" href="about.php">Tentang Kami</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link"  href="mobil.php">Jenis Dan Harga Mobil</a>
+        <a class="nav-link"  href="mobil.php">Nama Dan Harga Sewa Mobil</a>
         </li>
         <li class="nav-item">
         <a class="nav-link"data-bs-toggle="modal" data-bs-target="#modal" href="#">Kontak</a>
@@ -50,15 +50,25 @@
 </header>
   <br>
   <br>
-  <section class="home" id="home">
-  <div class="content">
-      <h3>White Rent Car</h3>
+  <section class="about" id="about">
+
+    
+    <div class="row">
+        <div class="image">
+            <img src="https://cdn.discordapp.com/attachments/899880655465357315/943892486760325150/Group_5.png" alt="">
+        </div>
+        <div class="content">
+        <h3>White Rent Car</h3>
       <p>White Rent Car adalah perusahaan yang bergerak dibidang jasa sewa mobil. 
         Kami menyewakan kendaraan roda empat untuk pemakaian harian, bulanan atau tahunan. 
         Armada kami didukung driver yang jujur dan berpengalaman yang menguasai area Bandung atau pulau Jawa. 
         Komitmen kami adalah memberikan layanan yang terbaik, mudah dan cepat.
       </p>
-  </div>
+        </div>
+    </div>
+
+</section>
+
   <div class="image">
       <div class="image">
           <img src="https://cdn.discordapp.com/attachments/899880655465357315/943892486760325150/Group_5.png" alt="img">

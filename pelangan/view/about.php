@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../style.css">
     
     
-    <title>White Rent Car</title>
+    <title>White Rent Car | About</title>
   </head>
   <body style="background-color: #F7F6F2 ;">
   <header class="header">
@@ -32,7 +32,7 @@
           <a class="nav-link" href="about.php">Tentang Kami</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link"  href="mobil.php">Jenis Dan Harga Mobil</a>
+        <a class="nav-link"  href="mobil.php">Nama Dan Harga  Sewa Mobil</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="contacts.php">Kontak</a>
@@ -50,22 +50,25 @@
       <div class="fas fa-bars" id="menu-btn"></div>
 </header>
   <br>
-  <section class="home" id="home">
-  
-  <div class="content">
-      <h3>White Rent Car</h3>
+  <section class="about" id="about">
+
+    
+    <div class="row">
+        <div class="image">
+            <img src="https://cdn.discordapp.com/attachments/899880655465357315/943892486760325150/Group_5.png" alt="">
+        </div>
+        <div class="content">
+        <h3>White Rent Car</h3>
       <p>White Rent Car adalah perusahaan yang bergerak dibidang jasa sewa mobil. 
         Kami menyewakan kendaraan roda empat untuk pemakaian harian, bulanan atau tahunan. 
         Armada kami didukung driver yang jujur dan berpengalaman yang menguasai area Bandung atau pulau Jawa. 
         Komitmen kami adalah memberikan layanan yang terbaik, mudah dan cepat.
       </p>
-  </div>
-  <div class="image">
-      <div class="image">
-      <img src="https://cdn.discordapp.com/attachments/899880655465357315/943892486760325150/Group_5.png" alt="">
-      </div>
-   </div>
-  </section>
+        </div>
+    </div>
+
+</section>
+ 
 <!-- Modal -->
 <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">

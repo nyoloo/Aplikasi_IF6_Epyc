@@ -21,7 +21,7 @@ error_reporting (0);
     <link rel="stylesheet" href="../../style.css">
     
     
-    <title>White Rent Car</title>
+    <title>White Rent Car | Transaksi</title>
   </head>
   <Style>
     .container-sm{
@@ -46,7 +46,7 @@ error_reporting (0);
           <a class="nav-link" href="../about.php">Tentang Kami</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link"  href="../mobil.php">Jenis Dan Harga Mobil</a>
+        <a class="nav-link"  href="../mobil.php">Nama Dan Harga Sewa Mobil</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="../contacts.php">Kontak</a>

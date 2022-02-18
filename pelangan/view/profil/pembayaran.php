@@ -114,7 +114,7 @@ else
 
 
 
-  <title>White Rent Car</title>
+  <title>White Rent Car | Pembayaran</title>
 </head>
 
 <body style="background-color: #F7F6F2 ;">
@@ -133,7 +133,7 @@ else
           <a class="nav-link" href="../about.php">Tentang Kami</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="../mobil.php">Jenis Dan Harga Mobil</a>
+          <a class="nav-link" href="../mobil.php">Nama Dan Harga Sewa Mobil</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="../contacts.php">Kontak</a>

@@ -19,7 +19,7 @@ header("Location:../login/login.php?error=4");
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="../style.css">
 
-    <title>Profil</title>
+    <title>White Rent Car | Profil</title>
   </head>
   
   <body>
@@ -39,7 +39,7 @@ header("Location:../login/login.php?error=4");
           <a class="nav-link" href="about.php">Tentang Kami</a>
         </li>
         <li class="nav-item">
-        <a class="nav-link" href="mobil.php">Jenis Dan Harga Mobil</a>
+        <a class="nav-link" href="mobil.php">Nama Dan Harga Sewa Mobil</a>
         </li>
         <li class="nav-item">
         <a class="nav-link" href="contacts.php">Kontak</a>
