@@ -92,7 +92,13 @@ error_reporting (0);
               <label for="platnomor" class="col-sm-2 col-form-label">Plat Nomer</label>
               <div class="col-sm-10">
                 <input type="text" readonly class="form-control" id="platnomor" name ="platnomor" value=" <?= $dataMobil['plat_mobil']; ?>">
-
+              </div>
+              </div>
+              <div class="mb-3 row">
+              <label for="tujuan" class="col-sm-2 col-form-label">Tujuan</label>
+              <div class="col-sm-10">
+                <input type="text"  class="form-control" id="tujuan" name ="tujuan">
+              </div>
               </div>
               <br>
               <br>
