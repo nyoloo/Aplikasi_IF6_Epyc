@@ -16,7 +16,7 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<link rel="stylesheet" href="../../style.css">
-    <title>Penyimpanan Data Profil White Rent Car</title>
+    <title>Penyimpanan Data Profil Delichip</title>
   </head>
   <body>
   <?php
@@ -38,9 +38,14 @@ if(isset($_POST["simpan"])){
 		if($res){
 			if($db->__construct()->affected_rows>0){ // jika ada penambahan data
 				?>
-				<br>
-				<br>
-				<center>
+<?php
+} else{
+  ?>
+  <br>
+  <br>
+  <br>
+  <br>
+  <center>
 <div class="card" style="width: 25rem;">
 <center>
 <h5 class="card-header">Update Profil Sudah Berhasil</h5>
@@ -51,7 +56,7 @@ if(isset($_POST["simpan"])){
   
 </div>
 </center>
-<?php
+  <?php
 }
 } 
 else {
