@@ -161,7 +161,7 @@ error_reporting (0);
             <div class="modal-footer">
               <div class="modal-body">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">TIDAK</button>
-                <a class="btn btn-primary" href="../login/logot.php" role="button">YA</a>
+                <a class="btn btn-primary" href="../../login/logot.php" role="button">YA</a>
               </div>
 
             </div>
