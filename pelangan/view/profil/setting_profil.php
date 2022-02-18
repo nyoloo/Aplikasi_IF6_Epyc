@@ -101,7 +101,7 @@
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" name="password" id="txt_password" class="form-control" value="<?php
+                  <input type="text" name="password" id="txt_password" class="form-control" value="<?php
                                               $idcustomer=$_SESSION["id_customer"];
                                               $query=mysqli_query($db->__construct(),"select password as password from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
