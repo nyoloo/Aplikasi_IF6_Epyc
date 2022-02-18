@@ -155,11 +155,11 @@
             <div class="modal-dialog">
               <div class="modal-content">
                 <div class="modal-body">
-                Login terlebihdahulu sebelum memasuki halaman ini, bisa klik icon <i class="fa fa-user"></i> atau klik tombol login
+                Login terlebih dahulu! <br>Bisa klik icon <i class="fa fa-user"></i> atau klik tombol Log In.
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="pelangan/login/login.php" class="btn btn-primary">Login</a>
+                  <a href="pelangan/login/login.php" class="btn btn-primary">Log In</a>
                 </div>
               </div>
             </div>
