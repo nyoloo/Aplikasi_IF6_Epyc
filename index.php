@@ -9,10 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="pelangan/style.css">
+    
     <title>White Rent Car</title>
   </head>
   <body>
@@ -74,82 +74,52 @@
 <br>
 <br>
 
-<div class="container">
-<div class="row d-flex flex-wrap align-items-center" data-toggle="modal" data-target="#lightbox">
-  <div class="col-12 col-md-6 col-lg-3">
-    
-<img src="https://cdn.discordapp.com/attachments/837296692876410883/944055349093224589/ansh-jain-u7rqYZyjtwg-unsplash.jpg" data-target="#indicators" data-slide-to="0" alt="" /> 
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-       <img src="asset/toyota 86.jpg" data-target="#indicators" data-slide-to="1" alt="" />
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-     <img src="asset/toyota-land-cruiser-300-series.jpeg" data-target="#indicators" data-slide-to="2"  alt="" />
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-       <img src="asset/toyota-rush1.jpg" data-target="#indicators" data-slide-to="3" alt="" />
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-       <img src="asset/new-toyota-raize-2020.jpg" data-target="#indicators" data-slide-to="3"  alt="" />
-  </div>
-  <div class="col-12 col-md-6 col-lg-3">
-       <img src="asset/CHR Hybrid.jpg" data-target="#indicators" data-slide-to="4" alt="" />
-  </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="lightbox" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-        <button type="button" class="close text-right p-2" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      <div id="indicators" class="carousel slide" data-interval="false">
-  <ol class="carousel-indicators">
-    <li data-target="#indicators" data-slide-to="0" class="active"></li>
-    <li data-target="#indicators" data-slide-to="1"></li>
-    <li data-target="#indicators" data-slide-to="2"></li>
-    <li data-target="#indicators" data-slide-to="3"></li>
-    <li data-target="#indicators" data-slide-to="4"></li>
-    <li data-target="#indicators" data-slide-to="5"></li>
-  </ol>
-  <div class="carousel-inner">
-    
-    <div class="carousel-item active">
-      
-      <img class="d-block w-100" src="https://cdn.discordapp.com/attachments/837296692876410883/944055349093224589/ansh-jain-u7rqYZyjtwg-unsplash.jpg" alt="First slide">
+<center>
+<section class="jumbotron text-center">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col">
+        <h3>
+          Galeri
+        </h3>
+      </div>
     </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="asset/toyota 86.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="asset/toyota-land-cruiser-300-series.jpeg" alt="Third slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="asset/toyota-rush1.jpg" alt="Fourth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="asset/new-toyota-raize-2020.jpg" alt="Fifth slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="asset/CHR Hybrid.jpg" alt="Sixth slide">
+    <div class="row">
+    <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="asset/toyota supra.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="asset/toyota 86.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="asset/toyota-land-cruiser-300-series.jpeg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="asset/toyota-rush1.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <br>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="asset/new-toyota-raize-2020.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="asset/CHR Hybrid.jpg" class="card-img-top" alt="...">
+        </div>
+      </div>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#indicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#indicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-    </div>
-  </div>
-</div>
-</div>
-
+</section>
+</center>
 <!-- Modal -->
   <div class="modal fade" id="modal" tabindex="-1" >
             <div class="modal-dialog">
@@ -165,9 +135,6 @@
             </div>
   </div>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.5.3/umd/popper.min.js'></script>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.min.js'></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="pelangan/script.js"></script>
   </body>

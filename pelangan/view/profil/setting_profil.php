@@ -65,48 +65,48 @@
           <form name="editprofil"  action="simpanprofil.php" method="post">
             <div class="mb-3">
               <label for="namacustomer" class="form-label">Nama Customer</label>
-              <input type="text" name="namacustomer" id="txt_nama_customer" class="form-control"  placeholder="<?php 
+              <input type="text" name="namacustomer" id="txt_nama_customer" class="form-control"  <?php 
               $idcustomer=$_SESSION["id_customer"];
               $query=mysqli_query($db->__construct(),"select nama_customer as namacustomer from customer where id_customer='$idcustomer'");
               $data=mysqli_fetch_array($query);
               $namacustomer=$data['namacustomer'];
-              echo $namacustomer?>">
+              echo $namacustomer?>>
             </div>
             <div class="mb-3">
                     <label for="alamat" class="form-label">Alamat</label>
-                    <input type="text" name="alamat" id="txt_alamat" class="form-control"  placeholder="<?php
+                    <input type="text" name="alamat" id="txt_alamat" class="form-control"  <?php
                                               $idcustomer=$_SESSION["id_customer"];
                                               $query=mysqli_query($db->__construct(),"select alamat as alamat from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
                                               $alamat=$data['alamat'];
-                                              echo $alamat?>">
+                                              echo $alamat?>>
             </div>
                 <div class="mb-3">
                   <label for="notelepon" class="form-label">No Telepon</label>
-                  <input type="text" name="notelp" id="txt_notelp" class="form-control" placeholder="<?php
+                  <input type="text" name="notelp" id="txt_notelp" class="form-control" <?php
                                               $idcustomer=$_SESSION["id_customer"];
                                               $query=mysqli_query($db->__construct(),"select no_telp as notelp from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
                                               $notelp=$data['notelp'];
-                                              echo $notelp?>">
+                                              echo $notelp?>>
                   <div class="mb-3">
                     <label for="displayname" class="form-label">Username</label>
-                    <input type="text" name="username" id="txt_username" class="form-control"  placeholder="<?php
+                    <input type="text" name="username" id="txt_username" class="form-control" <?php
                                               $idcustomer=$_SESSION["id_customer"];
                                               $query=mysqli_query($db->__construct(),"select username as username from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
                                               $username=$data['username'];
-                                              echo $username?>">
+                                              echo $username?>>
                   </div>
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" name="password" id="txt_password" class="form-control"  placeholder="<?php
+                  <input type="password" name="password" id="txt_password" class="form-control"  <?php
                                               $idcustomer=$_SESSION["id_customer"];
                                               $query=mysqli_query($db->__construct(),"select password as password from customer where id_customer='$idcustomer'");
                                               $data=mysqli_fetch_array($query);
                                               $password=$data['password'];
-                                              echo $password ?>">
+                                              echo $password ?>>
                   
                 </div>
                 <div class="d-grid gap-2 d-sm-flex justify-content-sm-end">
@@ -130,7 +130,7 @@
       <div class="modal-footer">
         <div class="modal-body">
         <button type="button" class="btn btn-danger" data-bs-dismiss="modal">TIDAK</button>
-        <a class="btn btn-primary" href="../login/logot.php" role="button">YA</a>
+        <a class="btn btn-primary" href="../../login/logot.php" role="button">YA</a>
         </div>
         
       </div>
