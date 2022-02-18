@@ -94,12 +94,7 @@ error_reporting (0);
                 <input type="text" readonly class="form-control" id="platnomor" name ="platnomor" value=" <?= $dataMobil['plat_mobil']; ?>">
               </div>
               </div>
-              <div class="mb-3 row">
-              <label for="tujuan" class="col-sm-2 col-form-label">Tujuan</label>
-              <div class="col-sm-10">
-                <input type="text"  class="form-control" id="tujuan" name ="tujuan">
-              </div>
-              </div>
+              
               <br>
               <br>
               <br>
@@ -132,9 +127,15 @@ error_reporting (0);
             <div class="mb-3 row">
               <label for="totalhargasewa" class="col-sm-2 col-form-label"> Total Harga Sewa </label>
               <div class="col-sm-10">
-                <input type="text" readonly class="form-control" id="totalhargasewa" name="totalhargasewa" value="<?= "Rp".number_format($diff2,0,",","."); ?>">
+                <input type="text" readonly class="form-control" id="totalhargasewa" name="totalhargasewa" style="width: 37.4rem;" value="<?= "Rp".number_format($diff2,0,",","."); ?>" >
                 </div>
             </div>
+            <div class="mb-3 row">
+              <label for="tujuan" class="col-sm-2 col-form-label">Tujuan</label>
+              <div class="col-sm-10">
+                <input type="text"  class="form-control" id="tujuan" name ="tujuan" style="width: 37.4rem;" >
+              </div>
+              </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a href="../mobil.php" class="btn btn-danger">Kembali</a>
             <input type="submit" name="simpan1" value="Lanjutkan Ke Pembayaran" class="btn btn-primary">
