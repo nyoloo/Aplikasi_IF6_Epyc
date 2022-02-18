@@ -48,7 +48,7 @@
 		      		</div>
 	            <div class="form-group">
 					<input type="password" name="password" id="password" class="form-control" placeholder="Password"required >
-	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+
 	            </div>
 	            <div class="form-group">
 					<input type="submit" name="signin" id="signin" class="form-control btn btn-primary submit px-3" value="Login" >
@@ -61,7 +61,7 @@
 	          </form>
 	          <div class="social d-flex text-center">
 	          	<a href="register.php" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Buat Akun</a>
-	          	<a href="http://localhost/tugas-besar-RPL/admin/public/" class="px-2 py-2 ml-md-1 rounded term-service"><span class="ion-logo-twitter mr-2"></span> Login To Admin</a>
+	          	<a href="http://localhost/tugas-besar-RPL/admin/public/" class="px-2 py-2 ml-md-1 rounded term-service"><span class="ion-logo-twitter mr-2"></span> Login Sebagai Admin</a>
 	          </div>
 		      </div>
 				</div>

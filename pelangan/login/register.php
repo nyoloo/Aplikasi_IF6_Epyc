@@ -40,7 +40,7 @@
 		      		</div>
 	            <div class="form-group">
 					<input type="password" name="password" id="password" class="form-control" placeholder="Masukkan Password Anda"required >
-	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
+	              
 	            </div>
 	            <div class="form-group">
                     <input type="submit" name="signup" id="signup"  class="form-control btn btn-primary submit px-3" value="Register" >
