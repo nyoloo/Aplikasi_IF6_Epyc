@@ -57,40 +57,20 @@
 <h1 class="display-4">White Rent Car</h1>
 </section>
 
-<br>
-<br>
-<br>
-<br>
-<section>
-<div class="container">
-  <div class="row text-center">
-    <div class="col">
-      <h3>Mengapa Harus White Rent Car?</h3>
-      <span>Ada 2 Alasan kenapa harus memilih White Rent Car.</span>
-  </div>
-  <br>
-  <br>
-  <br>
-  <br>
-  <div class="row justify-content-center">
-  <div class="col-md-4 mb-3">
-      <h4>
-        Kendaraan yang terawat
-      </h4>
-      <p>
-      Seluruh Unit Kendaraan White Rent Car mendapatkan perawatan secara berkala demi menjaga kenyamanan Anda dalam menggunakan layanan kami.
-      </p>
+<section class="about" id="about">
+
+    
+    <div class="row">
+        <div class="image">
+            <img src="https://cdn.discordapp.com/attachments/899880655465357315/943892486760325150/Group_5.png" alt="">
+        </div>
+        <div class="content">
+            <h3>Mengapa Harus Kami?</h3>
+            <p>Seluruh unit kendaraan White Rent Car mendapatkan perawatan secara berkala demi menjaga kenyamanan Anda dalam menggunakan layanan kami.</p>
+            <p> White Rent Car membuktikan keunggulan-keunggulan dengan harga yang terjangkau.</p>
+        </div>
     </div>
-    <div class="col-md-4 mb-3">
-      <h4>
-        Harga Terjangkau
-      </h4>
-      <p>
-      White Rent Car membuktikan keunggulan-keunggulan dengan harga yang terjangkau.
-      </p>
-    </div>
-  </div>
-</div>
+
 </section>
 <br>
 <br>
