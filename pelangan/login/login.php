@@ -26,7 +26,7 @@
 				<div class="col-md-6 col-lg-4">
 					<div class="login-wrap p-0">
 		      	<h3 class="mb-4 text-center">Have an account?</h3>
-				  <?php
+					<?php
                     if (isset($_GET["error"])) {
                     $error = $_GET["error"];
                     if ($error == 1) {
@@ -48,15 +48,14 @@
 		      		</div>
 	            <div class="form-group">
 					<input type="password" name="password" id="password" class="form-control" placeholder="Password"required >
-
 	            </div>
 	            <div class="form-group">
 					<input type="submit" name="signin" id="signin" class="form-control btn btn-primary submit px-3" value="Login" >
 	            </div>
 	            <div class="form-group d-md-flex">
-								<div class="justify-content-end">
-									<a href="lupapass.php" class="term-service">Lupa Password?</a>
-								</div>
+					<div class="justify-content-end">
+						<a href="lupapass.php" class="term-service">Lupa Password?</a>
+					</div>
 	            </div>
 	          </form>
 	          <div class="social d-flex text-center">

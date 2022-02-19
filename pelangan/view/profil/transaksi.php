@@ -156,14 +156,12 @@ error_reporting (0);
               <center>
                 <h3>Anda yakin ?</h3>
               </center>
-
             </div>
             <div class="modal-footer">
               <div class="modal-body">
                 <button type="button" class="btn btn-danger" data-bs-dismiss="modal">TIDAK</button>
                 <a class="btn btn-primary" href="../../login/logot.php" role="button">YA</a>
               </div>
-
             </div>
           </div>
         </div>

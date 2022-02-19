@@ -82,20 +82,19 @@
                     </div>
             </div>
         </div>
-       <?php endforeach; ?> 
-       <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-            <div class="pagination:container">
-        <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+      <?php endforeach; ?> 
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <div class="pagination:container">
+          <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group me-2" role="group" aria-label="First group">
-            <?php for ($i=1; $i<=$pages ; $i++){ ?>
+              <?php for ($i=1; $i<=$pages ; $i++){ ?>
                 <a class="btn btn-primary"  href="?halaman=<?php echo $i; ?>"><?php echo $i; ?></a>
-                <?php } 
+              <?php } 
                 ?>
-    
             </div>
-       </div>
-    </div>
-  </div>
+          </div>
+        </div>
+      </div>
       <!-- //sadasdasdasd -->
     </div>
   </div>

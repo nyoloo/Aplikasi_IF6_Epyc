@@ -156,13 +156,11 @@
       </div>
       <div class="modal-footer">
         <div class="modal-body">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">TIDAK</button>
-        <a class="btn btn-primary" href="../login/logot.php" role="button">YA</a>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">TIDAK</button>
+            <a class="btn btn-primary" href="../login/logot.php" role="button">YA</a>
+          </div>
         </div>
-        
-        </div>
-        
       </div>
     </div>
   </div>

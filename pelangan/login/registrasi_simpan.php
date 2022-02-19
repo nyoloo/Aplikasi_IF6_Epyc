@@ -60,13 +60,11 @@ VALUES('$customerupdate', '$nama_customer','$alamat','$notelp','$username','$pas
                 <h5 class="card-header">Registrasi Berhasil</h5>
                 <div class="card-body">
                   <p class="card-text">Silahkan Kembali ke halaman Log In dengan memencet tombol OK.</p>
-
                 </div>
                 <div class="card-footer ">
                   <a class="btn btn-primary" href="login.php" role="button">OK</a>
                 </div>
               </center>
-           
             <?php
           }
           

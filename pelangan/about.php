@@ -75,17 +75,17 @@
       </div>
    <!---- modal  --->
    <div class="modal fade" id="modal" tabindex="-1" >
-            <div class="modal-dialog">
-              <div class="modal-content">
-                <div class="modal-body">
-                Login terlebih dahulu! <br>Bisa klik icon <i class="fa fa-user"></i> atau klik tombol Log In.
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                  <a href="login/login.php" class="btn btn-primary">Log In</a>
-                </div>
-              </div>
-            </div>
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            Login terlebih dahulu! <br>Bisa klik icon <i class="fa fa-user"></i> atau klik tombol Log In.
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <a href="login/login.php" class="btn btn-primary">Log In</a>
+          </div>
+        </div>
+      </div>
    </div>
   </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>

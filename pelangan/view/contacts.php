@@ -55,20 +55,22 @@
   <br>
 <div class="container">
   <div class="row justify-content-center">
-  <div class="card" style="max-width: 800px;">
-        <div class="card-body">
-            <h5 class="card-title">Perlu Bantuan?</h5>
-            <h6>Hubungi Kami!</h6>
-            <form name="kirimpesan" action="contactskirim.php" method="post">
-            <label for="nama" name="nama" class="form-label">Nama</label>
-            <input type="text" name="nama" id="nama" class="form-control" >
-            <div class="mb-3">
-            <label for="exampleInputEmail1" class="form-label">Alamat E-mail</label>
-            <input type="email" name="email" id="nama" class="form-control" >
-    <div id="emailHelp" class="form-text">Kami tidak akan pernah untuk memberi E-mail anda ke siapapun.</div>
+    <div class="card" style="max-width: 800px;">
+      <div class="card-body">
+        <h5 class="card-title">Perlu Bantuan?</h5>
+        <h6>Hubungi Kami!</h6>
+        <form name="kirimpesan" action="contactskirim.php" method="post">
+        <label for="nama" name="nama" class="form-label">Nama</label>
+        <input type="text" name="nama" id="nama" class="form-control" >
+        <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Alamat E-mail</label>
+        <input type="email" name="email" id="nama" class="form-control" >
+      <div id="emailHelp" class="form-text">
+        Kami tidak akan pernah untuk memberi E-mail anda ke siapapun.
+      </div>
   </div>
   <div class="mb-3">
-  <label for="exampleFormControlTextarea1" class="form-label">Komentar</label>
+  <label for="exampleFormControlTextarea1" class="form-label">Pesan</label>
   <textarea name="pesan" id="pesan" class="form-control"  rows="3"></textarea>
 </div>
 <input type="submit" name="simpan" value="Kirim Pesan" class="btn btn-success"></div>

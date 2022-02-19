@@ -80,10 +80,9 @@
                     </div>
             </div>
         </div>
-       <?php endforeach; ?> 
-       
-       <center>
-       <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <?php endforeach; ?> 
+      <center>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
             <div class="pagination:container">
         <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
             <div class="btn-group me-2" role="group" aria-label="First group">
@@ -93,11 +92,10 @@
                 ?>
     
             </div>
-       </div>
+      </div>
     </div>
   </div>
-       </center>
-       
+      </center>
 </section>
 <!-- Modal -->
 <div class="modal fade" id="modal" tabindex="-1" >

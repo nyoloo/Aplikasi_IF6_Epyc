@@ -55,8 +55,6 @@
 <h1 class="display-4">White Rent Car</h1>
 </section>
 <section class="about" id="about">
-
-    
     <div class="row">
         <div class="image">
             <img src="https://cdn.discordapp.com/attachments/899880655465357315/943892486760325150/Group_5.png" alt="">
@@ -67,7 +65,6 @@
             <p> White Rent Car membuktikan keunggulan-keunggulan dengan harga yang terjangkau.</p>
         </div>
     </div>
-
 </section>
 
 <br>
