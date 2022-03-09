@@ -16,11 +16,11 @@ error_reporting (0);
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../../style.css">
-    
-    
+   <link rel="stylesheet" href="../../mobil/css/styles.css">
+   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <title>White Rent Car | Transaksi</title>
   </head>
   <Style>
@@ -30,39 +30,33 @@ error_reporting (0);
       align-items: center;
     }
   </Style>
-  <body style="background-color: #F7F6F2 ;">
-  <header class="header">
+  <body>
 
-<a href="#" class="logo">
-<img src="https://cdn.discordapp.com/attachments/899880655465357315/943891619692818472/Group_4.png" alt="">
+<!--========== SCROLL TOP ==========-->
+<a href="#" class="scrolltop" id="scroll-top">
+    <i class='bx bx-chevron-up scrolltop__icon'></i>
 </a>
 
-<nav class="navbar">
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active " href="../home.php"><i class="fa fa-home"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../about.php">Tentang Kami</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link"  href="../mobil.php">Nama Dan Harga Sewa Mobil</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="../contacts.php">Kontak</a>
-        </li>
-      </ul>
-      
-</nav>
-<div class="icons">
-      <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../view/profil.php">Profil</a></li>
-            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">Log Out</a></li>
-          </ul>
-      <div class="fas fa-bars" id="menu-btn"></div>
+<!--========== HEADER ==========-->
+<header class="l-header" id="header">
+    <nav class="nav bd-container">
+        <a href="#" class="nav__logo">White Rent Car</a>
+
+        <div class="nav__menu" id="nav-menu">
+            
+
+                <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+            </ul>
+        </div>
+
+        <div class="nav__toggle" id="nav-toggle">
+            <i class='bx bx-menu'></i>
+        </div>
+    </nav>
 </header>
+
+<main class="l-main">
+<br>
 <br>
 <br>
 <br>
@@ -74,22 +68,22 @@ error_reporting (0);
       <div class="col-md-12">
         <div class="card-body">
           <div class="row g-3 align-items-center">
-            <h5 class="card-title"><?= $dataMobil['nama_mobil']?></h5>
+            <h5 class="card-title"style="color: black;"><?= $dataMobil['nama_mobil']?></h5>
             <div class="row mb-3">
-              <label for="inputEmail3" class="col-sm-2 col-form-label">Tanggal Pinjam</label>
+              <label for="inputEmail3" class="col-sm-2 col-form-label"style="color: black;">Tanggal Pinjam</label>
               <div class="col-sm-10">
                     <input type="date" class="form-control" name="tanggalminjam" value="<?= $_POST['tanggalminjam']; ?>">
                   </div>
             </div>
             <div class="row mb-3">
-              <label for="inputPassword3" class="col-sm-2 col-form-label">Tanggal Kembali</label>
+              <label for="inputPassword3" class="col-sm-2 col-form-label"style="color: black;">Tanggal Kembali</label>
               <div class="col-sm-10">
                     <input type="date" class="form-control" name="tanggalkembali" value="<?= $_POST['tanggalkembali']; ?>">
                   </div>
             </div>
 
             <div class="mb-3 row">
-              <label for="platnomor" class="col-sm-2 col-form-label">Plat Nomer</label>
+              <label for="platnomor" class="col-sm-2 col-form-label"style="color: black;">Plat Nomer</label>
               <div class="col-sm-10">
                 <input type="text" readonly class="form-control" id="platnomor" name ="platnomor" value=" <?= $dataMobil['plat_mobil']; ?>">
               </div>
@@ -99,7 +93,7 @@ error_reporting (0);
               <br>
               <br>
             <div class="mb-3 row">
-            <label for="hargasewa" class="col-sm-2 col-form-label">Harga Sewa Per Hari</label>
+            <label for="hargasewa" class="col-sm-2 col-form-label" style="color: black;">Harga Sewa Per Hari</label>
               <div class="col-auto">
                 <input type="text" readonly class="form-control" id="hargasewa" style="width: 28rem;" value=" <?= "Rp".number_format($dataMobil['harga_sewa'],0,",","."); ?>" > 
               </div>
@@ -125,13 +119,13 @@ error_reporting (0);
             </div>
             </div>
             <div class="mb-3 row">
-              <label for="totalhargasewa" class="col-sm-2 col-form-label"> Total Harga Sewa </label>
+              <label for="totalhargasewa" class="col-sm-2 col-form-label" style="color: black;"> Total Harga Sewa </label>
               <div class="col-sm-10">
                 <input type="text" readonly class="form-control" id="totalhargasewa" name="totalhargasewa" style="width: 37.4rem;" value="<?= "Rp".number_format($diff2,0,",","."); ?>" >
                 </div>
             </div>
             <div class="mb-3 row">
-              <label for="tujuan" class="col-sm-2 col-form-label">Tujuan</label>
+              <label for="tujuan" class="col-sm-2 col-form-label" style="color: black;" >Tujuan</label>
               <div class="col-sm-10">
                 <input type="text"  class="form-control" id="tujuan" name ="tujuan" style="width: 37.4rem;" >
               </div>
@@ -169,6 +163,10 @@ error_reporting (0);
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <script src="script.js"></script>
+<script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="../../mobil/js/main.js"></script>
 
 
   </body>

@@ -7,6 +7,7 @@ $db=new database();
 if (!isset($_SESSION["username"]))
 header("Location:../login/login.php?error=4");
 ?>
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -15,60 +16,79 @@ header("Location:../login/login.php?error=4");
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" href="../style.css">
-
+   <link rel="stylesheet" href="../mobil/css/styles.css">
+   <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
     <title>White Rent Car | Profil</title>
   </head>
-  
-  <body>
+
     
-  <header class="header">
+    <body>
+  
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-chevron-up scrolltop__icon'></i>
+        </a>
 
-<a href="#" class="logo">
-<img src="https://cdn.discordapp.com/attachments/899880655465357315/943891619692818472/Group_4.png" alt="">
-</a>
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">White Rent Car</a>
 
-<nav class="navbar">
-    <ul class="nav justify-content-center">
-        <li class="nav-item">
-          <a class="nav-link active " href="home.php"><i class="fa fa-home"></i></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.php">Tentang Kami</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="mobil.php">Nama Dan Harga Sewa Mobil</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="contacts.php">Kontak</a>
-        </li>
-      </ul>
-      
-</nav>
-<div class="icons">
-      <a class="nav-link  fa fa-user" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="../view/profil.php">Profil</a></li>
-            <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#keluar">Log Out</a></li>
-          </ul>
-      <div class="fas fa-bars" id="menu-btn"></div>
-</header>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <main class="container d-flex justify-content-center align-items-center">
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="home.php" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="home.php" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="mobil.php" class="nav__link">Harga Sewa</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Profil</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link" data-bs-toggle="modal" data-bs-target="#logot">Logout</a></li>
+
+                        <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+        
+        <!-- Modal -->
+        <center>
+        <div class="modal fade" id="logot" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Logout</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" style="color: black;">
+                        Yakin Untuk Keluar?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tidak</button>
+                        <button type="button" class="btn btn-primary">Ya</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        
+        </center>
+<br>
+<br>
+<br>
+        <main class="container d-flex justify-content-center align-items-center">
     <div class="card">
-      <h5 class="card-header"><center>Profil</center></h5>
+      <h5 class="card-header" style="color: black;"><center>Profil</center></h5>
         <div class="card-body">
         <center>
           <div class="row">
             <div class="col-sm-6">
-              <p>Nama Customer</p>
+              <p  style="color: black;">Nama Customer</p>
                 <h6 class="text-muted f-w-400" name="namacustomer">
                   <?php
                     $idcustomer=$_SESSION["id_customer"];
@@ -80,7 +100,7 @@ header("Location:../login/login.php?error=4");
                 </h6>
             </div>
             <div class="col-sm-6">
-              <p class="m-b-10 f-w-600">Alamat</p>
+              <p class="m-b-10 f-w-600" style="color: black;">Alamat</p>
                   <h6 class="text-muted f-w-400" name="alamat">
                     <?php
                       $idcustomer=$_SESSION["id_customer"];
@@ -96,7 +116,7 @@ header("Location:../login/login.php?error=4");
             <br>
             <br>
               <div class="col-sm-6">
-                <p class="m-b-10 f-w-600">No Telp</p>
+                <p class="m-b-10 f-w-600" style="color: black;">No Telp</p>
                 <h6 class="text-muted f-w-400" name="notelp">                             
                 <?php
                   $idcustomer=$_SESSION["id_customer"];
@@ -108,7 +128,7 @@ header("Location:../login/login.php?error=4");
               </h6>
             </div>
             <div class="col-sm-6">
-              <p class="m-b-10 f-w-600">Username</p>
+              <p class="m-b-10 f-w-600" style="color: black;">Username</p>
               <h6 class="text-muted f-w-400" name="username">
               <?php
                 $idcustomer=$_SESSION["id_customer"];
@@ -123,7 +143,7 @@ header("Location:../login/login.php?error=4");
           <br>
           <div class="row justify-content-center">
             <div class="col-sm-6">
-              <p class="m-b-10 f-w-600">Password</p>
+              <p class="m-b-10 f-w-600" style="color: black;">Password</p>
               <h6 class="text-muted f-w-400" name="password">
               <?php
                 $idcustomer=$_SESSION["id_customer"];
@@ -145,29 +165,24 @@ header("Location:../login/login.php?error=4");
       </div>
   </main>
   
-  <div class="modal fade" id="keluar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-body">
-        <center>
-        <h3>Anda yakin ?</h3>
-        </center>
-        
-      </div>
-      <div class="modal-footer">
-        <div class="modal-body">
-        <div class="d-grid gap-2 d-md-flex justify-content-md-center">
-        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">TIDAK</button>
-        <a class="btn btn-primary" href="../login/logot.php" role="button">YA</a>
-        </div>
-        
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-  </body>
+
+        <!--========== FOOTER ==========-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content grid">
+                <div class="footer__rights">
+                    <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+                </div>
+            </div>
+            </div>
+        </footer>
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="../mobil/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+    </body>
 </html>

@@ -16,8 +16,7 @@
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="../../assets/css/styles.css">
-
-        <title>White Rent Car</title>
+	    <title>White Rent Car</title>
     </head>
     <body>
         <header class="header" id="header">
@@ -41,10 +40,7 @@
                             </div>
                         </li>
                         <li class="nav__item">
-                            <a href="#place" class="nav__logout">Login</a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#place" class="nav__logout">Logout</a>
+                            <a href="../login/logot.php" class="nav__link">Logout</a>
                         </li>
                 
                     </ul>
@@ -71,7 +67,7 @@
                 <div class="home__container container grid">
                     <div class="home__data">
                         <h1 class="home__data-title">The Best Service<br> With <b>Well-Maintained <br>  Car</b></h1>
-                        <a href="#about" class="button">About US<i class="ri-arrow-right-line"></i></a>
+                        <a href="contacts.php" class="button">contact US<i class="ri-arrow-right-line"></i></a>
 
                     </div>
                 </div>
@@ -123,5 +119,8 @@
 
         <!--=============== MAIN JS ===============-->
         <script src="../../assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
     </body>
 </html>

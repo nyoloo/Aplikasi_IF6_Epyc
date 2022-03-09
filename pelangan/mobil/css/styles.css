@@ -4,8 +4,10 @@
 /*===== VARIABLES CSS =====*/
 :root {
   --header-height: 3rem;
+  --hue-color: 171;
 
-  /*========== Colors ==========*/
+  /* HSL color mode */
+  
   --first-color: #069C54;
   --first-color-alt: #048654;
   --title-color: #393939;
@@ -13,6 +15,14 @@
   --text-color-light: #A6A6A6;
   --body-color: #FBFEFD;
   --container-color: #FFFFFF;
+  --first-color-second: hsl(var(--hue-color), 64%, 22%);
+  --first-color-alt: hsl(var(--hue-color), 64%, 15%);
+  --title-color: #393939;
+  --input-color: hsl(var(--hue-color), 24%, 97%);
+  --body-color: hsl(var(--hue-color), 100%, 99%);
+  --white-color: #FFF;
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
+  --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
   /*========== Font and typography ==========*/
   --body-font: 'Poppins', sans-serif;
@@ -70,6 +80,7 @@ body.dark-theme{
   --container-color: #27302C;
 }
 
+
 /*========== Button Dark/Light ==========*/
 .change-theme{
   position: absolute;
@@ -106,28 +117,8 @@ img{
   max-width: 100%;
   height: auto;
 }
-
-/*========== CLASS CSS ==========*/
-.section{
-  padding: 4rem 0 2rem;
-}
-
-.section-title, .section-subtitle{
-  text-align: center;
-}
-
-.section-title{
-  font-size: var(--h1-font-size);
-  color: var(--title-color);
-  margin-bottom: var(--mb-3);
-}
-
-.section-subtitle{
-  display: block;
-  color: var(--first-color);
-  font-weight: var(--font-medium);
-  margin-bottom: var(--mb-1);
-}
+/* Modal */
+/* The Modal (background) */
 
 /*========== LAYOUT ==========*/
 .bd-container{
@@ -247,6 +238,20 @@ img{
   visibility: visible;
   bottom: 1.5rem;
 }
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb-color);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--text-color-light);
+}
+
 
 /*========== HOME ==========*/
 .home__container{
