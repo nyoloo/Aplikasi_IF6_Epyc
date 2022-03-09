@@ -1,0 +1,263 @@
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: #F7F6F2;
+}
+section{
+    padding: 2rem 7%;
+}
+.heading{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding-bottom: 2.5rem;
+    font-size: 2.5rem;
+}
+.heading span{
+    color: rgb(32, 32, 32);
+    text-transform: uppercase;
+}
+.header{
+    background-color: #C8C6C6;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1,5rem 7%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+.header .logo img{
+    height: 3rem;
+}
+.header .navbar a{
+    margin: 0 1rem ;
+    font-size: 1.2rem;
+    color: rgb(0, 0, 0);
+}
+
+.header.navbar a:hover{
+    color: rgb(255, 248, 248);
+}
+
+.header .icons div{
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
+
+.header .icons div:hover{
+    color:#000;
+}
+
+.header .fa {
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 2rem;
+  }
+  
+  .header .fa:hover {
+      opacity: 0.7;
+  }
+  .header .fa-user{
+      color: rgb(0, 0, 0);
+  }
+  .header .fa-shopping-cart{
+      color : rgb(0, 0, 0)
+  }
+
+#menu-btn{
+    display: none;
+}
+.jumbotron{
+    padding: 2rem 1rem;
+    background-color: #D3DEDC;
+}
+
+.home{
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.home .content{
+    max-width: 40rem;
+}
+
+.home .content h3{
+    font-size: 5rem;
+    text-transform: uppercase;
+    color:rgb(0, 0, 0);
+}
+
+.home .content p{
+    font-size: 1.5rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding:1rem 0;
+    color:#000;
+}
+
+.home .image img 
+{
+    width:80%;
+    height: auto;
+    
+}
+.blogs .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.blogs .box-container .box{
+    border:var(--border);    
+}
+
+.blogs .box-container .box .image{
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.blogs .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.blogs .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+.blogs .box-container .box .content{
+    padding:2rem;
+}
+
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.5;
+    color:#fff;
+}
+
+.blogs .box-container .box .content .title:hover{
+    color:var(--main-color);
+}
+
+.blogs .box-container .box .content span{
+    color:var(--main-color);
+    display: block;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+
+.blogs .box-container .box .content p{
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color:#ccc;
+    padding:1rem 0;
+}
+.about .row{
+    display: flex;
+    align-items: center;
+    background: #F7F6F2;
+    flex-wrap: wrap;
+}
+
+.about .row .image{
+    flex:1 1 20rem;
+}
+
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex:1 1 20rem;
+    padding:2rem;
+}
+
+.about .row .content h3{
+    font-size: 1.5rem;
+    color:rgb(0, 0, 0);
+}
+
+.about .row .content p{
+    font-size: 1.3rem;
+    color:rgb(83, 81, 81);
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+
+  @media only screen and (min-width: 1400px) {
+    p {
+        font-size: 20px
+    }
+  }
+  
+
+
+@media (max-width:991px){
+
+
+    .header{
+        padding:1.5rem 2rem;
+    }
+
+    section{
+        padding:2rem;
+    }
+
+}
+
+@media (max-width:880px){
+
+    #menu-btn{
+        display: inline-block;
+    }
+
+    .header .navbar{
+        position: absolute;
+        top:100%; right: -100%;
+        background: rgb(255, 246, 246);
+        width: 30rem;
+        height: calc(100vh - 9.5rem);
+        padding-right: 0ch;
+    }
+
+    .header .navbar.active{
+        right:0;
+    }
+
+    .header .navbar a{
+        color: #000;
+        display: block;
+        margin:1rem;
+        padding:1rem;
+        font-size: 1.4rem;
+    }
+
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+}

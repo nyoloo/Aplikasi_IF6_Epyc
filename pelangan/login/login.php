@@ -3,40 +3,29 @@
 <!doctype html>
 <html lang="en">
   <head>
-  <title>White Rent Car | Login</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>White Rent Car | Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/iconic/css/material-design-iconic-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="css/style.css">
 
 	</head>
-	<body>
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
-				<form class="login100-form validate-form"  action="logindatabase.php" method="post">
-					<span class="login100-form-title p-b-49">
-						Login
-					</span>
+	<body class="img js-fullheight" style="background-image: url(images/mobil.jpg);">
+	<section class="ftco-section">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-6 text-center mb-5">
+					<h2 class="heading-section">Log In </h2>
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-6 col-lg-4">
+					<div class="login-wrap p-0">
+		      	<h3 class="mb-4 text-center">Have an account?</h3>
 					<?php
                     if (isset($_GET["error"])) {
                     $error = $_GET["error"];
@@ -53,61 +42,36 @@
                     showError("Unknown Error.");
                     }
                     ?>
-					<div class="wrap-input100 validate-input m-b-23" data-validate = "Username is reauired">
-						<span class="label-input100">Username</span>
-						<input class="input100" ype="username" name="username" id="username" placeholder="Type your username">
-						<span class="focus-input100" data-symbol="&#xf206;"></span>
+					<form action="logindatabase.php" method="post">
+		      		<div class="form-group">
+						<input type="username" name="username" id="username" class="form-control" placeholder="Username"required>
+		      		</div>
+	            <div class="form-group">
+					<input type="password" name="password" id="password" class="form-control" placeholder="Password"required >
+	            </div>
+	            <div class="form-group">
+					<input type="submit" name="signin" id="signin" class="form-control btn btn-primary submit px-3" value="Login" >
+	            </div>
+	            <div class="form-group d-md-flex">
+					<div class="justify-content-end">
+						<a href="lupapass.php" class="term-service">Lupa Password?</a>
 					</div>
-					<div class="wrap-input100 validate-input" data-validate="Password is required">
-						<span class="label-input100">Password</span>
-						<input class="input100" type="password" name="password" id="password" placeholder="Type your password">
-						<span class="focus-input100" data-symbol="&#xf190;"></span>
-					</div>
-					<div class="text-right p-t-8 p-b-31">
-						<a href="lupapass.php" class="term-service">
-							Lupa Password?
-						</a>
-					</div>
-					<div class="container-login100-form-btn">
-						<div class="wrap-login100-form-btn">
-							<div class="login100-form-bgbtn"></div>
-							<input type="submit" name="signin" id="signin"  class="login100-form-btn" value="Login" >
-						</div>
-					</div>
-					<div class="txt1 text-center p-t-54 p-b-20">
-						<a href="http://localhost/tugas-besar-RPL/admin/public/">
-							Login with admin acount
-						</a>
-						<br>
-						<br>
-						<br>
-						<br>
-						<br>
-						<a href="register.php" class="txt2">
-							Sign Up
-						</a>
-					</div>
-				</form>
+	            </div>
+	          </form>
+	          <div class="social d-flex text-center">
+	          	<a href="register.php" class="px-2 py-2 mr-md-1 rounded"><span class="ion-logo-facebook mr-2"></span> Buat Akun</a>
+	          	<a href="http://localhost/tugas-besar-RPL/admin/public/" class="px-2 py-2 ml-md-1 rounded term-service"><span class="ion-logo-twitter mr-2"></span> Login Sebagai Admin</a>
+	          </div>
+		      </div>
+				</div>
 			</div>
 		</div>
-	</div>
+	</section>
 
- <!--===============================================================================================-->
- <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 
 	</body>
 </html>

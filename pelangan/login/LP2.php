@@ -28,9 +28,9 @@ include_once ("../../function.php");
     use PHPMailer\PHPMailer\PHPMailer;
     use PHPMailer\PHPMailer\Exception;
             
-   //require './lib/PHPMailer/src/Exception.php';
-    //require './lib/PHPMailer/src/PHPMailer.php';
-    //require './lib/PHPMailer/src/SMTP.php';
+    require './lib/PHPMailer/src/Exception.php';
+    require './lib/PHPMailer/src/PHPMailer.php';
+    require './lib/PHPMailer/src/SMTP.php';
 
 //error_reporting(0);
 if(isset($_POST["kirim"])){
